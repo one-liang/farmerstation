@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "NotoSansTC";
+    font-weight: 400;
+    src: url("/src/fonts/NotoSansTC-Regular.otf") format("woff2");
+  }
+
+  @font-face {
+    font-family: "NotoSansTC";
+    font-weight: 700;
+    src: url("/src/fonts/NotoSansTC-Bold.otf") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-weight: 400;
+    src: url("/src/fonts/Inter-Regular.ttf") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-weight: 700;
+    src: url("/src/fonts/Inter-Bold.ttf") format("woff2");
+  }
+
+  html {
+    @apply font-notoSansTC;
+  }
+}
+
+@layer components {
+  .card {
+    @apply p-8 bg-teal-200 rounded-lg shadow-xl;
+  }
+}
+
+@layer utilities {
+  .line-clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .line-clamp-1 {
+    -webkit-line-clamp: 1;
+  }
+
+  .line-clamp-2 {
+    -webkit-line-clamp: 2;
+  }
+
+  .line-clamp-3 {
+    -webkit-line-clamp: 3;
+  }
+}

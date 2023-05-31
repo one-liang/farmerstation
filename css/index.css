@@ -421,7 +421,7 @@ video {
 
   font-weight: 400;
 
-  src: url("/src/fonts/NotoSansTC-Regular.otf") format("woff2");
+  src: url("../fonts/NotoSansTC-Regular.otf") format("woff2");
 }
 
 @font-face {
@@ -429,7 +429,7 @@ video {
 
   font-weight: 700;
 
-  src: url("/src/fonts/NotoSansTC-Bold.otf") format("woff2");
+  src: url("../fonts/NotoSansTC-Bold.otf") format("woff2");
 }
 
 @font-face {
@@ -437,7 +437,7 @@ video {
 
   font-weight: 400;
 
-  src: url("/src/fonts/Inter-Regular.ttf") format("woff2");
+  src: url("../fonts/Inter-Regular.ttf") format("woff2");
 }
 
 @font-face {
@@ -445,7 +445,7 @@ video {
 
   font-weight: 700;
 
-  src: url("/src/fonts/Inter-Bold.ttf") format("woff2");
+  src: url("../fonts/Inter-Bold.ttf") format("woff2");
 }
 
 html {
@@ -582,12 +582,12 @@ html {
   line-height: 1.625;
 }
 
-.text-primary {
-  --tw-text-opacity: 1;
-  color: rgb(135 190 35 / var(--tw-text-opacity));
-}
-
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(135 190 35 / var(--tw-text-opacity));
 }

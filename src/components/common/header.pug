@@ -1,27 +1,45 @@
 header(class="relative mx-auto max-w-screen-2xl xl:px-[68px] lg:px-12 px-5 lg:py-0 py-3 flex items-center justify-between z-40")
-  a(class="w-48" href="#")
+  a(class="w-48 !top-16 z-40" href="#")
     img(src="/images/Farmer.svg" alt="")
+  div(class="static z-30 lg:!hidden !block before:block before:bg-white before:w-full before:h-16 before:absolute before:top-0 before:left-0")
   nav(class="flex items-center gap-x-10")
-    ul(id="menu" class="lg:translate-y-0 translate-y-[calc(-100%-64px)] absolute duration-200 lg:divide-y-0 divide-y divide-black divide-opacity-10 left-0 z-30 items-center w-full h-full lg:min-h-0 min-h-[calc(100vh-64px)] leading-9 bg-white px-[40px] pt-5 lg:pt-0 lg:px-0 lg:h-auto lg:static lg:flex gap-x-12 lg:w-auto lg:left-auto lg:top-auto top-16")
+    ul(id="menu" class="fixed transform -translate-y-full transition-transform duration-200 ease-in-out left-0 w-full h-screen overflow-auto lg:translate-y-0 lg:static lg:overflow-visible lg:divide-y-0 divide-y divide-black divide-opacity-10 z-20 items-center leading-9 bg-white px-[40px] pt-5 lg:pt-0 lg:px-0 lg:h-auto lg:flex gap-x-12 lg:w-auto lg:left-auto top-0")
       li
-        a(class="block py-3 text-lg duration-200 lg:text-base whitespace-nowrap lg:hover:text-primary-dark lg:inline-block lg:py-0" href="#") 關於我們
+        a(class="font-medium lg:font-normal block py-3 text-lg duration-200 lg:text-base whitespace-nowrap lg:hover:text-primary-dark lg:inline-block lg:py-0" href="#") 關於我們
       li
-        button(class="duration-200 lg:peer whitespace-nowrap text-lg text-left w-full inline-block lg:w-auto lg:block lg:text-base lg:py-[18px] py-3 lg:hover:text-primary-dark" type="button") 在地食事
-        div(class="hidden absolute top-full flex-col bg-white drop-shadow px-3 py-4 z-10 lg:peer-hover:flex hover:flex w-[200px]")
-          a(class="p-3 duration-200 rounded-lg hover:text-primary-dark hover:bg-primary-lighten" href="#") 當令食材
-          a(class="p-3 duration-200 rounded-lg hover:text-primary-dark hover:bg-primary-lighten" href="#") 達人推薦
+        button(class="dropdownBtn font-medium lg:font-normal duration-200 peer whitespace-nowrap text-lg text-left w-full flex items-center justify-between lg:w-auto lg:block lg:text-base lg:py-[18px] py-3 lg:hover:text-primary-dark" type="button")
+          span 在地食事
+          svg(class="w-5 h-5 pointer-events-none lg:hidden block" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg")
+            path(class="add" d='M10.0003 1.66669C5.40866 1.66669 1.66699 5.40835 1.66699 10C1.66699 14.5917 5.40866 18.3334 10.0003 18.3334C14.592 18.3334 18.3337 14.5917 18.3337 10C18.3337 5.40835 14.592 1.66669 10.0003 1.66669ZM13.3337 10.625H10.6253V13.3334C10.6253 13.675 10.342 13.9584 10.0003 13.9584C9.65866 13.9584 9.37533 13.675 9.37533 13.3334V10.625H6.66699C6.32533 10.625 6.04199 10.3417 6.04199 10C6.04199 9.65835 6.32533 9.37502 6.66699 9.37502H9.37533V6.66669C9.37533 6.32502 9.65866 6.04169 10.0003 6.04169C10.342 6.04169 10.6253 6.32502 10.6253 6.66669V9.37502H13.3337C13.6753 9.37502 13.9587 9.65835 13.9587 10C13.9587 10.3417 13.6753 10.625 13.3337 10.625Z' fill='#87BE23')
+            path(class="minus" d="M10.0003 1.66669C5.40866 1.66669 1.66699 5.40835 1.66699 10C1.66699 14.5917 5.40866 18.3334 10.0003 18.3334C14.592 18.3334 18.3337 14.5917 18.3337 10C18.3337 5.40835 14.592 1.66669 10.0003 1.66669ZM13.267 10.625H6.60033C6.25866 10.625 5.97533 10.3417 5.97533 10C5.97533 9.65835 6.25866 9.37502 6.60033 9.37502H13.267C13.6087 9.37502 13.892 9.65835 13.892 10C13.892 10.3417 13.617 10.625 13.267 10.625Z" fill="#87BE23")
+
+        div(class="dropdown-content bg-red-200 hidden lg:absolute static top-full flex-col bg-white lg:drop-shadow lg:px-3 lg:py-4 z-10 peer-hover:lg:flex hover:flex lg:w-[200px] w-full")
+          a(class="lg:p-3 py-2 pl-[6px] lg:inline-block flex items-center justify-between duration-200 rounded-lg hover:text-primary-dark hover:bg-primary-lighten" href="#")
+            span(class="flex items-center gap-x-2 lg:before:hidden before:block before:bg-black before:w-[6px] before:h-[6px] before:rounded-full") 當令食材
+            img(class="block lg:hidden" src="/images/icons/Circle-Right.svg", alt="")
+          a(class="lg:p-3 py-2 pl-[6px] lg:inline-block flex items-center justify-between duration-200 rounded-lg hover:text-primary-dark hover:bg-primary-lighten" href="#")
+            span(class="flex items-center gap-x-2 lg:before:hidden before:block before:bg-black before:w-[6px] before:h-[6px] before:rounded-full") 達人推薦
+            img(class="block lg:hidden" src="/images/icons/Circle-Right.svg", alt="")
       li
-        button(class="duration-200 lg:peer whitespace-nowrap text-lg text-left w-full inline-block lg:w-auto lg:block lg:text-base lg:py-[18px] py-3 lg:hover:text-primary-dark" type="button") 農民直送
-        div(class="hidden absolute top-full flex-col bg-white drop-shadow px-3 py-4 z-10 lg:peer-hover:flex hover:flex w-[200px]")
-          a(class="p-3 duration-200 rounded-lg hover:text-primary-dark hover:bg-primary-lighten" href="#") 當令食材
-          a(class="p-3 duration-200 rounded-lg hover:text-primary-dark hover:bg-primary-lighten" href="#") 達人推薦
+        button(class="dropdownBtn font-medium lg:font-normal duration-200 peer whitespace-nowrap text-lg text-left w-full inline-block lg:w-auto lg:block lg:text-base lg:py-[18px] py-3 lg:hover:text-primary-dark" type="button") 農民直送
+        div(class="dropdown-content bg-red-200 hidden lg:absolute static top-full flex-col bg-white lg:drop-shadow lg:px-3 lg:py-4 z-10 peer-hover:lg:flex hover:flex lg:w-[200px] w-full")
+          a(class="lg:p-3 py-2 pl-[6px] lg:inline-block flex items-center justify-between duration-200 rounded-lg hover:text-primary-dark hover:bg-primary-lighten" href="#")
+            span(class="flex items-center gap-x-2 lg:before:hidden before:block before:bg-black before:w-[6px] before:h-[6px] before:rounded-full") 當令食材
+            img(class="block lg:hidden" src="/images/icons/Circle-Right.svg", alt="")
+          a(class="lg:p-3 py-2 pl-[6px] lg:inline-block flex items-center justify-between duration-200 rounded-lg hover:text-primary-dark hover:bg-primary-lighten" href="#")
+            span(class="flex items-center gap-x-2 lg:before:hidden before:block before:bg-black before:w-[6px] before:h-[6px] before:rounded-full") 達人推薦
+            img(class="block lg:hidden" src="/images/icons/Circle-Right.svg", alt="")
       li
-        button(class="duration-200 lg:peer whitespace-nowrap text-lg text-left w-full inline-block lg:w-auto lg:block lg:text-base lg:py-[18px] py-3 lg:hover:text-primary-dark" type="button") 食農教育
-        div(class="hidden absolute top-full flex-col bg-white drop-shadow px-3 py-4 z-10 lg:peer-hover:flex hover:flex w-[200px]")
-          a(class="p-3 duration-200 rounded-lg hover:text-primary-dark hover:bg-primary-lighten" href="#") 當令食材
-          a(class="p-3 duration-200 rounded-lg hover:text-primary-dark hover:bg-primary-lighten" href="#") 達人推薦
+        button(class="dropdownBtn font-medium lg:font-normal duration-200 peer whitespace-nowrap text-lg text-left w-full inline-block lg:w-auto lg:block lg:text-base lg:py-[18px] py-3 lg:hover:text-primary-dark" type="button") 食農教育
+        div(class="dropdown-content bg-red-200 hidden lg:absolute static top-full flex-col bg-white lg:drop-shadow lg:px-3 lg:py-4 z-10 peer-hover:lg:flex hover:flex lg:w-[200px] w-full")
+          a(class="lg:p-3 py-2 pl-[6px] lg:inline-block flex items-center justify-between duration-200 rounded-lg hover:text-primary-dark hover:bg-primary-lighten" href="#")
+            span(class="flex items-center gap-x-2 lg:before:hidden before:block before:bg-black before:w-[6px] before:h-[6px] before:rounded-full") 當令食材
+            img(class="block lg:hidden" src="/images/icons/Circle-Right.svg", alt="")
+          a(class="lg:p-3 py-2 pl-[6px] lg:inline-block flex items-center justify-between duration-200 rounded-lg hover:text-primary-dark hover:bg-primary-lighten" href="#")
+            span(class="flex items-center gap-x-2 lg:before:hidden before:block before:bg-black before:w-[6px] before:h-[6px] before:rounded-full") 達人推薦
+            img(class="block lg:hidden" src="/images/icons/Circle-Right.svg", alt="")
       li(class="mt-3 !border-0 lg:mt-0")
-        a(class="block w-full px-3 py-[10px] lg:py-2 text-sm text-center text-white duration-200 border rounded-lg whitespace-nowrap bg-primary border-primary-dark lg:text-left lg:w-auto lg:inline-block lg:hover:bg-primary-dark" href="#") 登入專區
+        a(class="font-medium lg:font-normal block w-full px-3 py-[10px] lg:py-2 text-sm text-center text-white duration-200 border rounded-lg whitespace-nowrap bg-primary border-primary-dark lg:text-left lg:w-auto lg:inline-block lg:hover:bg-primary-dark" href="#") 登入專區
       li(class="mt-10 !border-0 flex gap-x-6 lg:mt-0 lg:hidden")
         //- facebook
         a(class="box-border flex items-center justify-center w-10 h-10 duration-200 bg-gray-400 rounded-full" href="#")
@@ -31,7 +49,7 @@ header(class="relative mx-auto max-w-screen-2xl xl:px-[68px] lg:px-12 px-5 lg:py
         a(class="box-border flex items-center justify-center w-10 h-10 duration-200 bg-gray-400 rounded-full" href="#")
           svg(class="w-[18px] h-[18px] text-white fill-current" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg")
             path(d="M14.167 3.33334H5.83366C3.33366 3.33334 1.66699 5.00001 1.66699 7.50001V12.5C1.66699 15 3.33366 16.6667 5.83366 16.6667H14.167C16.667 16.6667 18.3337 15 18.3337 12.5V7.50001C18.3337 5.00001 16.667 3.33334 14.167 3.33334ZM11.5753 10.8583L9.51698 12.0917C8.68364 12.5917 8.00031 12.2084 8.00031 11.2334V8.75835C8.00031 7.78335 8.68364 7.40002 9.51698 7.90002L11.5753 9.13334C12.367 9.61667 12.367 10.3833 11.5753 10.8583Z")            
-    ul(class="flex lg:gap-x-6 gap-x-4")
+    ul(class="flex lg:gap-x-6 gap-x-4 z-40")
       //- search
       li
         a(class="box-border flex items-center justify-center w-10 h-10 duration-200 border border-gray-400 rounded-full lg:w-9 lg:h-9 lg:bg-gray-400 lg:hover:bg-primary-dark" href="#")

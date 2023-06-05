@@ -1,18 +1,20 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  purge: [
-    "./src/**/*.pug",
-    "./src/**/*.js",
-  ],
+  purge: ["./src/**/*.pug", "./src/**/*.js"],
   darkMode: false, // or "media" or "class"
   theme: {
     extend: {
       fontFamily: {
-        notoSansTC: ["Inter", "NotoSansTC", "Microsoft JhengHei", ...defaultTheme.fontFamily.sans],
+        notoSansTC: [
+          "Inter",
+          "NotoSansTC",
+          "Microsoft JhengHei",
+          ...defaultTheme.fontFamily.sans,
+        ],
       },
       textColor: {
-        "primary": "#87BE23",
+        primary: "#87BE23",
         "primary-dark": "#6C9C30",
         "primary-lighten": "#E2EFCB",
         "secondary-dark": "#F39313",
@@ -32,7 +34,7 @@ module.exports = {
         "gradient-right ": "#C9F974",
       },
       backgroundColor: {
-        "primary": "#87BE23",
+        primary: "#87BE23",
         "primary-dark": "#6C9C30",
         "primary-lighten": "#E2EFCB",
         "secondary-dark": "#F39313",
@@ -52,7 +54,7 @@ module.exports = {
         "gradient-right ": "#C9F974",
       },
       borderColor: {
-        "primary": "#87BE23",
+        primary: "#87BE23",
         "primary-dark": "#6C9C30",
         "primary-lighten": "#E2EFCB",
         "secondary-dark": "#F39313",
@@ -73,11 +75,11 @@ module.exports = {
       },
       dropShadow: {
         DEFAULT: "0px 0px 8px rgba(0, 0, 0, 0.2)",
-      }
+      },
     },
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
+};

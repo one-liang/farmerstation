@@ -11,6 +11,12 @@
 
   @font-face {
     font-family: "NotoSansTC";
+    font-weight: 500;
+    src: url("../fonts/NotoSansTC-Medium.otf") format("woff2");
+  }
+
+  @font-face {
+    font-family: "NotoSansTC";
     font-weight: 700;
     src: url("../fonts/NotoSansTC-Bold.otf") format("woff2");
   }
@@ -19,6 +25,12 @@
     font-family: "Inter";
     font-weight: 400;
     src: url("../fonts/Inter-Regular.ttf") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-weight: 500;
+    src: url("../fonts/Inter-Medium.ttf") format("woff2");
   }
 
   @font-face {

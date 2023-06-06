@@ -734,6 +734,10 @@ html {
   flex-direction: column;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
@@ -830,11 +834,6 @@ html {
   background-color: rgb(240 240 240 / var(--tw-bg-opacity));
 }
 
-.bg-red-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
-}
-
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(135 190 35 / var(--tw-bg-opacity));
@@ -884,6 +883,14 @@ html {
   padding-bottom: 10px;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
 .pt-5 {
   padding-top: 1.25rem;
 }
@@ -903,6 +910,11 @@ html {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .text-lg {
@@ -1119,6 +1131,11 @@ html {
 
   .lg\:p-3 {
     padding: 0.75rem;
+  }
+
+  .lg\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
 
   .lg\:px-12 {

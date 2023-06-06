@@ -45,8 +45,8 @@
 }
 
 @layer components {
-  .card {
-    @apply p-8 bg-teal-200 rounded-lg shadow-xl;
+  .show {
+    @apply !opacity-100 !visible;
   }
 }
 

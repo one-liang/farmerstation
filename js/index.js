@@ -28,21 +28,26 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // menu 展開收合
-  const dropdownBtns = document.querySelectorAll('.dropdownBtn');
+  const dropdownBtns = document.querySelectorAll(".dropdownBtn");
 
-  dropdownBtns.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const content = btn.nextElementSibling;
-      btn.classList.toggle("text-primary");
-      const addIcon = btn.querySelector('.add');
-      const minusIcon = btn.querySelector('.minus');
+  function dropdownEvent() {
+    if (window.innerWidth < 1024) {
+      dropdownBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const content = btn.nextElementSibling;
+          btn.classList.toggle("text-primary");
+          const addIcon = btn.querySelector(".add");
+          const minusIcon = btn.querySelector(".minus");
 
-      content.classList.toggle('hidden');
-      addIcon.classList.toggle('hidden');
-      minusIcon.classList.toggle('hidden');
-    });
-  });
+          content.classList.toggle("hidden");
+          addIcon.classList.toggle("hidden");
+          minusIcon.classList.toggle("hidden");
+        });
+      });
+    }
+  }
 
+  dropdownEvent();
 
   // menu resize 後關閉
   function adjustDropdowns() {
@@ -56,7 +61,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  window.addEventListener("resize", adjustDropdowns);
+  window.addEventListener("resize", function () {
+    adjustDropdowns();
+    dropdownEvent();
+  });
 });
 
 // gotop

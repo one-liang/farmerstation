@@ -73,6 +73,9 @@ module.exports = {
         "gradient-middle ": "#CAF57B",
         "gradient-right ": "#C9F974",
       },
+      maxWidth: {
+        "screen-xl": "1200px",
+      },
       dropShadow: {
         DEFAULT: "0px 0px 8px rgba(0, 0, 0, 0.2)",
       },

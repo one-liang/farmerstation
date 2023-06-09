@@ -42,11 +42,29 @@
   html {
     @apply font-notoSansTC;
   }
+
+  .article-bg {
+    &:before {
+      background-image: url("/images/background/index_article.jpg");
+    }
+  }
 }
 
 @layer components {
   .show {
     @apply !opacity-100 !visible;
+  }
+
+  .button-default {
+    @apply px-3 py-2 rounded-lg duration-200;
+  }
+
+  .button-normal {
+    @apply bg-gray-100 text-gray-600 border border-gray-200;
+  }
+
+  .button-active {
+    @apply bg-primary text-white border border-primary-dark;
   }
 }
 
@@ -67,5 +85,9 @@
 
   .line-clamp-3 {
     -webkit-line-clamp: 3;
+  }
+
+  .basis-225 {
+    flex-basis: 225px;
   }
 }

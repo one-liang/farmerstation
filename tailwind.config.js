@@ -36,7 +36,7 @@ module.exports = {
       backgroundColor: {
         primary: "#87BE23",
         "primary-dark": "#6C9C30",
-        "primary-lighten": "#E2EFCB",
+        "primary-light": "#E2EFCB",
         "secondary-dark": "#F39313",
         "secondary-light": "#FAB900",
         "error-dark": "#FF0000",
@@ -73,11 +73,29 @@ module.exports = {
         "gradient-middle ": "#CAF57B",
         "gradient-right ": "#C9F974",
       },
+      gradientColorStops: {
+        "gradient-left ": "#86BC25",
+        "gradient-middle ": "#CAF57B",
+        "gradient-right ": "#C9F974",
+        "gradient-black-75": "rgba(0, 0, 0, 0.75)",
+      },
       maxWidth: {
         "screen-xl": "1200px",
       },
       dropShadow: {
         DEFAULT: "0px 0px 8px rgba(0, 0, 0, 0.2)",
+      },
+      animation: {
+        "bounce-x": "bounce-x 1s linear infinite",
+      },
+      keyframes: {
+        "bounce-x": {
+          "0%, 100%": { transform: "translateX(0)" },
+          "50%": { transform: "translateX(4px)" },
+        },
+      },
+      boxShadow: {
+        card: "0 0 30px 0 rgba(0, 0, 0, 0.5)",
       },
     },
   },

@@ -59,7 +59,7 @@
         </ul>
         <ul class="z-40 flex lg:gap-x-6 gap-x-4">
           <!-- search-->
-          <li><a class="box-border flex items-center justify-center w-10 h-10 duration-200 border border-gray-400 rounded-full lg:w-9 lg:h-9 lg:bg-gray-400 lg:hover:bg-primary-dark" href="#">
+          <li><a class="box-border flex items-center justify-center w-10 h-10 duration-200 border border-gray-400 rounded-full lg:w-9 lg:h-9 lg:bg-gray-400 lg:hover:bg-primary-dark" id="searchBtn" href="javascript:;">
               <svg class="w-4 h-4 text-gray-400 fill-current lg:text-white" viewbox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.83335 0.25C3.64518 0.25 0.25 3.64517 0.25 7.83332C0.25 12.0215 3.64518 15.4166 7.83335 15.4166C12.0215 15.4166 15.4167 12.0215 15.4167 7.83332C15.4167 3.64517 12.0215 0.25 7.83335 0.25ZM1.41667 7.83332C1.41667 4.2895 4.28951 1.41666 7.83335 1.41666C11.3772 1.41666 14.25 4.2895 14.25 7.83332C14.25 11.3771 11.3772 14.25 7.83335 14.25C4.28951 14.25 1.41667 11.3771 1.41667 7.83332Z"></path>
                 <path d="M14.4681 13.6431C14.2403 13.4153 13.871 13.4153 13.6432 13.6431C13.4153 13.8709 13.4153 14.2403 13.6431 14.4681L16.7542 17.5791C16.982 17.8069 17.3513 17.807 17.5791 17.5791C17.8069 17.3513 17.807 16.982 17.5791 16.7542L14.4681 13.6431Z"></path>
@@ -88,7 +88,15 @@
         </ul>
       </div>
     </header>
+    <!-- 背景色-->
     <div class="inset-0 w-full h-full bg-black opacity-50 cursor-default z-10" id="header-bg"></div>
+    <dialog class="modal" id="modal">
+      <form>
+        <input type="text">
+        <button formmethod="dialog" type="submit">Cancel</button>
+        <button type="submit">Submit</button>
+      </form>
+    </dialog>
     <main class="mt-[60px]">
       <!-- 最新消息-->
       <section class="max-w-screen-xl mx-auto mt-8 lg:mt-14 xl:px-0 px-5">

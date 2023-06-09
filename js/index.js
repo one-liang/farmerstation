@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuCircles = document.querySelectorAll("#menuButton circle");
   const menuRect = document.querySelectorAll("#menuButton rect");
   const headerBg = document.querySelector("#header-bg");
+  const modal = document.querySelector("#modal");
+  const searchBtn = document.querySelector("#searchBtn");
 
   // 漢堡選單
   menuButton.addEventListener("click", function () {
@@ -86,6 +88,10 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", function () {
     adjustDropdowns();
     dropdownEvent();
+  });
+
+  searchBtn.addEventListener("click", function () {
+    modal.showModal();
   });
 });
 

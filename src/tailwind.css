@@ -42,6 +42,10 @@
   html {
     @apply font-notoSansTC;
   }
+
+  .modal::backdrop {
+    @apply bg-black bg-opacity-70;
+  }
 }
 
 @layer components {

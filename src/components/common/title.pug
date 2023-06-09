@@ -1,0 +1,14 @@
+mixin title(theme, data1, data2, data3)
+
+  if (theme == "black")
+    div
+      p(class="text-gray-600 text-base")=data1
+      p(class="mt-1 text-2xl lg:text-3xl text-black font-bold")=data2
+      hr(class="mt-[18px] lg:mt-8 overflow-visible border-black border-opacity-10 relative before:absolute before:left-0 before:top-0 before:w-[72px] before:h-[6px] before:rounded-md before:bg-gradient-to-r before:from-[#86BC25] before:via-[#CAF57B] before:to-[#C9F974]")
+  else
+    div(class="lg:max-w-[225px]")
+      p(class=`text-${theme} text-base`)=data1
+      p(class=`text-${theme} text-2xl lg:text-3xl font-bold mt-1`)=data2
+      span(class=`bg-${theme} block mt-8 w-[72px] h-[6px] rounded-md`)
+      if(data3)
+        p(class=`text-${theme} text-lg mt-8 lg:block hidden break-words`)=data3

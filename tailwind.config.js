@@ -97,6 +97,9 @@ module.exports = {
       boxShadow: {
         card: "0 0 30px 0 rgba(0, 0, 0, 0.5)",
       },
+      zIndex: {
+        1: 1,
+      },
     },
   },
   variants: {

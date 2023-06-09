@@ -1,3 +1,5 @@
+include ./components/common/title.pug
+
 doctype html
 html(lang="zh-Hant-TW")
   include ./components/common/head.pug
@@ -6,10 +8,7 @@ html(lang="zh-Hant-TW")
 
     // 最新消息
     section(class="max-w-screen-xl mx-auto mt-8 lg:mt-14 xl:px-0 px-5")
-      div
-        p(class="text-gray-600 text-base") News
-        p(class="mt-1 text-2xl lg:text-3xl text-black font-bold") 最新消息
-        hr(class="mt-[18px] lg:mt-8 overflow-visible border-black border-opacity-10 relative before:absolute before:left-0 before:top-0 before:w-[72px] before:h-[6px] before:rounded-md before:bg-gradient-to-r before:from-[#86BC25] before:via-[#CAF57B] before:to-[#C9F974]")
+      +title("black", "News", "最新消息")
       div(class="mt-7 lgmt-9")
         div(class="flex gap-x-6")
           button(id="tab1" class="tab-button button-default button-active hover:button-active" type="button") 好康報報
@@ -43,11 +42,7 @@ html(lang="zh-Hant-TW")
     section(class="article-bg relative mt-8 lg:mt-14 px-5 xl:px-0 py-12 lg:py-[88px] before:absolute before:inset-0 before:bg-cover before:bg-no-repeat before:bg-center before:w-full before:lg:h-full before:h-[338px] before:z-1 after:absolute after:inset-0 after:bg-black after:bg-opacity-50 after:w-full after:lg:h-full after:h-[338px] after:z-[2]")
       div(class="max-w-screen-xl mx-auto flex flex-col lg:flex-row lg:gap-x-[76px] relative z-[3]")
         // 文字區塊
-        div(class="lg:max-w-[225px]")
-          p(class="text-white text-base") Latest Articles
-          p(class="text-white text-2xl lg:text-3xl font-bold mt-1") 最新文章
-          span(class="bg-white block mt-8 w-[72px] h-[6px] rounded-md")
-          p(class="text-white text-lg mt-8 lg:block hidden break-words") 可以放一段文字可以放一段文字可以放可以放一段文字可以放一段文字可以放一段文字可以放一段文字
+        +title("white", "Latest Articles", "最新文章", "可以放一段文字可以放一段文字可以放可以放一段文字可以放一段文字可以放一段文字可以放一段文字")
 
         div(class="flex flex-col")
           div(class="flex flex-col lg:flex-row lg:shadow-card rounded-lg overflow-hidden")
@@ -55,7 +50,7 @@ html(lang="zh-Hant-TW")
             a(class="block flex-1 mt-6 lg:mt-0 group" href="#")
               div(class="relative block")
                 picture(class="relative block overflow-hidden")
-                  img(class="w-full lg:max-w-[450px] h-full lg:max-h-[337.5px] max-h-[264px] object-cover rounded-lg lg:rounded-none overflow-hidden duration-300 group-hover:scale-105" src="./images/card/card1.jpg", alt="")
+                  img(class="w-full lg:max-w-[450px] h-full lg:max-h-[337.5px] max-h-[264px] object-cover rounded-lg lg:rounded-none overflow-hidden duration-300 group-hover:scale-105" src="./images/article/article1.jpg", alt="")
                 span(class="absolute left-0 lg:left-6 bottom-[-17px] bg-primary-light border border-primary border-opacity-20 text-primary-dark text-sm px-3 py-[6px] rounded-lg") 當令食材
               div(class="bg-white mt-6 lg:mt-0 lg:px-6 lg:py-7")
                 p(class="text-lg font-medium text-black line-clamp line-clamp-1 break-words duration-300 group-hover:text-primary-dark") 農民直銷站精選照片介紹
@@ -65,7 +60,7 @@ html(lang="zh-Hant-TW")
             a(class="block flex-1 mt-6 lg:mt-0 group" href="#")
               div(class="relative block")
                 picture(class="relative block overflow-hidden")
-                  img(class="w-full lg:max-w-[450px] h-full lg:max-h-[337.5px] max-h-[264px] object-cover rounded-lg lg:rounded-none overflow-hidden duration-300 group-hover:scale-105" src="./images/card/card2.jpg", alt="")
+                  img(class="w-full lg:max-w-[450px] h-full lg:max-h-[337.5px] max-h-[264px] object-cover rounded-lg lg:rounded-none overflow-hidden duration-300 group-hover:scale-105" src="./images/article/article2.jpg", alt="")
                 span(class="absolute left-0 lg:left-6 bottom-[-17px] bg-primary-light border border-primary border-opacity-20 text-primary-dark text-sm px-3 py-[6px] rounded-lg") 達人推薦
               div(class="bg-white mt-6 lg:mt-0 lg:px-6 lg:py-7 lg:border-l lg:border-black lg:border-opacity-10")
                 p(class="text-lg font-medium text-black line-clamp line-clamp-1 break-words duration-300 group-hover:text-primary-dark") 坐擁青山綠水～三星地區農會以「小農大作」為題規劃坐擁青山綠水～三星地區農會以「小農大作」為題規劃
@@ -76,7 +71,7 @@ html(lang="zh-Hant-TW")
             // card 3
             a(class="flex-1 flex flex-col relative h-[225px] basis-225 w-full group" href="#")
               picture(class="absolute inset-0 block overflow-hidden")
-                img(class="w-full h-full object-cover duration-300 group-hover:scale-105" src="/images/card/card3.jpg", alt="")
+                img(class="w-full h-full object-cover duration-300 group-hover:scale-105" src="/images/article/article3.jpg", alt="")
               span(class="absolute left-0 top-0 px-3 py-[6px] text-primary-dark bg-primary-light rounded-br-lg") 當令食材
               div(class="relative flex flex-col justify-end mt-auto p-4 bg-gradient-to-t from-gradient-black-75")
                 p(class="text-gray-100 text-[13px] break-words line-clamp line-clamp-1") 2023.04.13
@@ -84,7 +79,7 @@ html(lang="zh-Hant-TW")
             // card 4
             a(class="flex-1 flex flex-col relative h-[225px] basis-225 w-full group" href="#")
               picture(class="absolute inset-0 block overflow-hidden")
-                img(class="w-full h-full object-cover duration-300 group-hover:scale-105" src="/images/card/card4.jpg", alt="")
+                img(class="w-full h-full object-cover duration-300 group-hover:scale-105" src="/images/article/article4.jpg", alt="")
               span(class="absolute left-0 top-0 px-3 py-[6px] text-primary-dark bg-primary-light rounded-br-lg") 當令食材
               div(class="relative flex flex-col justify-end mt-auto p-4 bg-gradient-to-t from-gradient-black-75")
                 p(class="text-gray-100 text-[13px] break-words line-clamp line-clamp-1") 2023.04.13
@@ -92,13 +87,83 @@ html(lang="zh-Hant-TW")
             // card 5
             a(class="flex-1 flex flex-col relative h-[225px] basis-225 w-full group" href="#")
               picture(class="absolute inset-0 block overflow-hidden")
-                img(class="w-full h-full object-cover duration-300 group-hover:scale-105" src="/images/card/card5.jpg", alt="")
+                img(class="w-full h-full object-cover duration-300 group-hover:scale-105" src="/images/article/article5.jpg", alt="")
               span(class="absolute left-0 top-0 px-3 py-[6px] text-primary-dark bg-primary-light rounded-br-lg") 當令食材
               div(class="relative flex flex-col justify-end mt-auto p-4 bg-gradient-to-t from-gradient-black-75")
                 p(class="text-gray-100 text-[13px] break-words line-clamp line-clamp-1") 2023.04.13
                 p(class="text-white font-medium mt-1 break-words line-clamp line-clamp-1") 以服務和顧客搏感情，為地方農業升溫
-          
 
-    div(class="mt-20")
+    // 全臺農民直銷據點
+    section(class="bg-[#FFFDC8] bg-opacity-25")
+      div(class="max-w-screen-xl mx-auto mt-8 lg:my-14 xl:px-0 px-5 py-8 lg:py-14")
+        // 文字區塊
+        +title("black", "Farmers Market", "全臺農民直銷據點")
+
+    // 活力好站
+    section(class="max-w-screen-xl mx-auto mt-8 lg:my-14 xl:px-0 px-5")
+      // 文字區塊
+      +title("black", "Recommend", "活力好站")
+      div(class="mt-6 lg:mt-[30px]")
+        // article - 1 (圖右)
+        div(class="relative flex mt-[58px] lg:mt-[72px] lg:px-6")
+          div(class="bg-gray-50 w-full md:w-[600px] h-[152px] md:h-[400px] mt-[183px] md:mt-[72px] mx-5 md:mx-0 z-[2]")
+            div(class="triangle relative w-[100px] h-[100px] hidden md:block")
+              span(class="absolute left-4 top-4 text-2xl text-white font-extrabold") 01
+            div(class="p-5 lg:px-[60px]")
+              p(class="text-lg lg:text-2xl font-medium text-black line-clamp line-clamp-2 break-words") 01 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷
+              p(class="text-[15px] lg:text-base text-gray-800 mt-2 lg:mt-6 line-clamp line-clamp-2 lg:line-clamp-3 break-words") 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹
+          picture(class="absolute left:0 md:left-auto md:right-6 w-full md:w-[650px] h-[215px] md:h-auto drop-shadow z-1 before:md:block before:hidden before:bg-primary before:bg-opacity-60 before:absolute before:-right-4 before:-bottom-4 before:w-full before:h-full before:z-0")
+            img(class="relative w-full h-full object-cover" src="/images/recommend/recommend1.jpg", alt="")
+        // article - 2 (圖左)
+        div(class="relative flex flex-row-reverse mt-[58px] lg:mt-[72px] lg:px-6")
+          div(class="bg-gray-50 w-full md:w-[600px] h-[152px] md:h-[400px] mt-[183px] md:mt-[72px] mx-5 md:mx-0 z-[2]")
+            div(class="triangle relative w-[100px] h-[100px] hidden md:block")
+              span(class="absolute left-4 top-4 text-2xl text-white font-extrabold") 02
+            div(class="p-5 lg:px-[60px]")
+              p(class="text-lg lg:text-2xl font-medium text-black line-clamp line-clamp-2 break-words") 02 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷
+              p(class="text-[15px] lg:text-base text-gray-800 mt-2 lg:mt-6 line-clamp line-clamp-2 lg:line-clamp-3 break-words") 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹
+          picture(class="absolute right:0 md:right-auto md:left-6 w-full md:w-[650px] h-[215px] md:h-auto drop-shadow z-1 before:md:block before:hidden before:bg-primary before:bg-opacity-60 before:absolute before:-left-4 before:-bottom-4 before:w-full before:h-full before:z-0")
+            img(class="relative w-full h-full object-cover" src="/images/recommend/recommend2.jpg", alt="")
+        // article - 3 (圖右)
+        div(class="relative flex mt-[58px] lg:mt-[72px] lg:px-6")
+          div(class="bg-gray-50 w-full md:w-[600px] h-[152px] md:h-[400px] mt-[183px] md:mt-[72px] mx-5 md:mx-0 z-[2]")
+            div(class="triangle relative w-[100px] h-[100px] hidden md:block")
+              span(class="absolute left-4 top-4 text-2xl text-white font-extrabold") 03
+            div(class="p-5 lg:px-[60px]")
+              p(class="text-lg lg:text-2xl font-medium text-black line-clamp line-clamp-2 break-words") 03 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷
+              p(class="text-[15px] lg:text-base text-gray-800 mt-2 lg:mt-6 line-clamp line-clamp-2 lg:line-clamp-3 break-words") 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹
+          picture(class="absolute left:0 md:left-auto md:right-6 w-full md:w-[650px] h-[215px] md:h-auto drop-shadow z-1 before:md:block before:hidden before:bg-primary before:bg-opacity-60 before:absolute before:-right-4 before:-bottom-4 before:w-full before:h-full before:z-0")
+            img(class="relative w-full h-full object-cover" src="/images/recommend/recommend3.jpg", alt="")
+
+    // 圖文區塊
+    section(class="recommend-bg relative px-5 xl:px-0 pt-12 lg:pt-[88px] pb-6 lg:pb-8 before:absolute before:inset-0 before:bg-cover before:bg-no-repeat before:bg-center before:w-full before:h-full before:z-1 after:absolute after:inset-0 after:bg-white after:bg-opacity-80 after:w-full after:h-full after:z-[2]")
+      div(class="max-w-screen-xl mx-auto relative z-[3]")
+        div(class="grid grid-cols-2 lg:grid-cols-3 gap-x-6 lg:gap-x-12 gap-y-8")
+          a(class="inline-block group" href="#")
+            picture(class="block overflow-hidden rounded-lg")
+              img(class="w-full h-[123px] lg:h-[277px] object-cover duration-300 group-hover:scale-105" src="/images/recommend/recommend4.jpg", alt="")
+            p(class="text-lg text-black font-medium mt-3 lg:mt-4 line-clamp line-clamp-2 break-words duration-300 group-hover:text-primary-dark") 農民直銷站精選照片
+            p(class="text-base text-gray-800 !hidden lg:!display-box lg:mt-3 line-clamp line-clamp-2 break-words") 牆面照片裡的小農，臉上掛著靦腆而自信的笑容，李智遠總幹事說：「現在有 65 位農友登錄，用 Line 群組即時溝通，提供銷售訊息。」
+          a(class="inline-block group" href="#")
+            picture(class="block overflow-hidden rounded-lg")
+              img(class="w-full h-[123px] lg:h-[277px] object-cover duration-300 group-hover:scale-105" src="/images/recommend/recommend5.jpg", alt="")
+            p(class="text-lg text-black font-medium mt-3 lg:mt-4 line-clamp line-clamp-2 break-words duration-300 group-hover:text-primary-dark") 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷
+            p(class="text-base text-gray-800 !hidden lg:!display-box lg:mt-3 line-clamp line-clamp-2 break-words") 牆面照片裡的小農，臉上掛著靦腆而自信的笑容，李智遠總幹事說：「現在有 65 位農友登錄，用 Line 群組即時溝通，提供銷售訊息。」
+          a(class="inline-block group" href="#")
+            picture(class="block overflow-hidden rounded-lg")
+              img(class="w-full h-[123px] lg:h-[277px] object-cover duration-300 group-hover:scale-105" src="/images/recommend/recommend6.jpg", alt="")
+            p(class="text-lg text-black font-medium mt-3 lg:mt-4 line-clamp line-clamp-2 break-words duration-300 group-hover:text-primary-dark") 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷
+            p(class="text-base text-gray-800 !hidden lg:!display-box lg:mt-3 line-clamp line-clamp-2 break-words") 牆面照片裡的小農，臉上掛著靦腆而自信的笑容，李智遠總幹事說：「現在有 65 位農友登錄，用 Line 群組即時溝通，提供銷售訊息。」
+        div(class="mt-6 lg:mt-8 text-center")
+          a(class="flex items-center justify-center mx-auto gap-x-3 w-[170px] py-3 border border-primary-dark rounded-lg group duration-200 hover:bg-primary" href="#")
+            span(class="text-primary-dark text-[15px] font-bold duration-200 group-hover:text-white") More
+            svg(class="fill-current text-primary-dark duration-200 group-hover:text-white" width="6" height="11" viewbox="0 0 6 11" xmlns="http://www.w3.org/2000/svg")
+              path(fill-rule="evenodd" clip-rule="evenodd" d="M0.146447 0.479943C0.341709 0.284681 0.658291 0.284681 0.853553 0.479943L5.52022 5.14661C5.71548 5.34187 5.71548 5.65845 5.52022 5.85372L0.853553 10.5204C0.658291 10.7156 0.341709 10.7156 0.146447 10.5204C-0.0488155 10.3251 -0.0488155 10.0085 0.146447 9.81328L4.45956 5.50016L0.146447 1.18705C-0.0488155 0.991787 -0.0488155 0.675205 0.146447 0.479943Z")
+
+    // 直銷據點即時報
+    section(class="max-w-screen-xl mx-auto mt-8 lg:my-14 xl:px-0 px-5")
+      // 文字區塊
+      +title("black", "Facebook", "直銷據點即時報")
+
     include ./components/common/footer.pug
     include ./components/common/gotop.pug

@@ -132,33 +132,3 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 // gotop end
-
-// 頁籤切換
-const tabButtons = document.getElementsByClassName("tab-button");
-
-// 對每個按鈕元素添加點擊事件監聽器
-for (let i = 0; i < tabButtons.length; i++) {
-  tabButtons[i].addEventListener("click", function () {
-    // 取得按鈕索引
-    let tabIndex = Array.from(tabButtons).indexOf(this);
-
-    // 隱藏所有的 tab 內容
-    let tabPanes = document.getElementsByClassName("tab-pane");
-    for (let j = 0; j < tabPanes.length; j++) {
-      tabPanes[j].classList.add("hidden");
-    }
-
-    // 顯示選中的 tab 內容
-    tabPanes[tabIndex].classList.remove("hidden");
-
-    // 移除所有按鈕的 active 類別
-    for (let k = 0; k < tabButtons.length; k++) {
-      tabButtons[k].classList.remove("button-active");
-      tabButtons[k].classList.add("button-normal");
-    }
-
-    // 將選中的按鈕設置為 active
-    this.classList.remove("button-normal");
-    this.classList.add("button-active");
-  });
-}

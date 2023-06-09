@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "NotoSansTC";
+    font-weight: 400;
+    src: url("../fonts/NotoSansTC-Regular.otf") format("woff2");
+  }
+
+  @font-face {
+    font-family: "NotoSansTC";
+    font-weight: 500;
+    src: url("../fonts/NotoSansTC-Medium.otf") format("woff2");
+  }
+
+  @font-face {
+    font-family: "NotoSansTC";
+    font-weight: 700;
+    src: url("../fonts/NotoSansTC-Bold.otf") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-weight: 400;
+    src: url("../fonts/Inter-Regular.ttf") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-weight: 500;
+    src: url("../fonts/Inter-Medium.ttf") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-weight: 700;
+    src: url("../fonts/Inter-Bold.ttf") format("woff2");
+  }
+
+  html {
+    @apply font-notoSansTC;
+  }
+}
+
+@layer components {
+  .show {
+    @apply !opacity-100 !visible;
+  }
+
+  .button-default {
+    @apply px-3 py-2 rounded-lg duration-200;
+  }
+
+  .button-normal {
+    @apply bg-gray-100 text-gray-600 border border-gray-200;
+  }
+
+  .button-active {
+    @apply bg-primary text-white border border-primary-dark;
+  }
+}
+
+@layer utilities {
+  .display-box {
+    display: -webkit-box;
+  }
+
+  .line-clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .line-clamp-1 {
+    -webkit-line-clamp: 1;
+  }
+
+  .line-clamp-2 {
+    -webkit-line-clamp: 2;
+  }
+
+  .line-clamp-3 {
+    -webkit-line-clamp: 3;
+  }
+}

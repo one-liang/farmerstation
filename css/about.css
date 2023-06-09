@@ -1416,35 +1416,6 @@ html {
   -webkit-line-clamp: 2;
 }
 
-.article-bg {
-  &:before {
-    background-image: url("/images/background/index_article.jpg");
-  }
-}
-
-.recommend-bg {
-  &:before {
-    background-image: url("/images/background/index_article.jpg");
-  }
-}
-
-.basis-225 {
-  flex-basis: 225px;
-}
-
-.triangle:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 100px 100px 0 0;
-  border-color: #87be23 transparent transparent transparent;
-  @media (min-width: 768px) {
-    content: none;
-  }
-}
-
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;

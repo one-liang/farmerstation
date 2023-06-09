@@ -1,117 +1,31 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("./tailwind.css");
 
-@layer base {
-  @font-face {
-    font-family: "NotoSansTC";
-    font-weight: 400;
-    src: url("../fonts/NotoSansTC-Regular.otf") format("woff2");
-  }
-
-  @font-face {
-    font-family: "NotoSansTC";
-    font-weight: 500;
-    src: url("../fonts/NotoSansTC-Medium.otf") format("woff2");
-  }
-
-  @font-face {
-    font-family: "NotoSansTC";
-    font-weight: 700;
-    src: url("../fonts/NotoSansTC-Bold.otf") format("woff2");
-  }
-
-  @font-face {
-    font-family: "Inter";
-    font-weight: 400;
-    src: url("../fonts/Inter-Regular.ttf") format("woff2");
-  }
-
-  @font-face {
-    font-family: "Inter";
-    font-weight: 500;
-    src: url("../fonts/Inter-Medium.ttf") format("woff2");
-  }
-
-  @font-face {
-    font-family: "Inter";
-    font-weight: 700;
-    src: url("../fonts/Inter-Bold.ttf") format("woff2");
-  }
-
-  html {
-    @apply font-notoSansTC;
-  }
-
-  .article-bg {
-    &:before {
-      background-image: url("/images/background/index_article.jpg");
-    }
-  }
-
-  .recommend-bg {
-    &:before {
-      background-image: url("/images/background/index_article.jpg");
-    }
+.article-bg {
+  &:before {
+    background-image: url("/images/background/index_article.jpg");
   }
 }
 
-@layer components {
-  .show {
-    @apply !opacity-100 !visible;
-  }
-
-  .button-default {
-    @apply px-3 py-2 rounded-lg duration-200;
-  }
-
-  .button-normal {
-    @apply bg-gray-100 text-gray-600 border border-gray-200;
-  }
-
-  .button-active {
-    @apply bg-primary text-white border border-primary-dark;
+.recommend-bg {
+  &:before {
+    background-image: url("/images/background/index_article.jpg");
   }
 }
 
-@layer utilities {
-  .display-box {
-    display: -webkit-box;
-  }
+.basis-225 {
+  flex-basis: 225px;
+}
 
-  .line-clamp {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
+.triangle:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 100px 0 0;
+  border-color: #87be23 transparent transparent transparent;
 
-  .line-clamp-1 {
-    -webkit-line-clamp: 1;
-  }
-
-  .line-clamp-2 {
-    -webkit-line-clamp: 2;
-  }
-
-  .line-clamp-3 {
-    -webkit-line-clamp: 3;
-  }
-
-  .basis-225 {
-    flex-basis: 225px;
-  }
-
-  .triangle:before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 100px 100px 0 0;
-    border-color: #87be23 transparent transparent transparent;
-
-    @screen md {
-      content: none;
-    }
+  @screen md {
+    content: none;
   }
 }

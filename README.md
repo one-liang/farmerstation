@@ -1,7 +1,7 @@
 # Farmerstation
 
 - [Home Page](https://one-liang.github.io/farmerstation/)
-- [Adout Page](https://one-liang.github.io/farmerstation/adout)
+- [About Page](https://one-liang.github.io/farmerstation/about)
 - [Farmers Page](https://one-liang.github.io/farmerstation/farmers)
 - [Farmers List Page](https://one-liang.github.io/farmerstation/farmers/list)
 - [Category Page](https://one-liang.github.io/farmerstation/category)

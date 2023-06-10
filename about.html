@@ -92,9 +92,15 @@
     <div class="inset-0 w-full h-full bg-black opacity-50 cursor-default z-10" id="header-bg"></div>
     <dialog class="modal" id="modal">
       <form>
-        <input type="text">
-        <button formmethod="dialog" type="submit">Cancel</button>
-        <button type="submit">Submit</button>
+        <!-- close button-->
+        <button class="absolute right-[-18px] top-[-18px] rounded-full bg-primary w-9 h-9 flex items-center justify-center" formmethod="dialog" type="submit"><img src="./images/icons/Cross.svg" alt=""></button>
+        <div class="flex items-center gap-x-2"><img class="w-[17.5px] h-[17.5px]" src="./images/icons/Search.svg" alt="">
+          <p class="text-lg text-black font-medium">站內搜索</p>
+        </div>
+        <div class="flex gap-x-3 mt-2">
+          <input class="w-full flex-grow px-4 py-3 bg-gray-100 border border-gray-200 rounded-lg text-[15px] placeholder-gray-500" type="text" placeholder="請輸入關鍵字">
+          <button class="button-default button-active flex-shrink-0" type="submit">搜尋</button>
+        </div>
       </form>
     </dialog>
     <h1 class="text-3xl font-bold leading-relaxed text-gray-700">About</h1>

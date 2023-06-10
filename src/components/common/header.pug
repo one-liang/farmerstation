@@ -92,6 +92,12 @@ div(id="header-bg" class="inset-0 w-full h-full bg-black opacity-50 cursor-defau
 //- search popup
 dialog(id="modal" class="modal")
   form
-    input(type="text")
-    button(formmethod="dialog" type="submit") Cancel
-    button(type="submit") Submit
+    // close button
+    button(class="absolute right-[-18px] top-[-18px] rounded-full bg-primary w-9 h-9 flex items-center justify-center" formmethod="dialog" type="submit")
+      img(class="" src="./images/icons/Cross.svg", alt="")
+    div(class="flex items-center gap-x-2")
+      img(class="w-[17.5px] h-[17.5px]" src="./images/icons/Search.svg", alt="")
+      p(class="text-lg text-black font-medium") 站內搜索
+    div(class="flex gap-x-3 mt-2")
+      input(class="w-full flex-grow px-4 py-3 bg-gray-100 border border-gray-200 rounded-lg text-[15px] placeholder-gray-500" type="text" placeholder="請輸入關鍵字")
+      button(class="button-default button-active flex-shrink-0" type="submit") 搜尋

@@ -43,6 +43,10 @@
     @apply font-notoSansTC;
   }
 
+  .modal {
+    @apply bg-white px-6 lg:px-10 py-8 rounded-lg relative overflow-visible;
+  }
+
   .modal::backdrop {
     @apply bg-black bg-opacity-70;
   }
@@ -54,7 +58,7 @@
   }
 
   .button-default {
-    @apply px-3 py-2 rounded-lg duration-200;
+    @apply px-3 py-2 whitespace-nowrap rounded-lg duration-200;
   }
 
   .button-normal {

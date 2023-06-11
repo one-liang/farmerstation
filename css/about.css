@@ -771,6 +771,10 @@ html {
   margin-top: 1rem;
 }
 
+.mt-\[-49px\] {
+  margin-top: -49px;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }

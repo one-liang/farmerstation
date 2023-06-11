@@ -1,0 +1,50 @@
+include ./components/common/head.pug
+include ./components/common/breadcrumbs.pug
+include ./components/common/card.pug
+
+doctype html
+html(lang="zh-Hant-TW")
+  +head("article")
+  body
+    include ./components/common/header.pug
+    main(class="mt-[60px]")
+      // 主圖
+      section(class="bg-white relative")
+        div(class="max-w-screen-xl mx-auto relative overflow-hidden xl:rounded-lg before:absolute before:inset-0 before:w-full before:h-full before:bg-gradient-to-r before:from-black/50 before:via-black/0 before:to-black/50")
+          img(class="w-full h-[150px] xl:h-[250px] object-cover" src="./images/article/article-bg.png", alt="")
+          h1(class="absolute top-14 xl:top-16 left-5 xl:left-8 text-2xl xl:text-4xl font-bold text-white") 課程活動(文章底層頁)
+      section(class="max-w-screen-xl mx-auto mt-6 xl:mt-8 mb-14 xl:mb-20 px-5 xl:px-0 overflow-hidden")
+        // 麵包屑
+        +breadcrumbs("首頁", "課程活動")
+
+        div(class="flex flex-col lg:flex-row gap-x-16 mt-6 xl:mt-8")
+          div(class="w-full lg:w-[800px]")
+            h2(class="text-3xl font-bold text-black") 疫情下的在地．安心真價值—臺日直銷站論壇暨食農教育士授證典禮 ，將於12月22日(三)於農糧署北辦舉辦
+            div(class="flex lg:items-center lg:justify-between flex-col lg:flex-row mt-5 lg:mt-[26px] gap-y-4 lg:gap-y-0")
+              div(class="flex lg:items-center flex-col lg:flex-row lg:gap-x-10 gap-y-[10px] lg:gap-y-0")
+                p(class="text-gray-500 text-sm") 圖 | 財團法人中國生產力中心
+                p(class="text-gray-500 text-sm") 文 | 財團法人中國生產力中心
+              div(class="flex items-center gap-x-5 lg:justify-start justify-between")
+                p(class="text-gray-500 text-sm") 2022-07-12
+                div(class="group relative w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center cursor-pointer" tabindex="-1")
+                  img(class="" src="./images/icons/Share.svg", alt="")
+                  div(class="absolute top-12 right-0 lg:right-auto invisible origin-top-right lg:origin-top-center -translate-y-2 scale-95 transform opacity-0 transition-all duration-300 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:scale-100 group-focus-within:opacity-100")
+                    ul(class="triangle-share before:right-0 before:lg:right-auto before:lg:left-1/2 before:left-auto bg-white rounded-lg w-[169px] grid grid-cols-1 divide-y divide-gray-100 px-3 py-2 shadow")
+                      li
+                        a(class="flex items-center gap-x-2 p-3" href="#") 
+                          img(src="./images/icons/Facebook.svg", alt="")
+                          span(class="text-sm text-gray-600") Facebook
+                      li
+                        a(class="flex items-center gap-x-2 p-3" href="#") 
+                          img(src="./images/icons/Line.svg", alt="")
+                          span(class="text-sm text-gray-600") Line
+                      li
+                        a(class="flex items-center gap-x-2 p-3" href="#") 
+                          img(src="./images/icons/Twitter.svg", alt="")
+                          span(class="text-sm text-gray-600") Twitter
+          div(class="h-[1000px]")
+          div(class="w-full lg:w-[336px]")
+            div 相關文章
+
+    include ./components/common/footer.pug
+    include ./components/common/gotop.pug

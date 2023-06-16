@@ -826,6 +826,10 @@ html {
   z-index: 2;
 }
 
+.z-0 {
+  z-index: 0;
+}
+
 .z-40 {
   z-index: 40;
 }
@@ -912,6 +916,14 @@ html {
 
 .mt-\[183px\] {
   margin-top: 183px;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.-mr-1 {
+  margin-right: -0.25rem;
 }
 
 .mt-3 {
@@ -1058,6 +1070,10 @@ html {
   max-height: 264px;
 }
 
+.max-h-\[218px\] {
+  max-height: 218px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1188,6 +1204,10 @@ html {
 
 .origin-top-right {
   transform-origin: top right;
+}
+
+.origin-top {
+  transform-origin: top;
 }
 
 .-translate-y-2 {
@@ -1398,6 +1418,10 @@ html {
 
 .overflow-visible {
   overflow: visible;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
 }
 
 .whitespace-nowrap {
@@ -1650,6 +1674,11 @@ html {
   padding-bottom: 2rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .px-\[6px\] {
   padding-left: 6px;
   padding-right: 6px;
@@ -1841,6 +1870,11 @@ html {
   --tw-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   --tw-shadow-colored: 0px 0px 8px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .blur {
@@ -2199,6 +2233,22 @@ html {
   padding-top: 0px !important;
 }
 
+.focus-within\:border-transparent:focus-within {
+  border-color: transparent;
+}
+
+.focus-within\:outline:focus-within {
+  outline-style: solid;
+}
+
+.focus-within\:outline-2:focus-within {
+  outline-width: 2px;
+}
+
+.focus-within\:outline-blue-500:focus-within {
+  outline-color: #3b82f6;
+}
+
 .hover\:button-active:hover {
   border-width: 1px;
   --tw-border-opacity: 1;
@@ -2240,6 +2290,11 @@ html {
 .hover\:bg-primary-dark:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(108 156 48 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 217 217 / var(--tw-bg-opacity));
 }
 
 .hover\:text-primary-dark:hover {

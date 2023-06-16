@@ -1,5 +1,6 @@
 include ./components/common/head.pug
 include ./components/common/breadcrumbs.pug
+include ./components/common/title.pug
 include ./components/common/card.pug
 
 doctype html
@@ -13,11 +14,11 @@ html(lang="zh-Hant-TW")
         div(class="max-w-screen-xl mx-auto relative overflow-hidden xl:rounded-lg before:absolute before:inset-0 before:w-full before:h-full before:bg-gradient-to-r before:from-black/50 before:via-black/0 before:to-black/50")
           img(class="w-full h-[150px] xl:h-[250px] object-cover" src="./images/article/article-bg.png", alt="")
           h1(class="absolute top-14 xl:top-16 left-5 xl:left-8 text-2xl xl:text-4xl font-bold text-white") 課程活動(文章底層頁)
-      section(class="max-w-screen-xl mx-auto mt-6 xl:mt-8 mb-14 xl:mb-20 px-5 xl:px-0 overflow-hidden")
+      section(class="max-w-screen-xl mx-auto mt-6 xl:mt-8 mb-14 xl:mb-20 px-5 xl:px-0")
         // 麵包屑
         +breadcrumbs("首頁", "課程活動")
 
-        div(class="flex flex-col lg:flex-row gap-x-16 mt-6 xl:mt-8")
+        div(class="flex flex-col lg:flex-row gap-x-16 mt-6 xl:mt-8 min-h-screen")
           div(class="w-full lg:w-[800px]")
             h2(class="text-3xl font-bold text-black") 疫情下的在地．安心真價值—臺日直銷站論壇暨食農教育士授證典禮 ，將於12月22日(三)於農糧署北辦舉辦
             div(class="flex lg:items-center lg:justify-between flex-col lg:flex-row mt-5 lg:mt-[26px] gap-y-4 lg:gap-y-0")
@@ -42,9 +43,108 @@ html(lang="zh-Hant-TW")
                         a(class="flex items-center gap-x-2 p-3" href="#") 
                           img(src="./images/icons/Twitter.svg", alt="")
                           span(class="text-sm text-gray-600") Twitter
-          div(class="h-[1000px]")
-          div(class="w-full lg:w-[336px]")
-            div 相關文章
+            div(class="article")
+              p 本次臺日直銷站論壇暨食農教育士授證典禮，邀請新竹市竹北市農會、台中市霧峰區農會、臺南市新市區農會、合樸農學市集的陳孟凱召集人擔任臺灣代表，以及跨海連線的日本JA愛知中央的課長與直銷站經理，分享農產銷售、食農教育推廣的經驗與心得。此外，更集結取得第一期食農教育士認證資格的學員，共同接受署長授證。
+              p 活動詳情請見以下公告:
+              p 指導單位：行政院農業委員會農糧署 主辦單位：財團法人中國生產力中心(CPC)
+              p 
+                | 辦理時間：110年12月22日(三)，上午9時30分至12時10分
+                br
+                | 辦理地點：農糧署臺北辦公區7樓大禮堂(臺北市中正區杭州南路一段15號) 
+                br
+                | 論壇議程：
+              img(src="./images/article/article-content1.png", alt="")
+              p 本次臺日直銷站論壇暨食農教育士授證典禮，邀請新竹市竹北市農會、台中市霧峰區農會、臺南市新市區農會、合樸農學市集的陳孟凱召集人擔任臺灣代表，以及跨海連線的日本JA愛知中央的課長與直銷站經理，分享農產銷售、食農教育推廣的經驗與心得。此外，更集結取得第一期食農教育士認證資格的學員，共同接受署長授證。
+              figure
+                img(src="./images/article/article-content2.png", alt="")
+                figcaption 陳孟凱博士陳孟凱博士
+              div(class="video-wrapper")
+                iframe(width="560" height="315" src="https://www.youtube.com/embed/v0sNznWAQ7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="")
+
+            // tag group
+            div(class="flex flex-wrap gap-x-3 gap-y-4 lg:gap-y-0 mt-8")
+              // tag active 樣式 tag-button-active
+              a(class="tag-button-default" href="#") #食農教育士
+              a(class="tag-button-default" href="#") #竹北市
+              a(class="tag-button-default" href="#") #霧峰區農會
+              a(class="tag-button-default" href="#") #合樸農學市集
+              a(class="tag-button-default tag-button-active" href="#") #食農教育士
+
+          div(class="sticky top-16 w-full lg:w-[336px] mt-8 lg:mt-0 flex flex-col gap-y-8" style="height:max-content;")
+            // 相關文章
+            div(class="bg-gray-100 px-5 lg:px-8 py-5 lg:py-4 rounded-lg")
+              p(class="text-black font-medium") 相關文章
+              ul(class="mt-1 flex flex-col gap-y-3 divide-y divide-black divide-opacity-10")
+                li(class="pt-3")
+                  a(class="flex items-center gap-x-4 group" href="#")
+                    picture(class="flex-shrink-0 w-[75px] h-[56px] overflow-hidden rounded-md")
+                      img(class="w-full h-auto object-cover duration-200 group-hover:scale-105" src="./images/article/article-list1.png", alt="")
+                    p(class="text-sm text-black line-clamp line-clamp-2 duration-200 group-hover:text-primary-dark") 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹
+                li(class="pt-3")
+                  a(class="flex items-center gap-x-4 group" href="#")
+                    picture(class="flex-shrink-0 w-[75px] h-[56px] overflow-hidden rounded-md")
+                      img(class="w-full h-auto object-cover duration-200 group-hover:scale-105" src="./images/article/article-list2.png", alt="")
+                    p(class="text-sm text-black line-clamp line-clamp-2 duration-200 group-hover:text-primary-dark") 介紹農民直銷站精選照片
+                li(class="pt-3")
+                  a(class="flex items-center gap-x-4 group" href="#")
+                    picture(class="flex-shrink-0 w-[75px] h-[56px] overflow-hidden rounded-md")
+                      img(class="w-full h-auto object-cover duration-200 group-hover:scale-105" src="./images/article/article-list3.png", alt="")
+                    p(class="text-sm text-black line-clamp line-clamp-2 duration-200 group-hover:text-primary-dark") 介紹農民直銷站精選照片介紹農民直銷站
+
+            // 全臺農民直銷據點
+            div(class="bg-gray-100 px-5 lg:px-8 py-5 lg:py-4 rounded-lg")
+              p(class="text-black font-medium") 全臺農民直銷據點
+              ul(class="accordion mt-1 flex flex-col gap-y-2")
+                li(class="accordion-item")
+                  button(class="accordion-button")
+                    span(class="text-black text-sm") 北區
+                    svg(class="block w-5 h-5 pointer-events-none" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg")
+                      path(class="accordion-add" d="M10.0003 1.66669C5.40866 1.66669 1.66699 5.40835 1.66699 10C1.66699 14.5917 5.40866 18.3334 10.0003 18.3334C14.592 18.3334 18.3337 14.5917 18.3337 10C18.3337 5.40835 14.592 1.66669 10.0003 1.66669ZM13.3337 10.625H10.6253V13.3334C10.6253 13.675 10.342 13.9584 10.0003 13.9584C9.65866 13.9584 9.37533 13.675 9.37533 13.3334V10.625H6.66699C6.32533 10.625 6.04199 10.3417 6.04199 10C6.04199 9.65835 6.32533 9.37502 6.66699 9.37502H9.37533V6.66669C9.37533 6.32502 9.65866 6.04169 10.0003 6.04169C10.342 6.04169 10.6253 6.32502 10.6253 6.66669V9.37502H13.3337C13.6753 9.37502 13.9587 9.65835 13.9587 10C13.9587 10.3417 13.6753 10.625 13.3337 10.625Z" fill="#87BE23")
+                      path(class="hidden accordion-minus" d="M10.0003 1.66669C5.40866 1.66669 1.66699 5.40835 1.66699 10C1.66699 14.5917 5.40866 18.3334 10.0003 18.3334C14.592 18.3334 18.3337 14.5917 18.3337 10C18.3337 5.40835 14.592 1.66669 10.0003 1.66669ZM13.267 10.625H6.60033C6.25866 10.625 5.97533 10.3417 5.97533 10C5.97533 9.65835 6.25866 9.37502 6.60033 9.37502H13.267C13.6087 9.37502 13.892 9.65835 13.892 10C13.892 10.3417 13.617 10.625 13.267 10.625Z" fill="#87BE23")
+                  div(class="accordion-content")
+                    div(class="flex lg:items-center flex-col lg:flex-row lg:gap-y-0 gap-y-6 lg:gap-x-[30px] py-3 border-t border-black border-opacity-10")
+                      a(class="text-[13px] text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 北北基
+                      a(class="text-[13px] text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 桃園
+                      a(class="text-[13px] text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 新竹
+                li(class="accordion-item")
+                  button(class="accordion-button")
+                    span(class="text-black text-sm") 中區
+                    svg(class="block w-5 h-5 pointer-events-none" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg")
+                      path(class="accordion-add" d="M10.0003 1.66669C5.40866 1.66669 1.66699 5.40835 1.66699 10C1.66699 14.5917 5.40866 18.3334 10.0003 18.3334C14.592 18.3334 18.3337 14.5917 18.3337 10C18.3337 5.40835 14.592 1.66669 10.0003 1.66669ZM13.3337 10.625H10.6253V13.3334C10.6253 13.675 10.342 13.9584 10.0003 13.9584C9.65866 13.9584 9.37533 13.675 9.37533 13.3334V10.625H6.66699C6.32533 10.625 6.04199 10.3417 6.04199 10C6.04199 9.65835 6.32533 9.37502 6.66699 9.37502H9.37533V6.66669C9.37533 6.32502 9.65866 6.04169 10.0003 6.04169C10.342 6.04169 10.6253 6.32502 10.6253 6.66669V9.37502H13.3337C13.6753 9.37502 13.9587 9.65835 13.9587 10C13.9587 10.3417 13.6753 10.625 13.3337 10.625Z" fill="#87BE23")
+                      path(class="hidden accordion-minus" d="M10.0003 1.66669C5.40866 1.66669 1.66699 5.40835 1.66699 10C1.66699 14.5917 5.40866 18.3334 10.0003 18.3334C14.592 18.3334 18.3337 14.5917 18.3337 10C18.3337 5.40835 14.592 1.66669 10.0003 1.66669ZM13.267 10.625H6.60033C6.25866 10.625 5.97533 10.3417 5.97533 10C5.97533 9.65835 6.25866 9.37502 6.60033 9.37502H13.267C13.6087 9.37502 13.892 9.65835 13.892 10C13.892 10.3417 13.617 10.625 13.267 10.625Z" fill="#87BE23")
+                  div(class="accordion-content")
+                    div(class="flex lg:items-center flex-col lg:flex-row lg:gap-y-0 gap-y-6 lg:gap-x-[30px] py-3 border-t border-black border-opacity-10")
+                      a(class="text-[13px] text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 台中
+                      a(class="text-[13px] text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 彰化
+                      a(class="text-[13px] text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 南投
+                li(class="accordion-item")
+                  button(class="accordion-button")
+                    span(class="text-black text-sm") 南區
+                    svg(class="block w-5 h-5 pointer-events-none" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg")
+                      path(class="accordion-add" d="M10.0003 1.66669C5.40866 1.66669 1.66699 5.40835 1.66699 10C1.66699 14.5917 5.40866 18.3334 10.0003 18.3334C14.592 18.3334 18.3337 14.5917 18.3337 10C18.3337 5.40835 14.592 1.66669 10.0003 1.66669ZM13.3337 10.625H10.6253V13.3334C10.6253 13.675 10.342 13.9584 10.0003 13.9584C9.65866 13.9584 9.37533 13.675 9.37533 13.3334V10.625H6.66699C6.32533 10.625 6.04199 10.3417 6.04199 10C6.04199 9.65835 6.32533 9.37502 6.66699 9.37502H9.37533V6.66669C9.37533 6.32502 9.65866 6.04169 10.0003 6.04169C10.342 6.04169 10.6253 6.32502 10.6253 6.66669V9.37502H13.3337C13.6753 9.37502 13.9587 9.65835 13.9587 10C13.9587 10.3417 13.6753 10.625 13.3337 10.625Z" fill="#87BE23")
+                      path(class="hidden accordion-minus" d="M10.0003 1.66669C5.40866 1.66669 1.66699 5.40835 1.66699 10C1.66699 14.5917 5.40866 18.3334 10.0003 18.3334C14.592 18.3334 18.3337 14.5917 18.3337 10C18.3337 5.40835 14.592 1.66669 10.0003 1.66669ZM13.267 10.625H6.60033C6.25866 10.625 5.97533 10.3417 5.97533 10C5.97533 9.65835 6.25866 9.37502 6.60033 9.37502H13.267C13.6087 9.37502 13.892 9.65835 13.892 10C13.892 10.3417 13.617 10.625 13.267 10.625Z" fill="#87BE23")
+                  div(class="accordion-content")
+                    div(class="flex lg:items-center flex-col lg:flex-row lg:gap-y-0 gap-y-6 lg:gap-x-[30px] py-3 border-t border-black border-opacity-10")
+                      a(class="text-[13px] text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 雲林
+                      a(class="text-[13px] text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 嘉義
+                      a(class="text-[13px] text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 台南
+                li(class="accordion-item")
+                  button(class="accordion-button")
+                    span(class="text-black text-sm") 東區
+                    svg(class="block w-5 h-5 pointer-events-none" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg")
+                      path(class="accordion-add" d="M10.0003 1.66669C5.40866 1.66669 1.66699 5.40835 1.66699 10C1.66699 14.5917 5.40866 18.3334 10.0003 18.3334C14.592 18.3334 18.3337 14.5917 18.3337 10C18.3337 5.40835 14.592 1.66669 10.0003 1.66669ZM13.3337 10.625H10.6253V13.3334C10.6253 13.675 10.342 13.9584 10.0003 13.9584C9.65866 13.9584 9.37533 13.675 9.37533 13.3334V10.625H6.66699C6.32533 10.625 6.04199 10.3417 6.04199 10C6.04199 9.65835 6.32533 9.37502 6.66699 9.37502H9.37533V6.66669C9.37533 6.32502 9.65866 6.04169 10.0003 6.04169C10.342 6.04169 10.6253 6.32502 10.6253 6.66669V9.37502H13.3337C13.6753 9.37502 13.9587 9.65835 13.9587 10C13.9587 10.3417 13.6753 10.625 13.3337 10.625Z" fill="#87BE23")
+                      path(class="hidden accordion-minus" d="M10.0003 1.66669C5.40866 1.66669 1.66699 5.40835 1.66699 10C1.66699 14.5917 5.40866 18.3334 10.0003 18.3334C14.592 18.3334 18.3337 14.5917 18.3337 10C18.3337 5.40835 14.592 1.66669 10.0003 1.66669ZM13.267 10.625H6.60033C6.25866 10.625 5.97533 10.3417 5.97533 10C5.97533 9.65835 6.25866 9.37502 6.60033 9.37502H13.267C13.6087 9.37502 13.892 9.65835 13.892 10C13.892 10.3417 13.617 10.625 13.267 10.625Z" fill="#87BE23")
+                  div(class="accordion-content")
+                    div(class="flex lg:items-center flex-col lg:flex-row lg:gap-y-0 gap-y-6 lg:gap-x-[30px] py-3 border-t border-black border-opacity-10")
+                      a(class="text-[13px] text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 宜蘭
+                      a(class="text-[13px] text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 花蓮
+                      a(class="text-[13px] text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 台東
+
+        // 猜你喜歡
+        div(class="mt-8 lg:mt-14")
+          +title("black", "More", "猜你喜歡")
+          div(class="h-8")
+
 
     include ./components/common/footer.pug
     include ./components/common/gotop.pug

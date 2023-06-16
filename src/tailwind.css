@@ -68,6 +68,14 @@
   .button-active {
     @apply bg-primary text-white border border-primary-dark;
   }
+
+  .tag-button-default {
+    @apply text-[13px] lg:text-sm text-gray-800 px-3 py-2 border border-secondary-dark rounded-lg duration-200 hover:text-white hover:bg-secondary-dark;
+  }
+
+  .tag-button-active {
+    @apply text-white bg-secondary-dark;
+  }
 }
 
 @layer utilities {

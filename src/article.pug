@@ -2,10 +2,14 @@ include ./components/common/head.pug
 include ./components/common/breadcrumbs.pug
 include ./components/common/title.pug
 include ./components/common/card.pug
+include ./components/common/cardActivity.pug
 
 doctype html
 html(lang="zh-Hant-TW")
   +head("article")
+  head
+    link(rel="stylesheet", href="./src/swiper-bundle.min.css")
+    script(src="./src/swiper-bundle.min.js") 
   body
     include ./components/common/header.pug
     main(class="mt-[60px]")
@@ -144,7 +148,40 @@ html(lang="zh-Hant-TW")
         div(class="mt-8 lg:mt-14")
           +title("black", "More", "猜你喜歡")
           div(class="h-8")
+        div(class="relative")
+          div(class="swiper swiper-more")
+            // Additional required wrapper
+            div(class="swiper-wrapper")
+              // Slides
+              each val in [1, 2, 3, 4, 5, 6]
+                div(class="swiper-slide")
+                  +card(`${val} - 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷`, "牆面照片裡的小農，臉上掛著靦腆而自信的笑容，李智遠總幹事說：「現在有 65 位農友登錄，用 Line 群組即時溝通，提供銷售訊息。」")
+          div(class="swiper-button-prev swiper-button-more-prev !hidden lg:!flex items-center justify-center !w-9 !h-9 border border-gray-400 rounded-full !left-[-58px]")
+            img(src="./images/icons/Arrow-Lleft.svg", alt="")
+          div(class="swiper-button-next swiper-button-more-next !hidden lg:!flex items-center justify-center !w-9 !h-9 border border-gray-400 rounded-full !right-[-58px]")
+            img(src="./images/icons/Arrow-Right.svg", alt="")
 
+        // 近期活動
+        div(class="mt-8 lg:mt-14")
+          +title("black", "Activity", "近期活動")
+          div(class="h-8")
+        div(class="relative")
+          div(class="swiper swiper-activity")
+            // Additional required wrapper
+            div(class="swiper-wrapper")
+              // Slides
+              each val in [1, 2, 3, 4, 5, 6]
+                div(class="swiper-slide")
+                  +cardActivity(`${val} - 介紹農民直銷站精選照片介紹農民直銷站精選照片`, "2023.04.13")
+          div(class="swiper-button-prev swiper-button-activity-prev !hidden lg:!flex items-center justify-center !w-9 !h-9 border border-gray-400 rounded-full !left-[-58px]")
+            img(src="./images/icons/Arrow-Lleft.svg", alt="")
+          div(class="swiper-button-next swiper-button-activity-next !hidden lg:!flex items-center justify-center !w-9 !h-9 border border-gray-400 rounded-full !right-[-58px]")
+            img(src="./images/icons/Arrow-Right.svg", alt="")
+          div(class="mt-6 lg:mt-5 text-center")
+            a(class="flex items-center justify-center mx-auto gap-x-3 w-[130px] lg:w-[170px] py-2 lg:py-3 border border-primary-dark rounded-lg group duration-200 hover:bg-primary" href="#")
+              span(class="text-primary-dark text-[15px] font-bold duration-200 group-hover:text-white") More
+              svg(class="fill-current text-primary-dark duration-200 group-hover:text-white" width="6" height="11" viewbox="0 0 6 11" xmlns="http://www.w3.org/2000/svg")
+                path(fill-rule="evenodd" clip-rule="evenodd" d="M0.146447 0.479943C0.341709 0.284681 0.658291 0.284681 0.853553 0.479943L5.52022 5.14661C5.71548 5.34187 5.71548 5.65845 5.52022 5.85372L0.853553 10.5204C0.658291 10.7156 0.341709 10.7156 0.146447 10.5204C-0.0488155 10.3251 -0.0488155 10.0085 0.146447 9.81328L4.45956 5.50016L0.146447 1.18705C-0.0488155 0.991787 -0.0488155 0.675205 0.146447 0.479943Z")
 
     include ./components/common/footer.pug
     include ./components/common/gotop.pug

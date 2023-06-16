@@ -80,3 +80,14 @@
 .accordion-content {
   @apply bg-white -mt-[3px] px-5 rounded-br-lg rounded-bl-lg overflow-hidden max-h-0 transition-all duration-200 ease-in-out;
 }
+
+@media (max-width: 1023px) {
+  .swiper-slide {
+    @apply !w-[185px];
+  }
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: none !important;
+}

@@ -1,99 +1,95 @@
 include ./components/common/head.pug
 include ./components/common/breadcrumbs.pug
 include ./components/common/title.pug
-include ./components/common/card.pug
-include ./components/common/cardActivity.pug
+include ./components/common/cardH.pug
 
 doctype html
 html(lang="zh-Hant-TW")
-  +head("article")
-  head
-    link(rel="stylesheet", href="./src/swiper-bundle.min.css")
-    script(src="./src/swiper-bundle.min.js") 
+  +head("tag")
   body
     include ./components/common/header.pug
     main(class="mt-[60px]")
+      // 浮動 banner
+      div(class="bg-primary-light border-b border-primary-dark px-5 lg:px-0 py-[10px] lg:py-3 sticky top-[60px] z-20")
+        div(class="max-w-screen-xl mx-auto")
+          p(class="text-primary-dark text-[15px] lg:text-base") #番茄
       // 主圖
       section(class="bg-white relative")
         div(class="max-w-screen-xl mx-auto relative overflow-hidden xl:rounded-lg before:absolute before:inset-0 before:w-full before:h-full before:bg-gradient-to-r before:from-black/50 before:via-black/0 before:to-black/50")
-          img(class="w-full h-[150px] xl:h-[250px] object-cover" src="./images/article/article-bg.png", alt="")
-          h1(class="absolute top-14 xl:top-16 left-5 xl:left-8 text-2xl xl:text-4xl font-bold text-white") 課程活動(文章底層頁)
+          img(class="w-full h-[150px] xl:h-[250px] object-cover" src="./images/tag/tag-bg.png", alt="")
+          h1(class="absolute top-14 xl:top-16 left-5 xl:left-8 text-2xl xl:text-4xl font-bold text-white") #番茄(Tag結果頁)
       section(class="max-w-screen-xl mx-auto mt-6 xl:mt-8 mb-14 xl:mb-20 px-5 xl:px-0")
         // 麵包屑
-        +breadcrumbs("首頁", "課程活動")
+        +breadcrumbs("首頁", "#番茄")
+        div(class="mt-5 font-medium text-black text-lg")
+          span(class="text-primary-dark") 番茄
+          |  共有 115 筆結果
 
         div(class="flex flex-col lg:flex-row gap-x-16 mt-6 xl:mt-8 min-h-screen")
           div(class="w-full lg:w-[800px]")
-            h2(class="text-3xl font-bold text-black") 疫情下的在地．安心真價值—臺日直銷站論壇暨食農教育士授證典禮 ，將於12月22日(三)於農糧署北辦舉辦
-            div(class="flex lg:items-center lg:justify-between flex-col lg:flex-row mt-5 lg:mt-[26px] gap-y-4 lg:gap-y-0")
-              div(class="flex lg:items-center flex-col lg:flex-row lg:gap-x-10 gap-y-[10px] lg:gap-y-0")
-                p(class="text-gray-500 text-sm") 圖 | 財團法人中國生產力中心
-                p(class="text-gray-500 text-sm") 文 | 財團法人中國生產力中心
-              div(class="flex items-center gap-x-5 lg:justify-start justify-between")
-                p(class="text-gray-500 text-sm") 2022-07-12
-                div(class="group relative w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center cursor-pointer" tabindex="-1")
-                  img(class="" src="./images/icons/Share.svg", alt="")
-                  div(class="absolute top-12 right-0 lg:right-auto invisible origin-top-right lg:origin-top-center -translate-y-2 scale-95 transform opacity-0 transition-all duration-300 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:scale-100 group-focus-within:opacity-100")
-                    ul(class="triangle-share before:right-0 before:lg:right-auto before:lg:left-1/2 before:left-auto bg-white rounded-lg w-[169px] grid grid-cols-1 divide-y divide-gray-100 px-3 py-2 shadow")
-                      li
-                        a(class="flex items-center gap-x-2 p-3" href="#") 
-                          img(src="./images/icons/Facebook.svg", alt="")
-                          span(class="text-sm text-gray-600") Facebook
-                      li
-                        a(class="flex items-center gap-x-2 p-3" href="#") 
-                          img(src="./images/icons/Line.svg", alt="")
-                          span(class="text-sm text-gray-600") Line
-                      li
-                        a(class="flex items-center gap-x-2 p-3" href="#") 
-                          img(src="./images/icons/Twitter.svg", alt="")
-                          span(class="text-sm text-gray-600") Twitter
-            div(class="article")
-              p 本次臺日直銷站論壇暨食農教育士授證典禮，邀請新竹市竹北市農會、台中市霧峰區農會、臺南市新市區農會、合樸農學市集的陳孟凱召集人擔任臺灣代表，以及跨海連線的日本JA愛知中央的課長與直銷站經理，分享農產銷售、食農教育推廣的經驗與心得。此外，更集結取得第一期食農教育士認證資格的學員，共同接受署長授證。
-              p 活動詳情請見以下公告:
-              p 指導單位：行政院農業委員會農糧署 主辦單位：財團法人中國生產力中心(CPC)
-              p 
-                | 辦理時間：110年12月22日(三)，上午9時30分至12時10分
-                br
-                | 辦理地點：農糧署臺北辦公區7樓大禮堂(臺北市中正區杭州南路一段15號) 
-                br
-                | 論壇議程：
-              img(src="./images/article/article-content1.png", alt="")
-              p 本次臺日直銷站論壇暨食農教育士授證典禮，邀請新竹市竹北市農會、台中市霧峰區農會、臺南市新市區農會、合樸農學市集的陳孟凱召集人擔任臺灣代表，以及跨海連線的日本JA愛知中央的課長與直銷站經理，分享農產銷售、食農教育推廣的經驗與心得。此外，更集結取得第一期食農教育士認證資格的學員，共同接受署長授證。
-              figure
-                img(src="./images/article/article-content2.png", alt="")
-                figcaption 陳孟凱博士陳孟凱博士
-              div(class="video-wrapper")
-                iframe(width="560" height="315" src="https://www.youtube.com/embed/v0sNznWAQ7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="")
+            div(class="lg:divide-y lg:divide-black lg:divide-opacity-10 space-y-8")
+              each val in [1, 2, 3, 4, 5, 6, 7, 8]
+                +cardH("農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照農民直銷站精選照片介紹", "牆面照片裡的小農，臉上掛著靦腆而自信的笑容，李智遠總幹事說：「現在有 65 位農友登錄，用 Line 群組即時溝通，提供銷售訊息。」 牆面照片裡的小農，臉上掛著靦腆而自信的笑容，李智遠總幹事說：「現在有 65 位農友登錄，用 Line 群組即時溝通，提供銷售訊息。」", "活力好站")
+            // 分頁
+            div(class="mt-8 xl:mt-16")
+              ul(class="flex items-center justify-center space-x-4")
+                // 上一頁
+                li
+                  a(class="inline-flex items-center justify-center gap-x-2 text-xs text-gray-500 whitespace-nowrap duration-200 hover:text-primary" href="#")
+                    svg(class="fill-current w-[6px]" viewbox="0 0 8 14" xmlns="http://www.w3.org/2000/svg")
+                      path(fill-rule="evenodd" clip-rule="evenodd" d="M6.90027 0.51631C7.14435 0.760388 7.14435 1.15612 6.90027 1.40019L1.50888 6.79159L6.90027 12.183C7.14435 12.4271 7.14435 12.8228 6.90027 13.0669C6.6562 13.3109 6.26047 13.3109 6.01639 13.0669L0.183058 7.23353C-0.0610194 6.98945 -0.0610194 6.59372 0.183058 6.34964L6.01639 0.51631C6.26047 0.272233 6.6562 0.272233 6.90027 0.51631Z")
+                    span 上一頁
+                // 上一頁 end
+                // active 樣式 class 加上 !bg-primary !border-primary-dark !text-white
+                li
+                  a(class="inline-flex items-center justify-center bg-gray-100 text-gray-800 text-sm border border-transparent rounded-lg duration-200 min-w-[28px] min-h-[28px] hover:bg-primary hover:border-primary-dark hover:text-white !bg-primary !border-primary-dark !text-white" href="#")
+                    | 1
+                li
+                  a(class="inline-flex items-center justify-center bg-gray-100 text-gray-800 text-sm border border-transparent rounded-lg duration-200 min-w-[28px] min-h-[28px] hover:bg-primary hover:border-primary-dark hover:text-white" href="#")
+                    | 2
+                li
+                  a(class="inline-flex items-center justify-center bg-gray-100 text-gray-800 text-sm border border-transparent rounded-lg duration-200 min-w-[28px] min-h-[28px] hover:bg-primary hover:border-primary-dark hover:text-white" href="#")
+                    | 3
+                li
+                  span(class="inline-flex items-center justify-center text-gray-800 text-sm w-[22px] h-[22px]")
+                    | ...
+                li
+                  a(class="inline-flex items-center justify-center bg-gray-100 text-gray-800 text-sm border border-transparent rounded-lg duration-200 min-w-[28px] min-h-[28px] hover:bg-primary hover:border-primary-dark hover:text-white" href="#")
+                    | 999
+                // 下一頁
+                li
+                  a(class="inline-flex items-center justify-center gap-x-2 text-xs text-gray-500 whitespace-nowrap duration-200 hover:text-primary" href="#")
+                    span 下一頁
+                    svg(class="fill-current w-[6px]" viewbox="0 0 8 14" xmlns="http://www.w3.org/2000/svg")
+                      path(fill-rule="evenodd" clip-rule="evenodd" d="M0.683058 0.724806C0.927136 0.480729 1.32286 0.480729 1.56694 0.724806L7.40027 6.55814C7.64435 6.80222 7.64435 7.19795 7.40027 7.44202L1.56694 13.2754C1.32286 13.5194 0.927136 13.5194 0.683058 13.2754C0.438981 13.0313 0.438981 12.6356 0.683058 12.3915L6.07445 7.00008L0.683058 1.60869C0.438981 1.36461 0.438981 0.968884 0.683058 0.724806Z")
+                    
+                // 下一頁 end
+            // 分頁 end
 
-            // tag group
-            div(class="flex flex-wrap gap-x-3 gap-y-4 lg:gap-y-0 mt-8")
-              // tag active 樣式 tag-button-active
-              a(class="tag-button-default" href="#") #食農教育士
-              a(class="tag-button-default" href="#") #竹北市
-              a(class="tag-button-default" href="#") #霧峰區農會
-              a(class="tag-button-default" href="#") #合樸農學市集
-              a(class="tag-button-default tag-button-active" href="#") #食農教育士
-
-          div(class="sticky top-16 w-full lg:w-[336px] mt-8 lg:mt-0 flex flex-col gap-y-8" style="height:max-content;")
-            // 相關文章
-            div(class="bg-gray-100 px-5 lg:px-8 py-5 lg:py-4 rounded-lg")
-              p(class="text-black font-medium") 相關文章
-              ul(class="mt-1 flex flex-col gap-y-3 divide-y divide-black divide-opacity-10")
-                li(class="pt-3")
-                  a(class="flex items-center gap-x-4 group" href="#")
-                    picture(class="flex-shrink-0 w-[75px] h-[56px] overflow-hidden rounded-md")
-                      img(class="w-full h-auto object-cover duration-200 group-hover:scale-105" src="./images/article/article-list1.png", alt="")
-                    p(class="text-sm text-black line-clamp line-clamp-2 duration-200 group-hover:text-primary-dark") 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹
-                li(class="pt-3")
-                  a(class="flex items-center gap-x-4 group" href="#")
-                    picture(class="flex-shrink-0 w-[75px] h-[56px] overflow-hidden rounded-md")
-                      img(class="w-full h-auto object-cover duration-200 group-hover:scale-105" src="./images/article/article-list2.png", alt="")
-                    p(class="text-sm text-black line-clamp line-clamp-2 duration-200 group-hover:text-primary-dark") 介紹農民直銷站精選照片
-                li(class="pt-3")
-                  a(class="flex items-center gap-x-4 group" href="#")
-                    picture(class="flex-shrink-0 w-[75px] h-[56px] overflow-hidden rounded-md")
-                      img(class="w-full h-auto object-cover duration-200 group-hover:scale-105" src="./images/article/article-list3.png", alt="")
-                    p(class="text-sm text-black line-clamp line-clamp-2 duration-200 group-hover:text-primary-dark") 介紹農民直銷站精選照片介紹農民直銷站
+          div(class="sticky top-[109px] w-full lg:w-[336px] mt-8 lg:mt-0 flex flex-col gap-y-8" style="height:max-content;")
+            // 熱門主題
+            div(class="bg-gray-100 px-5 lg:px-6 py-5 lg:py-4 rounded-lg")
+              p(class="text-black font-medium") 熱門主題
+              ul(class="mt-4 flex flex-wrap gap-x-6 gap-y-5")
+                // active 狀態 !bg-primary !border-primary-dark !text-white
+                li
+                  a(class="inline-block text-gray-600 text-sm px-3 py-2 border border-gray-200 rounded-lg break-words duration-200 hover:bg-primary hover:border-primary-dark hover:text-white" href="#") #課程活動
+                li
+                  a(class="inline-block text-gray-600 text-sm px-3 py-2 border border-gray-200 rounded-lg break-words duration-200 hover:bg-primary hover:border-primary-dark hover:text-white" href="#") #農民直銷站
+                li
+                  a(class="inline-block text-gray-600 text-sm px-3 py-2 border border-gray-200 rounded-lg break-words duration-200 hover:bg-primary hover:border-primary-dark hover:text-white" href="#") #推薦Tag
+                li
+                  a(class="inline-block text-gray-600 text-sm px-3 py-2 border border-gray-200 rounded-lg break-words duration-200 hover:bg-primary hover:border-primary-dark hover:text-white" href="#") #在地食材
+                li
+                  a(class="inline-block text-gray-600 text-sm px-3 py-2 border border-gray-200 rounded-lg break-words duration-200 hover:bg-primary hover:border-primary-dark hover:text-white" href="#") #香蕉
+                li
+                  a(class="inline-block text-gray-600 text-sm px-3 py-2 border border-gray-200 rounded-lg break-words duration-200 hover:bg-primary hover:border-primary-dark hover:text-white" href="#") #最多15個字超過
+                li
+                  a(class="inline-block text-gray-600 text-sm px-3 py-2 border border-gray-200 rounded-lg break-words duration-200 hover:bg-primary hover:border-primary-dark hover:text-white" href="#") #推動地產地消成果論壇暨頒獎典禮
+                li
+                  a(class="inline-block text-gray-600 text-sm px-3 py-2 border border-gray-200 rounded-lg break-words duration-200 hover:bg-primary hover:border-primary-dark hover:text-white" href="#") #最多放10個Tag
+                li
+                  a(class="inline-block text-gray-600 text-sm px-3 py-2 border border-gray-200 rounded-lg break-words duration-200 hover:bg-primary hover:border-primary-dark hover:text-white !bg-primary !border-primary-dark !text-white" href="#") #番茄
 
             // 全臺農民直銷據點
             div(class="bg-gray-100 px-5 lg:px-8 py-5 lg:py-4 rounded-lg")
@@ -144,44 +140,6 @@ html(lang="zh-Hant-TW")
                       a(class="text-[13px] text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 花蓮
                       a(class="text-[13px] text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 台東
 
-        // 猜你喜歡
-        div(class="mt-8 lg:mt-14")
-          +title("black", "More", "猜你喜歡")
-          div(class="h-8")
-        div(class="relative")
-          div(class="swiper swiper-more")
-            // Additional required wrapper
-            div(class="swiper-wrapper")
-              // Slides
-              each val in [1, 2, 3, 4, 5, 6]
-                div(class="swiper-slide")
-                  +card(`${val} - 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷`, "牆面照片裡的小農，臉上掛著靦腆而自信的笑容，李智遠總幹事說：「現在有 65 位農友登錄，用 Line 群組即時溝通，提供銷售訊息。」")
-          div(class="swiper-button-prev swiper-button-more-prev !hidden lg:!flex items-center justify-center !w-9 !h-9 border border-gray-400 rounded-full !left-[-58px]")
-            img(src="./images/icons/Arrow-Lleft.svg", alt="")
-          div(class="swiper-button-next swiper-button-more-next !hidden lg:!flex items-center justify-center !w-9 !h-9 border border-gray-400 rounded-full !right-[-58px]")
-            img(src="./images/icons/Arrow-Right.svg", alt="")
-
-        // 近期活動
-        div(class="mt-8 lg:mt-14")
-          +title("black", "Activity", "近期活動")
-          div(class="h-8")
-        div(class="relative")
-          div(class="swiper swiper-activity")
-            // Additional required wrapper
-            div(class="swiper-wrapper")
-              // Slides
-              each val in [1, 2, 3, 4, 5, 6]
-                div(class="swiper-slide")
-                  +cardActivity(`${val} - 介紹農民直銷站精選照片介紹農民直銷站精選照片`, "2023.04.13")
-          div(class="swiper-button-prev swiper-button-activity-prev !hidden lg:!flex items-center justify-center !w-9 !h-9 border border-gray-400 rounded-full !left-[-58px]")
-            img(src="./images/icons/Arrow-Lleft.svg", alt="")
-          div(class="swiper-button-next swiper-button-activity-next !hidden lg:!flex items-center justify-center !w-9 !h-9 border border-gray-400 rounded-full !right-[-58px]")
-            img(src="./images/icons/Arrow-Right.svg", alt="")
-          div(class="mt-6 lg:mt-5 text-center")
-            a(class="flex items-center justify-center mx-auto gap-x-3 w-[130px] lg:w-[170px] py-2 lg:py-3 border border-primary-dark rounded-lg group duration-200 hover:bg-primary" href="#")
-              span(class="text-primary-dark text-[15px] font-bold duration-200 group-hover:text-white") More
-              svg(class="fill-current text-primary-dark duration-200 group-hover:text-white" width="6" height="11" viewbox="0 0 6 11" xmlns="http://www.w3.org/2000/svg")
-                path(fill-rule="evenodd" clip-rule="evenodd" d="M0.146447 0.479943C0.341709 0.284681 0.658291 0.284681 0.853553 0.479943L5.52022 5.14661C5.71548 5.34187 5.71548 5.65845 5.52022 5.85372L0.853553 10.5204C0.658291 10.7156 0.341709 10.7156 0.146447 10.5204C-0.0488155 10.3251 -0.0488155 10.0085 0.146447 9.81328L4.45956 5.50016L0.146447 1.18705C-0.0488155 0.991787 -0.0488155 0.675205 0.146447 0.479943Z")
 
     include ./components/common/footer.pug
     include ./components/common/gotop.pug

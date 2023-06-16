@@ -862,6 +862,10 @@ html {
   top: 1rem;
 }
 
+.top-\[109px\] {
+  top: 109px;
+}
+
 .right-6 {
   right: 1.5rem;
 }
@@ -882,6 +886,10 @@ html {
   top: -18px;
 }
 
+.z-20 {
+  z-index: 20;
+}
+
 .z-\[3\] {
   z-index: 3;
 }
@@ -892,10 +900,6 @@ html {
 
 .z-1 {
   z-index: 1;
-}
-
-.z-20 {
-  z-index: 20;
 }
 
 .z-40 {
@@ -1092,6 +1096,10 @@ html {
   height: 123px;
 }
 
+.h-\[112px\] {
+  height: 112px;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -1174,6 +1182,10 @@ html {
 
 .w-\[170px\] {
   width: 170px;
+}
+
+.w-\[150px\] {
+  width: 150px;
 }
 
 .w-\[160px\] {
@@ -1445,6 +1457,12 @@ html {
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
 .space-y-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1566,14 +1584,14 @@ html {
   border-color: rgb(135 190 35 / var(--tw-border-opacity));
 }
 
-.border-gray-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(105 105 105 / var(--tw-border-opacity));
-}
-
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(217 217 217 / var(--tw-border-opacity));
+}
+
+.border-gray-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(105 105 105 / var(--tw-border-opacity));
 }
 
 .border-opacity-10 {
@@ -2484,6 +2502,10 @@ html {
   --tw-bg-opacity: 0.8;
 }
 
+.first\:\!pt-0:first-child {
+  padding-top: 0px !important;
+}
+
 .hover\:button-active:hover {
   border-width: 1px;
   --tw-border-opacity: 1;
@@ -2820,6 +2842,10 @@ html {
     height: 277px;
   }
 
+  .lg\:h-\[176px\] {
+    height: 176px;
+  }
+
   .lg\:h-9 {
     height: 2.25rem;
   }
@@ -2846,6 +2872,10 @@ html {
 
   .lg\:w-\[170px\] {
     width: 170px;
+  }
+
+  .lg\:w-\[235px\] {
+    width: 235px;
   }
 
   .lg\:w-9 {
@@ -3094,6 +3124,10 @@ html {
     padding-bottom: 2rem;
   }
 
+  .lg\:pt-8 {
+    padding-top: 2rem;
+  }
+
   .lg\:pt-0 {
     padding-top: 0px;
   }
@@ -3115,6 +3149,11 @@ html {
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .lg\:text-3xl {
@@ -3229,6 +3268,10 @@ html {
 
   .xl\:mt-\[60px\] {
     margin-top: 60px;
+  }
+
+  .xl\:mt-16 {
+    margin-top: 4rem;
   }
 
   .xl\:h-\[250px\] {

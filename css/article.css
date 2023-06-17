@@ -902,6 +902,10 @@ html {
   z-index: 2;
 }
 
+.z-\[1\] {
+  z-index: 1;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -2595,8 +2599,8 @@ html {
   outline-width: 2px;
 }
 
-.focus-within\:outline-blue-500:focus-within {
-  outline-color: #3b82f6;
+.focus-within\:outline-black:focus-within {
+  outline-color: #000;
 }
 
 .hover\:button-active:hover {

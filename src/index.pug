@@ -5,9 +5,26 @@ include ./components/common/card.pug
 doctype html
 html(lang="zh-Hant-TW")
   +head("index")
+  head
+    link(rel="stylesheet", href="./src/swiper-bundle.min.css")
+    script(src="./src/swiper-bundle.min.js") 
   body(class="relative")
     include ./components/common/header.pug
     main(class="mt-[60px]")
+      // 主輪播圖
+      section(class="w-full lg:w-[1400px] h-[320px] lg:h-[585px] mx-auto lg:rounded-[80px] overflow-hidden")
+        div(class="swiper swiper-main h-[320px] lg:h-[585px]")
+          // Additional required wrapper
+          div(class="swiper-wrapper before:absolute before:inset-0 before:z-1 before:w-full before:h-full before:opacity-20 before:bg-gradient-to-r before:from-black before:via-transparent before:to-black")
+            // Slides
+            each val in [1, 2, 3, 4, 5, 6, 7]
+              div(class="swiper-slide")
+                img(class="w-full h-full object-cover object-center" src=`/images/index/index-bg${val}.jpg`, alt="")
+          div(class="swiper-pagination swiper-main-pagination")
+          div(class="swiper-button-prev swiper-button-main-prev flex items-center justify-center !w-9 !h-9 border border-gray-400 rounded-full !left-4")
+            img(src="./images/icons/Arrow-Left-White.svg", alt="")
+          div(class="swiper-button-next swiper-button-main-next flex items-center justify-center !w-9 !h-9 border border-gray-400 rounded-full !right-4")
+            img(src="./images/icons/Arrow-Right-White.svg", alt="")
       // 最新消息
       section(class="max-w-screen-xl mx-auto mt-8 lg:mt-14 xl:px-0 px-5")
         +title("black", "News", "最新消息")

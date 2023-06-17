@@ -29,3 +29,20 @@
     content: none;
   }
 }
+
+.swiper-main-pagination {
+  @apply flex items-center justify-center !bottom-8;
+}
+
+.swiper-pagination-bullet {
+  @apply bg-white opacity-50 first:w-[6px] first:h-[6px] last:w-[6px] last:h-[6px] w-[10px] h-[10px];
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  @apply bg-white;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: none !important;
+}

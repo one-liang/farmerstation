@@ -8,6 +8,10 @@
     <script src="js/index.js" defer="defer"> </script>
     <title>index</title>
   </head>
+  <head>
+    <link rel="stylesheet" href="./src/swiper-bundle.min.css">
+    <script src="./src/swiper-bundle.min.js"> </script>
+  </head>
   <body class="relative">
     <header class="fixed top-0 z-40 w-full bg-white">
       <div class=" mx-auto max-w-screen-2xl xl:px-[68px] lg:px-12 px-5 lg:py-0 py-3 flex items-center justify-between"><a class="w-48 !top-16 z-40" href="#"><img src="./images/Farmer.svg" alt=""></a>
@@ -105,6 +109,25 @@
       </form>
     </dialog>
     <main class="mt-[60px]">
+      <!-- 主輪播圖-->
+      <section class="w-full lg:w-[1400px] h-[320px] lg:h-[585px] mx-auto lg:rounded-[80px] overflow-hidden">
+        <div class="swiper swiper-main h-[320px] lg:h-[585px]">
+          <!-- Additional required wrapper-->
+          <div class="swiper-wrapper before:absolute before:inset-0 before:z-1 before:w-full before:h-full before:opacity-20 before:bg-gradient-to-r before:from-black before:via-transparent before:to-black">
+            <!-- Slides-->
+            <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg1.jpg" alt=""></div>
+            <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg2.jpg" alt=""></div>
+            <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg3.jpg" alt=""></div>
+            <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg4.jpg" alt=""></div>
+            <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg5.jpg" alt=""></div>
+            <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg6.jpg" alt=""></div>
+            <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg7.jpg" alt=""></div>
+          </div>
+          <div class="swiper-pagination swiper-main-pagination"></div>
+          <div class="swiper-button-prev swiper-button-main-prev flex items-center justify-center !w-9 !h-9 border border-gray-400 rounded-full !left-4"><img src="./images/icons/Arrow-Left-White.svg" alt=""></div>
+          <div class="swiper-button-next swiper-button-main-next flex items-center justify-center !w-9 !h-9 border border-gray-400 rounded-full !right-4"><img src="./images/icons/Arrow-Right-White.svg" alt=""></div>
+        </div>
+      </section>
       <!-- 最新消息-->
       <section class="max-w-screen-xl mx-auto mt-8 lg:mt-14 xl:px-0 px-5">
         <div>

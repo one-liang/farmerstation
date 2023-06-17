@@ -64,3 +64,64 @@ document.addEventListener("DOMContentLoaded", function () {
     tab2.classList.add("button-active");
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.innerWidth >= 1024) {
+    // 定義區域和對應的列表
+    const areas = ["north", "west", "south", "east"];
+
+    areas.forEach((area) => {
+      // 指定區域元素
+      const areaElement = document.querySelector(`.${area}`);
+      const areaListElement = document.querySelector(`.${area}-list`);
+
+      // 為區域元素添加 mouseover 事件監聽器
+      areaElement.addEventListener("mouseover", () => {
+        // 在 mouseover 時添加對應的活躍類別
+        areaElement.classList.add("map-active");
+        const listItems = areaListElement.querySelectorAll(".map-list-item");
+        listItems.forEach((item) => {
+          item.classList.add("map-list-item-active");
+        });
+        const title = areaListElement.querySelector(".map-list-title");
+        title.classList.add("map-list-title-active");
+      });
+
+      // 為區域元素添加 mouseout 事件監聽器
+      areaElement.addEventListener("mouseout", () => {
+        // 在 mouseout 時移除對應的活躍類別
+        areaElement.classList.remove("map-active");
+        const listItems = areaListElement.querySelectorAll(".map-list-item");
+        listItems.forEach((item) => {
+          item.classList.remove("map-list-item-active");
+        });
+        const title = areaListElement.querySelector(".map-list-title");
+        title.classList.remove("map-list-title-active");
+      });
+
+      // 處理區域列表 mouseover 和 mouseout 事件
+      areaListElement.addEventListener("mouseover", () => {
+        // 在 mouseover 時添加對應的活躍類別
+        areaElement.classList.add("map-active");
+        const listItems = areaListElement.querySelectorAll(".map-list-item");
+        listItems.forEach((item) => {
+          item.classList.add("map-list-item-active");
+        });
+        const title = areaListElement.querySelector(".map-list-title");
+        title.classList.add("map-list-title-active");
+      });
+
+      // 為區域列表添加 mouseout 事件監聽器
+      areaListElement.addEventListener("mouseout", () => {
+        // 在 mouseout 時移除對應的活躍類別
+        areaElement.classList.remove("map-active");
+        const listItems = areaListElement.querySelectorAll(".map-list-item");
+        listItems.forEach((item) => {
+          item.classList.remove("map-list-item-active");
+        });
+        const title = areaListElement.querySelector(".map-list-title");
+        title.classList.remove("map-list-title-active");
+      });
+    });
+  }
+});

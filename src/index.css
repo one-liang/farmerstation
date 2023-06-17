@@ -46,3 +46,27 @@
 .swiper-button-next:after {
   content: none !important;
 }
+
+.map-list-title {
+  @apply flex lg:block items-center justify-between text-left w-full bg-white lg:bg-transparent text-black lg:text-primary text-base lg:text-2xl px-5 lg:px-0 pt-[10px] lg:pt-0 pb-[10px] lg:pb-3 lg:mb-3 border lg:border-b lg:border-t-0 lg:border-r-0 lg:border-l-0 rounded-md lg:rounded-none border-primary-dark duration-200 focus-within:bg-secondary-dark focus-within:lg:bg-transparent focus-within:text-white focus-within:lg:text-black focus-within:border-secondary-dark focus-within:lg:border-primary-dark focus-within:rounded-bl-none focus-within:rounded-br-none;
+}
+
+.map-list-title-active {
+  @apply !text-secondary-dark;
+}
+
+.map-list-item {
+  @apply text-black text-base relative whitespace-nowrap duration-200 flex items-center justify-between lg:inline-block gap-x-8 lg:gap-x-0;
+}
+
+.map-list-item-active {
+  @apply !text-secondary-dark;
+}
+
+.map-list-item:nth-child(2n) {
+  @apply before:lg:absolute before:lg:w-[6px] before:lg:h-[6px] before:lg:bg-gray-200 before:lg:rounded-full before:lg:top-1/2 before:lg:left-[-19px] before:lg:-translate-y-1/2;
+}
+
+.map-active {
+  @apply text-secondary-dark;
+}

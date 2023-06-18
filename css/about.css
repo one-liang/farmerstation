@@ -862,6 +862,10 @@ html {
   z-index: 2;
 }
 
+.z-30 {
+  z-index: 30;
+}
+
 .z-\[1\] {
   z-index: 1;
 }
@@ -872,10 +876,6 @@ html {
 
 .z-40 {
   z-index: 40;
-}
-
-.z-30 {
-  z-index: 30;
 }
 
 .z-10 {
@@ -970,16 +970,20 @@ html {
   margin-top: 183px;
 }
 
+.mt-\[-66px\] {
+  margin-top: -66px;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
 
 .-mr-1 {
   margin-right: -0.25rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
 }
 
 .mt-9 {
@@ -1090,6 +1094,10 @@ html {
   height: 215px;
 }
 
+.h-\[105px\] {
+  height: 105px;
+}
+
 .h-\[123px\] {
   height: 123px;
 }
@@ -1174,6 +1182,10 @@ html {
   width: 22px;
 }
 
+.w-\[170px\] {
+  width: 170px;
+}
+
 .w-\[225px\] {
   width: 225px;
 }
@@ -1190,8 +1202,8 @@ html {
   width: 100px;
 }
 
-.w-\[170px\] {
-  width: 170px;
+.w-\[140px\] {
+  width: 140px;
 }
 
 .w-\[150px\] {
@@ -1481,6 +1493,10 @@ html {
   overflow: visible;
 }
 
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
 .overflow-y-auto {
   overflow-y: auto;
 }
@@ -1762,6 +1778,11 @@ html {
   padding-bottom: 2rem;
 }
 
+.px-\[10px\] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -1792,6 +1813,14 @@ html {
 
 .pb-6 {
   padding-bottom: 1.5rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .pt-10 {
@@ -2690,6 +2719,10 @@ html {
     margin-top: 1.5rem;
   }
 
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .lg\:mt-4 {
     margin-top: 1rem;
   }
@@ -2732,6 +2765,10 @@ html {
 
   .lg\:h-\[200px\] {
     height: 200px;
+  }
+
+  .lg\:h-\[112px\] {
+    height: 112px;
   }
 
   .lg\:h-\[277px\] {
@@ -2797,6 +2834,10 @@ html {
 
   .lg\:w-\[200px\] {
     width: 200px;
+  }
+
+  .lg\:w-\[150px\] {
+    width: 150px;
   }
 
   .lg\:w-9 {
@@ -2907,6 +2948,15 @@ html {
   .lg\:gap-x-6 {
     -moz-column-gap: 1.5rem;
          column-gap: 1.5rem;
+  }
+
+  .lg\:gap-y-20 {
+    row-gap: 5rem;
+  }
+
+  .lg\:gap-x-5 {
+    -moz-column-gap: 1.25rem;
+         column-gap: 1.25rem;
   }
 
   .lg\:divide-y > :not([hidden]) ~ :not([hidden]) {
@@ -3074,6 +3124,14 @@ html {
 
   .lg\:pb-8 {
     padding-bottom: 2rem;
+  }
+
+  .lg\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
+  .lg\:pb-\[60px\] {
+    padding-bottom: 60px;
   }
 
   .lg\:pt-8 {

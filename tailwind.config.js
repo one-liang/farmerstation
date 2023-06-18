@@ -28,7 +28,7 @@ module.exports = {
         "gray-400": "#9E9EA4",
         "gray-200": "#D9D9D9",
         "gray-100": "#F0F0F0",
-        "gray-50 ": "#F9F9F9",
+        "gray-50": "#F9F9F9",
         "gradient-left ": "#86BC25",
         "gradient-middle ": "#CAF57B",
         "gradient-right ": "#C9F974",

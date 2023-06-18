@@ -1,4 +1,4 @@
-mixin breadcrumbs(data1, data2)
+mixin breadcrumbs(data1, data2, data3)
 
   ul(class="text-gray-600 text-sm flex items-center gap-x-[6px]")
     li(class="")
@@ -6,3 +6,7 @@ mixin breadcrumbs(data1, data2)
     li /
     li 
       a(href="#")=data2
+    if(data2)
+      li /
+      li 
+        a(href="#")=data3

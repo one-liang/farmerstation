@@ -1,7 +1,7 @@
 @import url("./tailwind.css");
 
 @media (min-width: 1280px) {
-  .card:nth-child(3n + 4)::before {
+  .card-h:nth-child(3n + 4)::before {
     content: "";
     position: absolute;
     top: -32px;

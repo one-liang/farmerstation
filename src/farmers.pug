@@ -1,0 +1,36 @@
+include ./components/common/head.pug
+include ./components/common/breadcrumbs.pug
+include ./components/common/title.pug
+include ./components/common/card.pug
+include ./components/common/cardActivity.pug
+
+doctype html
+html(lang="zh-Hant-TW")
+  +head("farmers")
+  body
+    include ./components/common/header.pug
+    main(class="mt-[60px]")
+      // 主圖 
+      section(class="bg-white relative")
+        div(class="max-w-screen-xl mx-auto relative overflow-hidden xl:rounded-lg before:absolute before:inset-0 before:w-full before:h-full before:bg-gradient-to-r before:from-black/50 before:via-black/0 before:to-black/50")
+          img(class="w-full h-[150px] xl:h-[250px] object-cover" src="./images/farmers/farmers-bg1.png", alt="")
+          h1(class="absolute top-14 xl:top-16 left-5 xl:left-8 text-2xl xl:text-4xl font-bold text-white") 全臺農民直銷據點
+      section(class="max-w-screen-xl mx-auto mt-6 xl:mt-8 mb-14 xl:mb-20 px-5 xl:px-0")
+        // 麵包屑
+        +breadcrumbs("首頁", "全臺農民直銷據點")
+      // 活力好站
+      section(class="max-w-screen-xl mx-auto mt-8 lg:my-14 xl:px-0 px-5")
+        // 文字區塊
+        +title("black", "Recommend", "活力好站")
+        div(class="grid grid-cols-2 xl:grid-cols-3 gap-x-6 xl:gap-x-[40px] gap-y-8 xl:gap-y-16 mt-[30px] lg:mt-[26px]")
+          each val in [1, 2, 3, 4, 5, 6]
+            +card("農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷", "牆面照片裡的小農，臉上掛著靦腆而自信的笑容，李智遠總幹事說：「現在有 65 位農友登錄，用 Line 群組即時溝通，提供銷售訊息。」")
+        div(class="mt-6 lg:mt-5 text-center")
+          a(class="flex items-center justify-center mx-auto gap-x-3 w-[170px] py-3 border border-primary-dark rounded-lg group duration-200 hover:bg-primary" href="#")
+            span(class="text-primary-dark text-[15px] font-bold duration-200 group-hover:text-white") More
+            svg(class="fill-current text-primary-dark duration-200 group-hover:text-white" width="6" height="11" viewbox="0 0 6 11" xmlns="http://www.w3.org/2000/svg")
+              path(fill-rule="evenodd" clip-rule="evenodd" d="M0.146447 0.479943C0.341709 0.284681 0.658291 0.284681 0.853553 0.479943L5.52022 5.14661C5.71548 5.34187 5.71548 5.65845 5.52022 5.85372L0.853553 10.5204C0.658291 10.7156 0.341709 10.7156 0.146447 10.5204C-0.0488155 10.3251 -0.0488155 10.0085 0.146447 9.81328L4.45956 5.50016L0.146447 1.18705C-0.0488155 0.991787 -0.0488155 0.675205 0.146447 0.479943Z")
+
+
+    include ./components/common/footer.pug
+    include ./components/common/gotop.pug

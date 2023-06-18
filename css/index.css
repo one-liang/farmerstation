@@ -934,6 +934,10 @@ html {
   margin-top: -49px;
 }
 
+.mt-\[30px\] {
+  margin-top: 30px;
+}
+
 .mt-\[44px\] {
   margin-top: 44px;
 }
@@ -1170,6 +1174,10 @@ html {
   width: 22px;
 }
 
+.w-\[170px\] {
+  width: 170px;
+}
+
 .w-\[225px\] {
   width: 225px;
 }
@@ -1184,10 +1192,6 @@ html {
 
 .w-\[100px\] {
   width: 100px;
-}
-
-.w-\[170px\] {
-  width: 170px;
 }
 
 .w-\[150px\] {
@@ -2809,14 +2813,14 @@ html {
     margin-right: 0px;
   }
 
-  .lg\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .lg\:my-14 {
     margin-top: 3.5rem;
     margin-bottom: 3.5rem;
+  }
+
+  .lg\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .lg\:mt-8 {

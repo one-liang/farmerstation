@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/list.css">
-    <script src="../js/list.js" defer> </script>
+    <link rel="stylesheet" href="../src/swiper-bundle.min.css">
+    <script src="../js/list.js" defer></script>
+    <script src="../src/swiper-bundle.min.js"></script>
     <title>list</title>
   </head>
   <body>
@@ -126,6 +128,363 @@
           <li>/</li>
           <li> <a href="#">北北基</a></li>
         </ul>
+      </section>
+      <section class="max-w-screen-xl mx-auto mt-6 lg:mt-8 px-5 xl:px-0 grid grid-cols-1 lg:grid-cols-2 gap-x-0 lg:gap-x-16 gap-y-8">
+        <div>
+          <div class="swiper swiper-list w-full h-[264px] lg:h-[426px] rounded-lg overflow-hidden">
+            <!-- Additional required wrapper-->
+            <div class="swiper-wrapper before:absolute before:inset-0 before:z-1 before:w-full before:h-full before:opacity-20 before:bg-gradient-to-r before:from-black before:via-transparent before:to-black">
+              <!-- Slides-->
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg1.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg2.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg3.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg4.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg5.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg6.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg7.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination swiper-list-pagination"></div>
+            <div class="swiper-button-prev swiper-button-list-prev flex bg-white items-center justify-center !w-9 !h-9 rounded-full !left-4"><img src="../images/icons/Arrow-Left.svg" alt=""></div>
+            <div class="swiper-button-next swiper-button-list-next flex bg-white items-center justify-center !w-9 !h-9 rounded-full !right-4"><img src="../images/icons/Arrow-Right.svg" alt=""></div>
+          </div>
+          <div class="mt-5"></div>
+          <div class="flex items-center gap-x-4">
+            <p class="text-black text-xl font-medium line-clamp line-clamp-2 break-words">新北市五股區農會農民直銷站新北市五股區農會農民直銷站新北市五股區農會農民直銷站新北市五股區農會農民直銷站</p>
+            <div class="flex items-center flex-shrink-0 gap-x-[6px] px-3 py-2 bg-primary rounded-lg"><img src="../images/icons/Check.svg" alt="">
+              <p class="text-white text-sm">設置惜食區</p>
+            </div>
+          </div>
+          <ul class="mt-3 lg:mt-5 space-y-3">
+            <li class="flex text-gray-600">
+              <p class="flex-shrink-0">營業地址：</p>
+              <p>新北市五股區民義路一段21號</p>
+            </li>
+            <li class="flex text-gray-600">
+              <p class="flex-shrink-0">營業時間：</p>
+              <p class="text-primary-dark">營業中</p>
+              <div class="group relative flex items-center gap-x-2 border-l border-black border-opacity-20 pl-3 ml-3 cursor-pointer" tabindex="-1"><span>查看時間</span><img src="../images/icons/DropDown.svg" alt="">
+                <div class="fixed lg:absolute top-1/2 lg:top-10 left-1/2 -translate-x-1/2 z-10 invisible origin-top lg:origin-top-center -translate-y-1/2 lg:-translate-y-2 scale-95 transform opacity-0 transition-all duration-300 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:scale-100 group-focus-within:opacity-100">
+                  <ul class="triangle-share space-y-[10px] before:right-0 before:lg:right-auto before:lg:left-1/2 before:left-auto bg-white rounded-lg w-[169px] grid grid-cols-1 divide-y divide-gray-100 px-4 py-2 shadow">
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期日</span><span>11:30–15:00</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期一</span><span>11:30–21:30</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期二</span><span>11:30–21:30</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期三</span><span>11:30–21:30</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期四</span><span>11:30–21:30</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期五</span><span>11:30–21:30</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期六</span><span>11:30–15:00</span></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="flex text-gray-600">
+              <p class="flex-shrink-0">電話：</p>
+              <p>(02)2294-2223</p>
+            </li>
+            <li class="flex text-gray-600">
+              <p class="flex-shrink-0">農特產：</p>
+              <p>絲瓜、洋蔥、番石榴、萵苣菜、玉米、芒果、金鑽鳳梨、冬瓜、木瓜、火龍果</p>
+            </li>
+            <li class="flex text-gray-600 gap-x-4"><a class="flex items-center gap-x-[6px] border border-gray-200 rounded-full px-4 py-[10px]" href="#"><img src="../images/icons/Store.svg" alt=""><span>官網</span></a><a class="flex items-center gap-x-[6px] border border-gray-200 rounded-full px-4 py-[10px]" href="#"><img src="../images/icons/Facebook-Gray.svg" alt=""><span>Facebook</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="swiper swiper-list w-full h-[264px] lg:h-[426px] rounded-lg overflow-hidden">
+            <!-- Additional required wrapper-->
+            <div class="swiper-wrapper before:absolute before:inset-0 before:z-1 before:w-full before:h-full before:opacity-20 before:bg-gradient-to-r before:from-black before:via-transparent before:to-black">
+              <!-- Slides-->
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg1.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg2.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg3.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg4.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg5.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg6.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg7.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination swiper-list-pagination"></div>
+            <div class="swiper-button-prev swiper-button-list-prev flex bg-white items-center justify-center !w-9 !h-9 rounded-full !left-4"><img src="../images/icons/Arrow-Left.svg" alt=""></div>
+            <div class="swiper-button-next swiper-button-list-next flex bg-white items-center justify-center !w-9 !h-9 rounded-full !right-4"><img src="../images/icons/Arrow-Right.svg" alt=""></div>
+          </div>
+          <div class="mt-5"></div>
+          <div class="flex items-center gap-x-4">
+            <p class="text-black text-xl font-medium line-clamp line-clamp-2 break-words">新北市五股區農會農民直銷站新北市五股區農會農民直銷站新北市五股區農會農民直銷站新北市五股區農會農民直銷站</p>
+            <div class="flex items-center flex-shrink-0 gap-x-[6px] px-3 py-2 bg-primary rounded-lg"><img src="../images/icons/Check.svg" alt="">
+              <p class="text-white text-sm">設置惜食區</p>
+            </div>
+          </div>
+          <ul class="mt-3 lg:mt-5 space-y-3">
+            <li class="flex text-gray-600">
+              <p class="flex-shrink-0">營業地址：</p>
+              <p>新北市五股區民義路一段21號</p>
+            </li>
+            <li class="flex text-gray-600">
+              <p class="flex-shrink-0">營業時間：</p>
+              <p class="text-primary-dark">營業中</p>
+              <div class="group relative flex items-center gap-x-2 border-l border-black border-opacity-20 pl-3 ml-3 cursor-pointer" tabindex="-1"><span>查看時間</span><img src="../images/icons/DropDown.svg" alt="">
+                <div class="fixed lg:absolute top-1/2 lg:top-10 left-1/2 -translate-x-1/2 z-10 invisible origin-top lg:origin-top-center -translate-y-1/2 lg:-translate-y-2 scale-95 transform opacity-0 transition-all duration-300 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:scale-100 group-focus-within:opacity-100">
+                  <ul class="triangle-share space-y-[10px] before:right-0 before:lg:right-auto before:lg:left-1/2 before:left-auto bg-white rounded-lg w-[169px] grid grid-cols-1 divide-y divide-gray-100 px-4 py-2 shadow">
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期日</span><span>11:30–15:00</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期一</span><span>11:30–21:30</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期二</span><span>11:30–21:30</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期三</span><span>11:30–21:30</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期四</span><span>11:30–21:30</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期五</span><span>11:30–21:30</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期六</span><span>11:30–15:00</span></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="flex text-gray-600">
+              <p class="flex-shrink-0">電話：</p>
+              <p>(02)2294-2223</p>
+            </li>
+            <li class="flex text-gray-600">
+              <p class="flex-shrink-0">農特產：</p>
+              <p>絲瓜、洋蔥、番石榴、萵苣菜、玉米、芒果、金鑽鳳梨、冬瓜、木瓜、火龍果</p>
+            </li>
+            <li class="flex text-gray-600 gap-x-4"><a class="flex items-center gap-x-[6px] border border-gray-200 rounded-full px-4 py-[10px]" href="#"><img src="../images/icons/Store.svg" alt=""><span>官網</span></a><a class="flex items-center gap-x-[6px] border border-gray-200 rounded-full px-4 py-[10px]" href="#"><img src="../images/icons/Facebook-Gray.svg" alt=""><span>Facebook</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="swiper swiper-list w-full h-[264px] lg:h-[426px] rounded-lg overflow-hidden">
+            <!-- Additional required wrapper-->
+            <div class="swiper-wrapper before:absolute before:inset-0 before:z-1 before:w-full before:h-full before:opacity-20 before:bg-gradient-to-r before:from-black before:via-transparent before:to-black">
+              <!-- Slides-->
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg1.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg2.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg3.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg4.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg5.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg6.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg7.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination swiper-list-pagination"></div>
+            <div class="swiper-button-prev swiper-button-list-prev flex bg-white items-center justify-center !w-9 !h-9 rounded-full !left-4"><img src="../images/icons/Arrow-Left.svg" alt=""></div>
+            <div class="swiper-button-next swiper-button-list-next flex bg-white items-center justify-center !w-9 !h-9 rounded-full !right-4"><img src="../images/icons/Arrow-Right.svg" alt=""></div>
+          </div>
+          <div class="mt-5"></div>
+          <div class="flex items-center gap-x-4">
+            <p class="text-black text-xl font-medium line-clamp line-clamp-2 break-words">新北市五股區農會農民直銷站新北市五股區農會農民直銷站新北市五股區農會農民直銷站新北市五股區農會農民直銷站</p>
+            <div class="flex items-center flex-shrink-0 gap-x-[6px] px-3 py-2 bg-primary rounded-lg"><img src="../images/icons/Check.svg" alt="">
+              <p class="text-white text-sm">設置惜食區</p>
+            </div>
+          </div>
+          <ul class="mt-3 lg:mt-5 space-y-3">
+            <li class="flex text-gray-600">
+              <p class="flex-shrink-0">營業地址：</p>
+              <p>新北市五股區民義路一段21號</p>
+            </li>
+            <li class="flex text-gray-600">
+              <p class="flex-shrink-0">營業時間：</p>
+              <p class="text-primary-dark">營業中</p>
+              <div class="group relative flex items-center gap-x-2 border-l border-black border-opacity-20 pl-3 ml-3 cursor-pointer" tabindex="-1"><span>查看時間</span><img src="../images/icons/DropDown.svg" alt="">
+                <div class="fixed lg:absolute top-1/2 lg:top-10 left-1/2 -translate-x-1/2 z-10 invisible origin-top lg:origin-top-center -translate-y-1/2 lg:-translate-y-2 scale-95 transform opacity-0 transition-all duration-300 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:scale-100 group-focus-within:opacity-100">
+                  <ul class="triangle-share space-y-[10px] before:right-0 before:lg:right-auto before:lg:left-1/2 before:left-auto bg-white rounded-lg w-[169px] grid grid-cols-1 divide-y divide-gray-100 px-4 py-2 shadow">
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期日</span><span>11:30–15:00</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期一</span><span>11:30–21:30</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期二</span><span>11:30–21:30</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期三</span><span>11:30–21:30</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期四</span><span>11:30–21:30</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期五</span><span>11:30–21:30</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期六</span><span>11:30–15:00</span></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="flex text-gray-600">
+              <p class="flex-shrink-0">電話：</p>
+              <p>(02)2294-2223</p>
+            </li>
+            <li class="flex text-gray-600">
+              <p class="flex-shrink-0">農特產：</p>
+              <p>絲瓜、洋蔥、番石榴、萵苣菜、玉米、芒果、金鑽鳳梨、冬瓜、木瓜、火龍果</p>
+            </li>
+            <li class="flex text-gray-600 gap-x-4"><a class="flex items-center gap-x-[6px] border border-gray-200 rounded-full px-4 py-[10px]" href="#"><img src="../images/icons/Store.svg" alt=""><span>官網</span></a><a class="flex items-center gap-x-[6px] border border-gray-200 rounded-full px-4 py-[10px]" href="#"><img src="../images/icons/Facebook-Gray.svg" alt=""><span>Facebook</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="swiper swiper-list w-full h-[264px] lg:h-[426px] rounded-lg overflow-hidden">
+            <!-- Additional required wrapper-->
+            <div class="swiper-wrapper before:absolute before:inset-0 before:z-1 before:w-full before:h-full before:opacity-20 before:bg-gradient-to-r before:from-black before:via-transparent before:to-black">
+              <!-- Slides-->
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg1.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg2.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg3.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg4.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg5.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg6.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg7.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination swiper-list-pagination"></div>
+            <div class="swiper-button-prev swiper-button-list-prev flex bg-white items-center justify-center !w-9 !h-9 rounded-full !left-4"><img src="../images/icons/Arrow-Left.svg" alt=""></div>
+            <div class="swiper-button-next swiper-button-list-next flex bg-white items-center justify-center !w-9 !h-9 rounded-full !right-4"><img src="../images/icons/Arrow-Right.svg" alt=""></div>
+          </div>
+          <div class="mt-5"></div>
+          <div class="flex items-center gap-x-4">
+            <p class="text-black text-xl font-medium line-clamp line-clamp-2 break-words">新北市五股區農會農民直銷站新北市五股區農會農民直銷站新北市五股區農會農民直銷站新北市五股區農會農民直銷站</p>
+            <div class="flex items-center flex-shrink-0 gap-x-[6px] px-3 py-2 bg-primary rounded-lg"><img src="../images/icons/Check.svg" alt="">
+              <p class="text-white text-sm">設置惜食區</p>
+            </div>
+          </div>
+          <ul class="mt-3 lg:mt-5 space-y-3">
+            <li class="flex text-gray-600">
+              <p class="flex-shrink-0">營業地址：</p>
+              <p>新北市五股區民義路一段21號</p>
+            </li>
+            <li class="flex text-gray-600">
+              <p class="flex-shrink-0">營業時間：</p>
+              <p class="text-primary-dark">營業中</p>
+              <div class="group relative flex items-center gap-x-2 border-l border-black border-opacity-20 pl-3 ml-3 cursor-pointer" tabindex="-1"><span>查看時間</span><img src="../images/icons/DropDown.svg" alt="">
+                <div class="fixed lg:absolute top-1/2 lg:top-10 left-1/2 -translate-x-1/2 z-10 invisible origin-top lg:origin-top-center -translate-y-1/2 lg:-translate-y-2 scale-95 transform opacity-0 transition-all duration-300 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:scale-100 group-focus-within:opacity-100">
+                  <ul class="triangle-share space-y-[10px] before:right-0 before:lg:right-auto before:lg:left-1/2 before:left-auto bg-white rounded-lg w-[169px] grid grid-cols-1 divide-y divide-gray-100 px-4 py-2 shadow">
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期日</span><span>11:30–15:00</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期一</span><span>11:30–21:30</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期二</span><span>11:30–21:30</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期三</span><span>11:30–21:30</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期四</span><span>11:30–21:30</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期五</span><span>11:30–21:30</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期六</span><span>11:30–15:00</span></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="flex text-gray-600">
+              <p class="flex-shrink-0">電話：</p>
+              <p>(02)2294-2223</p>
+            </li>
+            <li class="flex text-gray-600">
+              <p class="flex-shrink-0">農特產：</p>
+              <p>絲瓜、洋蔥、番石榴、萵苣菜、玉米、芒果、金鑽鳳梨、冬瓜、木瓜、火龍果</p>
+            </li>
+            <li class="flex text-gray-600 gap-x-4"><a class="flex items-center gap-x-[6px] border border-gray-200 rounded-full px-4 py-[10px]" href="#"><img src="../images/icons/Store.svg" alt=""><span>官網</span></a><a class="flex items-center gap-x-[6px] border border-gray-200 rounded-full px-4 py-[10px]" href="#"><img src="../images/icons/Facebook-Gray.svg" alt=""><span>Facebook</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="swiper swiper-list w-full h-[264px] lg:h-[426px] rounded-lg overflow-hidden">
+            <!-- Additional required wrapper-->
+            <div class="swiper-wrapper before:absolute before:inset-0 before:z-1 before:w-full before:h-full before:opacity-20 before:bg-gradient-to-r before:from-black before:via-transparent before:to-black">
+              <!-- Slides-->
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg1.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg2.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg3.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg4.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg5.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg6.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="/images/index/index-bg7.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination swiper-list-pagination"></div>
+            <div class="swiper-button-prev swiper-button-list-prev flex bg-white items-center justify-center !w-9 !h-9 rounded-full !left-4"><img src="../images/icons/Arrow-Left.svg" alt=""></div>
+            <div class="swiper-button-next swiper-button-list-next flex bg-white items-center justify-center !w-9 !h-9 rounded-full !right-4"><img src="../images/icons/Arrow-Right.svg" alt=""></div>
+          </div>
+          <div class="mt-5"></div>
+          <div class="flex items-center gap-x-4">
+            <p class="text-black text-xl font-medium line-clamp line-clamp-2 break-words">新北市五股區農會農民直銷站新北市五股區農會農民直銷站新北市五股區農會農民直銷站新北市五股區農會農民直銷站</p>
+            <div class="flex items-center flex-shrink-0 gap-x-[6px] px-3 py-2 bg-primary rounded-lg"><img src="../images/icons/Check.svg" alt="">
+              <p class="text-white text-sm">設置惜食區</p>
+            </div>
+          </div>
+          <ul class="mt-3 lg:mt-5 space-y-3">
+            <li class="flex text-gray-600">
+              <p class="flex-shrink-0">營業地址：</p>
+              <p>新北市五股區民義路一段21號</p>
+            </li>
+            <li class="flex text-gray-600">
+              <p class="flex-shrink-0">營業時間：</p>
+              <p class="text-primary-dark">營業中</p>
+              <div class="group relative flex items-center gap-x-2 border-l border-black border-opacity-20 pl-3 ml-3 cursor-pointer" tabindex="-1"><span>查看時間</span><img src="../images/icons/DropDown.svg" alt="">
+                <div class="fixed lg:absolute top-1/2 lg:top-10 left-1/2 -translate-x-1/2 z-10 invisible origin-top lg:origin-top-center -translate-y-1/2 lg:-translate-y-2 scale-95 transform opacity-0 transition-all duration-300 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:scale-100 group-focus-within:opacity-100">
+                  <ul class="triangle-share space-y-[10px] before:right-0 before:lg:right-auto before:lg:left-1/2 before:left-auto bg-white rounded-lg w-[169px] grid grid-cols-1 divide-y divide-gray-100 px-4 py-2 shadow">
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期日</span><span>11:30–15:00</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期一</span><span>11:30–21:30</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期二</span><span>11:30–21:30</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期三</span><span>11:30–21:30</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期四</span><span>11:30–21:30</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期五</span><span>11:30–21:30</span></div>
+                    </li>
+                    <li class="!first:pt-0 pt-[10px]">
+                      <div class="flex items-center gap-x-4 text-sm text-gray-600"><span>星期六</span><span>11:30–15:00</span></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="flex text-gray-600">
+              <p class="flex-shrink-0">電話：</p>
+              <p>(02)2294-2223</p>
+            </li>
+            <li class="flex text-gray-600">
+              <p class="flex-shrink-0">農特產：</p>
+              <p>絲瓜、洋蔥、番石榴、萵苣菜、玉米、芒果、金鑽鳳梨、冬瓜、木瓜、火龍果</p>
+            </li>
+            <li class="flex text-gray-600 gap-x-4"><a class="flex items-center gap-x-[6px] border border-gray-200 rounded-full px-4 py-[10px]" href="#"><img src="../images/icons/Store.svg" alt=""><span>官網</span></a><a class="flex items-center gap-x-[6px] border border-gray-200 rounded-full px-4 py-[10px]" href="#"><img src="../images/icons/Facebook-Gray.svg" alt=""><span>Facebook</span></a></li>
+          </ul>
+        </div>
       </section>
       <!-- 活力好站-->
       <section class="max-w-screen-xl mx-auto mt-8 lg:my-14 xl:px-0 px-5">

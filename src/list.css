@@ -1,6 +1,16 @@
 @import url("./tailwind.css");
 
 @media (min-width: 1280px) {
+  /* .swiper-list:nth-child(2n + 3)::before {
+    content: "";
+    position: absolute;
+    top: -32px;
+    left: 0;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: calc(300% + 80px);
+  } */
+
   .card-h:nth-child(3n + 4)::before {
     content: "";
     position: absolute;
@@ -10,4 +20,40 @@
     background-color: rgba(0, 0, 0, 0.1);
     width: calc(300% + 80px);
   }
+}
+
+.triangle-share:before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 8px 12px 8px;
+  border-color: transparent transparent #ffffff transparent;
+}
+
+@media screen (max-width: 1023px) {
+  .triangle-share:before {
+    background: #000;
+    content: none;
+  }
+}
+
+.swiper-list-pagination {
+  @apply flex items-center justify-center !bottom-8;
+}
+
+.swiper-pagination-bullet {
+  @apply bg-white opacity-50 first:w-[6px] first:h-[6px] last:w-[6px] last:h-[6px] w-[10px] h-[10px];
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  @apply bg-white;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: none !important;
 }

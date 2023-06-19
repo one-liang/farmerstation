@@ -1,0 +1,1 @@
+"use strict";require("./header"),require("./gotop");

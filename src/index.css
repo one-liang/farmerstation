@@ -71,6 +71,10 @@
   @apply text-secondary-dark;
 }
 
-.fb-page iframe ._2p3a {
-  @apply mx-auto;
+.fb-page span {
+  @apply !w-full;
+}
+
+.fb-page span iframe {
+  @apply !w-full;
 }

@@ -2319,9 +2319,12 @@ html {
   color: rgb(243 147 19 / var(--tw-text-opacity));
 }
 
-.fb-page iframe ._2p3a {
-  margin-left: auto;
-  margin-right: auto;
+.fb-page span {
+  width: 100% !important;
+}
+
+.fb-page span iframe {
+  width: 100% !important;
 }
 
 .before\:absolute::before {

@@ -56,7 +56,7 @@
 }
 
 .map-list-item {
-  @apply text-black text-base relative whitespace-nowrap duration-200 flex items-center justify-between lg:inline-block gap-x-8 lg:gap-x-0;
+  @apply relative flex items-center justify-between text-base text-black duration-200 whitespace-nowrap lg:inline-block gap-x-8 lg:gap-x-0;
 }
 
 .map-list-item-active {
@@ -69,4 +69,8 @@
 
 .map-active {
   @apply text-secondary-dark;
+}
+
+.fb-page iframe ._2p3a {
+  @apply mx-auto;
 }

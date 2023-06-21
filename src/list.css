@@ -57,3 +57,14 @@
 .swiper-button-next:after {
   content: none !important;
 }
+
+@media (max-width: 1023px) {
+  .swiper-slide {
+    @apply !w-[185px];
+  }
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: none !important;
+}

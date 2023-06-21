@@ -59,7 +59,8 @@
 }
 
 @media (max-width: 1023px) {
-  .swiper-slide {
+  .swiper-related .swiper-slide,
+  .swiper-activity .swiper-slide {
     @apply !w-[185px];
   }
 }

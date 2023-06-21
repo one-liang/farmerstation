@@ -34,10 +34,9 @@
   border-color: transparent transparent #ffffff transparent;
 }
 
-@media screen (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
   .triangle-share:before {
-    background: #000;
-    content: none;
+    content: none !important;
   }
 }
 

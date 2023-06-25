@@ -3879,6 +3879,10 @@ html {
     height: 250px;
   }
 
+  .xl\:w-\[500px\] {
+    width: 500px;
+  }
+
   .xl\:w-\[718px\] {
     width: 718px;
   }

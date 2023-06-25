@@ -15,16 +15,18 @@ html(lang="zh-Hant-TW")
 
   body(class="relative")
     include ./components/common/header.pug
-    main(class="mt-[60px]")
+    main(class="mt-[52px] lg:mt-[72px]")
+      h1(class="sr-only") 食農知味
       // 主輪播圖
       section(class="w-full lg:max-w-[1400px] h-[320px] lg:h-[585px] mx-auto lg:rounded-[80px] overflow-hidden")
         div(class="swiper swiper-main h-[320px] lg:h-[585px]")
           // Additional required wrapper
-          div(class="swiper-wrapper before:absolute before:inset-0 before:z-1 before:w-full before:h-full before:opacity-20 before:bg-gradient-to-r before:from-black before:via-transparent before:to-black")
+          div(class="swiper-wrapper")
             // Slides
             each val in [1, 2, 3, 4, 5, 6, 7]
-              div(class="swiper-slide")
+              div(class="relative swiper-slide")
                 img(class="object-cover object-center w-full h-full" src=`./images/index/index-bg${val}.jpg`, alt="")
+                p(class="absolute lg:bottom-[140px] bottom-5 lg:left-[130px] text-white lg:w-[470px] w-full lg:text-[40px] text-[22px] lg:leading-[48px] leading-[32px] font-bold lg:px-0 px-5 z-1") 在地食事標題在地食事標題在地食事標題
           div(class="swiper-pagination swiper-main-pagination")
           div(class="swiper-button-prev swiper-button-main-prev flex items-center justify-center !w-9 !h-9 border border-gray-400 rounded-full !left-4")
             img(src="./images/icons/Arrow-Left-White.svg" alt="")
@@ -44,7 +46,7 @@ html(lang="zh-Hant-TW")
                 each val in [1, 2, 3, 4]
                   li
                     a(class="flex flex-col lg:gap-y-0 gap-y-2 lg:gap-x-10 lg:flex-row group" href="#") 
-                      p(class="text-base text-gray-500 break-words") 2023年04月13日
+                      p(class="text-sm text-gray-500 break-words lg:text-base") 2023年04月13日
                       p(class="text-base text-black break-words duration-200 group-hover:text-primary-dark group-hover:underline line-clamp line-clamp-2") 【JCA首次海外授權「食農教育士培訓工作坊」－連結農業與飲食，共同傳遞農產品的魅力】熱烈報名中
               div(class="mt-6 lg:mt-8")
                 a(class="flex items-center gap-x-[10px] group" href="#")
@@ -55,7 +57,7 @@ html(lang="zh-Hant-TW")
                 each val in [1, 2, 3, 4]
                   li
                     a(class="flex flex-col lg:gap-y-0 gap-y-2 lg:gap-x-10 lg:flex-row group" href="#") 
-                      p(class="text-base text-gray-500 break-words") 2023年04月13日
+                      p(class="text-sm text-gray-500 break-words lg:text-base") 2023年04月13日
                       p(class="text-base text-black break-words duration-200 group-hover:text-primary-dark group-hover:underline line-clamp line-clamp-2") 【疫情下的在地．安心真價值—臺日直銷站論壇暨食農教育士授證典禮】將於12月22日（三）於農糧署北辦舉辦
               div(class="mt-6 lg:mt-8")
                 a(class="flex items-center gap-x-[10px] group" href="#")
@@ -75,64 +77,64 @@ html(lang="zh-Hant-TW")
                 div(class="relative block")
                   picture(class="relative block overflow-hidden")
                     img(class="w-full lg:max-w-[450px] h-full lg:max-h-[337.5px] max-h-[264px] object-cover rounded-lg lg:rounded-none overflow-hidden" src="./images/article/article1.jpg" alt="")
-                  span(class="absolute left-0 lg:left-6 bottom-[-17px] bg-primary-light border border-primary border-opacity-20 text-primary-dark text-sm px-3 py-[6px] rounded-lg") 當令食材
+                  span(class="absolute left-0 lg:left-6 bottom-[-17px] bg-primary-light border border-primary border-opacity-20 text-primary-dark lg:text-sm text-13 px-3 py-[6px] lg:rounded-lg rounded-md") 當令食材
                 div(class="mt-6 bg-white lg:mt-0 lg:px-6 lg:py-7")
-                  p(class="text-lg font-medium text-black break-words duration-200 line-clamp line-clamp-1 group-hover:text-primary-dark") 農民直銷站精選照片介紹
-                  p(class="text-[15px] text-black line-clamp line-clamp-2 break-words mt-2 lg:mt-3") 牆面照片裡的小農，臉上掛著靦腆而自信的笑容，李智遠總幹事說：「現在有 65 位農友登錄，用 Line 群組即時溝通，提供銷售訊息。」
-                  p(class="mt-2 text-sm text-gray-500 break-words line-clamp line-clamp-1 lg:mt-3") 2023.04.13
+                  p(class="text-lg font-medium text-black break-words duration-200 line-clamp line-clamp-1 group-hover:text-primary-dark tracking-1") 農民直銷站精選照片介紹
+                  p(class="mt-2 text-gray-800 break-words text-15 line-clamp line-clamp-2 lg:mt-3") 牆面照片裡的小農，臉上掛著靦腆而自信的笑容，李智遠總幹事說：「現在有 65 位農友登錄，用 Line 群組即時溝通，提供銷售訊息。」
+                  p(class="mt-2 text-xs text-gray-500 break-words lg:text-sm line-clamp line-clamp-1 lg:mt-3") 2023.04.13
               // card 2
               a(class="flex-1 block mt-6 overflow-hidden duration-300 rounded-r-lg lg:mt-0 hover:scale-105 hover:rounded-lg hover:z-1 group" href="#")
                 div(class="relative block")
                   picture(class="relative block overflow-hidden")
                     img(class="w-full lg:max-w-[450px] h-full lg:max-h-[337.5px] max-h-[264px] object-cover rounded-lg lg:rounded-none overflow-hidden" src="./images/article/article2.jpg" alt="")
-                  span(class="absolute left-0 lg:left-6 bottom-[-17px] bg-primary-light border border-primary border-opacity-20 text-primary-dark text-sm px-3 py-[6px] rounded-lg") 達人推薦
+                  span(class="absolute left-0 lg:left-6 bottom-[-17px] bg-primary-light border border-primary border-opacity-20 text-primary-dark lg:text-sm text-13 px-3 py-[6px] lg:rounded-lg rounded-md") 達人推薦
                 div(class="mt-6 bg-white lg:mt-0 lg:px-6 lg:py-7 lg:border-l lg:border-black lg:border-opacity-10")
-                  p(class="text-lg font-medium text-black break-words duration-200 line-clamp line-clamp-1 group-hover:text-primary-dark") 坐擁青山綠水～三星地區農會以「小農大作」為題規劃坐擁青山綠水～三星地區農會以「小農大作」為題規劃
-                  p(class="text-[15px] text-black line-clamp line-clamp-2 break-words mt-2 lg:mt-3") 牆面照片裡的小農，臉上掛著靦腆而自信的笑容，李智遠總幹事說：「現在有 65 位農友登錄，用 Line 群組即時溝通，提供銷售訊息。」
-                  p(class="mt-2 text-sm text-gray-500 break-words line-clamp line-clamp-1 lg:mt-3") 2023.04.13
+                  p(class="text-lg font-medium text-black break-words duration-200 line-clamp line-clamp-1 group-hover:text-primary-dark tracking-1") 坐擁青山綠水～三星地區農會以「小農大作」為題規劃坐擁青山綠水～三星地區農會以「小農大作」為題規劃
+                  p(class="mt-2 text-gray-800 break-words text-15 line-clamp line-clamp-2 lg:mt-3") 牆面照片裡的小農，臉上掛著靦腆而自信的笑容，李智遠總幹事說：「現在有 65 位農友登錄，用 Line 群組即時溝通，提供銷售訊息。」
+                  p(class="mt-2 text-xs text-gray-500 break-words lg:text-sm line-clamp line-clamp-1 lg:mt-3") 2023.04.13
 
             div(class="grid grid-cols-2 mt-6 -mx-5 lg:grid-cols-4 lg:gap-y-0 gap-y-8 lg:shadow-card lg:mt-8 lg:mx-auto")
               // card 3
               a(class="flex-1 flex flex-col relative h-[147px] basis-147 w-full lg:rounded-l-lg overflow-hidden duration-300 hover:scale-105 hover:rounded-lg hover:z-1 group" href="#")
                 picture(class="absolute inset-0 block overflow-hidden")
                   img(class="object-cover w-full h-full" src="./images/article/article3.jpg" alt="")
-                span(class="absolute left-0 top-0 px-3 py-[6px] text-primary-dark bg-primary-light rounded-br-lg") 當令食材
+                span(class="absolute left-0 top-0 px-3 py-[6px] text-primary-dark lg:text-sm text-13 bg-primary-light rounded-br-lg") 當令食材
                 div(class="relative flex flex-col justify-end p-4 mt-auto bg-gradient-to-t from-gradient-black-75")
-                  p(class="text-gray-100 text-[13px] break-words line-clamp line-clamp-1") 2023.04.13
-                  p(class="mt-1 font-medium text-white break-words line-clamp line-clamp-1") 農民直銷站精選照片介紹－PART2
+                  p(class="text-gray-100 break-words text-13 line-clamp line-clamp-1") 2023.04.13
+                  p(class="mt-1 text-sm font-medium text-white break-words lg:text-base line-clamp line-clamp-1") 農民直銷站精選照片介紹－PART2
               // card 4
               a(class="flex-1 flex flex-col relative h-[147px] basis-147 w-full lg:overflow-hidden duration-300 hover:scale-105 hover:rounded-lg hover:z-1 group" href="#")
                 picture(class="absolute inset-0 block overflow-hidden")
                   img(class="object-cover w-full h-full" src="./images/article/article4.jpg" alt="")
-                span(class="absolute left-0 top-0 px-3 py-[6px] text-primary-dark bg-primary-light rounded-br-lg") 當令食材
+                span(class="absolute left-0 top-0 px-3 py-[6px] text-primary-dark lg:text-sm text-13 bg-primary-light rounded-br-lg") 當令食材
                 div(class="relative flex flex-col justify-end p-4 mt-auto bg-gradient-to-t from-gradient-black-75")
-                  p(class="text-gray-100 text-[13px] break-words line-clamp line-clamp-1") 2023.04.13
-                  p(class="mt-1 font-medium text-white break-words line-clamp line-clamp-1") 農民直銷站精選照片介紹
+                  p(class="text-gray-100 break-words text-13 line-clamp line-clamp-1") 2023.04.13
+                  p(class="mt-1 text-sm font-medium text-white break-words lg:text-base line-clamp line-clamp-1") 農民直銷站精選照片介紹
               // card 5
               a(class="flex-1 flex flex-col relative h-[147px] basis-147 w-full lg:overflow-hidden duration-300 hover:scale-105 hover:rounded-lg hover:z-1 group" href="#")
                 picture(class="absolute inset-0 block overflow-hidden")
                   img(class="object-cover w-full h-full" src="./images/article/article4.jpg" alt="")
-                span(class="absolute left-0 top-0 px-3 py-[6px] text-primary-dark bg-primary-light rounded-br-lg") 當令食材
+                span(class="absolute left-0 top-0 px-3 py-[6px] text-primary-dark lg:text-sm text-13 bg-primary-light rounded-br-lg") 當令食材
                 div(class="relative flex flex-col justify-end p-4 mt-auto bg-gradient-to-t from-gradient-black-75")
-                  p(class="text-gray-100 text-[13px] break-words line-clamp line-clamp-1") 2023.04.13
-                  p(class="mt-1 font-medium text-white break-words line-clamp line-clamp-1") 以服務和顧客搏感情，為地方農業升溫
+                  p(class="text-gray-100 break-words text-13 line-clamp line-clamp-1") 2023.04.13
+                  p(class="mt-1 text-sm font-medium text-white break-words lg:text-base line-clamp line-clamp-1") 以服務和顧客搏感情，為地方農業升溫
               // card 6
               a(class="flex-1 flex flex-col relative h-[147px] basis-147 w-full lg:rounded-r-lg overflow-hidden duration-300 hover:scale-105 hover:rounded-lg hover:z-1 group" href="#")
                 picture(class="absolute inset-0 block overflow-hidden")
                   img(class="object-cover w-full h-full" src="./images/article/article5.jpg" alt="")
-                span(class="absolute left-0 top-0 px-3 py-[6px] text-primary-dark bg-primary-light rounded-br-lg") 當令食材
+                span(class="absolute left-0 top-0 px-3 py-[6px] text-primary-dark lg:text-sm text-13 bg-primary-light rounded-br-lg") 當令食材
                 div(class="relative flex flex-col justify-end p-4 mt-auto bg-gradient-to-t from-gradient-black-75")
-                  p(class="text-gray-100 text-[13px] break-words line-clamp line-clamp-1") 2023.04.13
-                  p(class="mt-1 font-medium text-white break-words line-clamp line-clamp-1") 以服務和顧客搏感情，為地方農業升溫
+                  p(class="text-gray-100 break-words text-13 line-clamp line-clamp-1") 2023.04.13
+                  p(class="mt-1 text-sm font-medium text-white break-words lg:text-base line-clamp line-clamp-1") 以服務和顧客搏感情，為地方農業升溫
 
       // 全臺農民直銷據點
       section(class="bg-[#FFFDC8] bg-opacity-25 overflow-hidden")
-        div(class="max-w-screen-xl px-5 py-8 mx-auto mt-8 lg:my-14 xl:px-0 lg:py-14")
+        div(class="max-w-screen-xl px-5 py-8 mx-auto lg:mt-8 lg:my-14 xl:px-0 lg:py-14")
           // 文字區塊
           +title("black", "Farmers Market", "全臺農民直銷據點")
           div(class="relative mt-12 map")
             // 北區
-            div(class="north-list group absolute sm:top-[10%] md:top-[6%] lg:top-[7%] left-[28%] sm:left-[51%] md:left-[56%] lg:left-[37%] lg:w-[310px]")
+            div(class="north-list group absolute sm:top-[10%] md:top-[6%] lg:top-[7%] left-[28%] sm:left-[51%] md:left-[32%] lg:left-[37%] lg:w-[310px]")
               button(class="map-list-title" type="button")
                 span 北區
                 img(class="w-4 h-4 inline-block lg:hidden group-focus-within:!hidden" src="./images/icons/Add.svg" alt="")
@@ -148,7 +150,7 @@ html(lang="zh-Hant-TW")
                   span 新竹 (7)
                   img(class="inline-block lg:hidden" src="./images/icons/Right.svg" alt="")
             // 中區
-            div(class="west-list group absolute top-[32%] left-[8%] sm:left-[30%] lg:left-[16%] lg:w-[425px]")
+            div(class="west-list group absolute top-[32%] left-[8%] sm:left-[30%] lg:left-[8%] xl:left-[16%] lg:w-[425px]")
               button(class="map-list-title" type="button")
                 span 中區
                 img(class="w-4 h-4 inline-block lg:hidden group-focus-within:!hidden" src="./images/icons/Add.svg" alt="")
@@ -167,7 +169,7 @@ html(lang="zh-Hant-TW")
                   span 彰化 (3)
                   img(class="inline-block lg:hidden" src="./images/icons/Right.svg" alt="")
             // 南區
-            div(class="south-list group absolute top-[67%] sm:top-[72%] lg:top-[74%] left-[3%] sm:left-[20%] lg:left-[24%] lg:w-[235px]")
+            div(class="south-list group absolute top-[67%] sm:top-[72%] lg:top-[74%] left-[3%] sm:left-[20%] lg:left-[27%] lg:w-[235px]")
               button(class="map-list-title" type="button")
                 span 南區
                 img(class="w-4 h-4 inline-block lg:hidden group-focus-within:!hidden" src="./images/icons/Add.svg" alt="")
@@ -180,7 +182,7 @@ html(lang="zh-Hant-TW")
                   span 屏東 (2)
                   img(class="inline-block lg:hidden" src="./images/icons/Right.svg" alt="")
             // 東區
-            div(class="east-list group absolute top-[48%] left-[60%] sm:left-[66%] lg:w-[300px]")
+            div(class="east-list group absolute top-[48%] left-[60%] sm:left-[60%] lg:w-[300px]")
               button(class="map-list-title lg:text-right" type="button")
                 span 東區
                 img(class="w-4 h-4 inline-block lg:hidden group-focus-within:!hidden" src="./images/icons/Add.svg" alt="")
@@ -196,7 +198,7 @@ html(lang="zh-Hant-TW")
                   span 花蓮 (6)
                   img(class="inline-block lg:hidden" src="./images/icons/Right.svg" alt="")
             // 地圖
-            svg(class="text-primary text-opacity-60 fill-current mx-auto w-full lg:w-[718px] h-full lg:[1050px]" viewbox="0 0 718 1050" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+            svg(class="text-primary text-opacity-60 fill-current mx-auto w-full lg:w-[500px] h-full" viewbox="0 0 718 1050" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
               g(clip-path="url(#clip0_831_29934)")
                 rect(width="718" height="1050" fill="url(#pattern0)")
                 path(class="duration-200 cursor-pointer north hover:lg:text-secondary-dark" d="M506.602 267.4V267.5M711.502 85.5C699.502 84.5 689.502 83.5 686.502 69.5C683.502 55.5 683.502 59.5 671.502 57.5C659.502 55.5 643.502 48.5 635.502 42.5C622.902 33 613.502 21.5 606.502 10.5C599.502 -0.500006 595.502 0.499995 589.502 2.49999C583.502 4.49999 569.502 5.49999 564.502 13.5C559.502 21.5 554.502 31.5 548.502 36.5C542.502 41.5 542.502 54.5 521.502 57.5C517.902 58 515.202 58.3 513.102 58.4C502.902 59.1 507.302 56.3 496.502 60.5C483.502 65.5 485.502 66.5 471.502 70.5C457.502 74.5 446.502 83.5 439.502 98.5C437.602 102.5 435.702 105.8 433.702 108.7C428.302 116.8 422.602 122.5 417.502 133.5C410.502 148.5 411.502 154.5 407.502 164.5C403.702 173.9 402.602 169.1 397.502 173.6C397.202 173.9 396.902 174.2 396.502 174.5C390.502 180.5 403.502 186.5 379.502 196.5C355.502 206.5 367.502 214.5 358.502 218.5C349.502 222.5 351.502 241.5 339.502 252.5C335.702 256 331.902 260 328.102 264.7C329.902 266.7 329.302 269.6 333.502 274.5C339.502 281.5 347.502 290.5 361.502 297.5C375.502 304.5 385.502 306.5 392.502 310.5C399.502 314.5 411.502 312.5 411.502 307.5C411.502 302.5 409.502 295.5 419.502 297.5C429.502 299.5 432.502 298.5 439.502 306.5C446.502 314.5 445.502 307.5 451.502 304.5C457.502 301.5 462.502 305.5 468.502 297.5C474.502 289.5 480.502 295.5 484.502 285.5C488.502 275.5 490.502 278.5 493.502 282.5C496.502 286.5 499.502 286.5 501.502 279.5C502.402 276.2 504.702 272.1 506.902 268.5C507.802 269.6 510.302 267.5 517.502 267.5C519.602 267.5 520.902 267.3 521.902 267.1C522.202 265 522.602 263.6 523.002 262.4C524.202 259.4 525.902 258.7 528.502 255.5C532.502 250.5 539.502 245.5 543.502 240.5C547.502 235.5 547.502 230.5 547.502 225.5C547.502 223.8 547.502 222.6 547.702 221.5C548.102 219.3 549.202 217.5 552.502 213.5C557.502 207.5 553.502 210.5 556.502 202.5C559.202 195.4 561.802 193.8 568.002 193.5C568.802 193.5 569.602 193.5 570.502 193.5C578.502 193.5 581.502 189.5 587.502 185.5C593.502 181.5 592.502 184.5 598.502 181.5C604.502 178.5 599.502 170.5 600.502 162.5C601.502 154.5 605.502 155.5 616.502 152.5C627.502 149.5 619.502 148.5 628.502 146.5C637.502 144.5 632.502 138.5 641.502 138.5C650.502 138.5 651.502 137.5 652.502 131.5C653.502 125.5 655.502 125.5 662.502 123.5C669.502 121.5 671.502 119.5 669.502 113.5C667.502 107.5 667.502 105.5 673.402 105.3C679.302 105.1 680.502 105.5 683.902 101.5C687.302 97.5 688.502 100.5 696.502 98.5C701.502 97.2 702.202 97.2 703.702 98.3C717.302 90.2 721.802 86.4 711.502 85.5ZM506.602 267.2V267.1C506.502 267.1 506.502 267.1 506.602 267.2ZM506.502 266.7C506.502 266.6 506.502 266.6 506.502 266.5C506.502 266.6 506.502 266.7 506.502 266.7ZM506.502 266.2C506.502 266.1 506.502 266.1 506.502 266C506.502 266.1 506.502 266.2 506.502 266.2ZM506.602 267.7V267.8C506.602 267.8 506.602 267.8 506.602 267.7ZM506.702 268C506.702 268.1 506.702 268.1 506.702 268Z" stroke="white" stroke-width="4")
@@ -223,14 +225,14 @@ html(lang="zh-Hant-TW")
         +title("black", "Recommend", "活力好站")
         div(class="mt-6 lg:mt-[30px]")
           // article - 1 (圖右)
-          div(class="relative flex mt-[58px] lg:mt-[72px] lg:px-6")
+          div(class="relative flex mt-[24px] lg:mt-[72px] lg:px-6")
             div(class="bg-gray-50 w-full md:w-[600px] h-[152px] md:h-[400px] mt-[183px] md:mt-[72px] mx-5 md:mx-0 z-[2]")
               div(class="triangle relative w-[100px] h-[100px] hidden md:block")
                 span(class="absolute text-2xl font-extrabold text-white left-4 top-4") 01
               div(class="p-5 lg:px-[60px]")
-                p(class="text-lg font-medium text-black break-words lg:text-2xl line-clamp line-clamp-2") 01 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷
-                p(class="text-[15px] lg:text-base text-gray-800 mt-2 lg:mt-6 line-clamp line-clamp-2 lg:line-clamp-3 break-words") 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹
-            picture(class="absolute left:0 md:left-auto md:right-6 w-full md:w-[650px] h-[215px] md:h-auto drop-shadow z-1 before:md:block before:hidden before:bg-primary before:bg-opacity-60 before:absolute before:-right-4 before:-bottom-4 before:w-full before:h-full before:z-0")
+                p(class="text-lg font-medium text-black break-words lg:text-2xl line-clamp line-clamp-2 tracking-1") 01 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷
+                p(class="mt-2 text-gray-800 break-words text-15 !leading-[30px] lg:mt-6 line-clamp line-clamp-2 lg:line-clamp-3") 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹
+            picture(class="absolute left:0 md:left-auto md:right-6 w-full md:w-[650px] h-[215px] md:h-auto z-1 before:md:block before:hidden before:bg-primary before:bg-opacity-60 before:absolute before:-right-4 before:-bottom-4 before:w-full before:h-full before:z-0")
               img(class="relative object-cover w-full h-full" src="./images/recommend/recommend1.jpg" alt="")
           // article - 2 (圖左)
           div(class="relative flex flex-row-reverse mt-[58px] lg:mt-[72px] lg:px-6")
@@ -238,8 +240,8 @@ html(lang="zh-Hant-TW")
               div(class="triangle relative w-[100px] h-[100px] hidden md:block")
                 span(class="absolute text-2xl font-extrabold text-white left-4 top-4") 02
               div(class="p-5 lg:px-[60px]")
-                p(class="text-lg font-medium text-black break-words lg:text-2xl line-clamp line-clamp-2") 02 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷
-                p(class="text-[15px] lg:text-base text-gray-800 mt-2 lg:mt-6 line-clamp line-clamp-2 lg:line-clamp-3 break-words") 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹
+                p(class="text-lg font-medium text-black break-words lg:text-2xl line-clamp line-clamp-2 tracking-1") 02 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷
+                p(class="mt-2 text-gray-800 break-words text-15 !leading-[30px] lg:mt-6 line-clamp line-clamp-2 lg:line-clamp-3") 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹
             picture(class="absolute right:0 md:right-auto md:left-6 w-full md:w-[650px] h-[215px] md:h-auto drop-shadow z-1 before:md:block before:hidden before:bg-primary before:bg-opacity-60 before:absolute before:-left-4 before:-bottom-4 before:w-full before:h-full before:z-0")
               img(class="relative object-cover w-full h-full" src="./images/recommend/recommend2.jpg" alt="")
           // article - 3 (圖右)
@@ -248,9 +250,9 @@ html(lang="zh-Hant-TW")
               div(class="triangle relative w-[100px] h-[100px] hidden md:block")
                 span(class="absolute text-2xl font-extrabold text-white left-4 top-4") 03
               div(class="p-5 lg:px-[60px]")
-                p(class="text-lg font-medium text-black break-words lg:text-2xl line-clamp line-clamp-2") 03 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷
-                p(class="text-[15px] lg:text-base text-gray-800 mt-2 lg:mt-6 line-clamp line-clamp-2 lg:line-clamp-3 break-words") 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹
-            picture(class="absolute left:0 md:left-auto md:right-6 w-full md:w-[650px] h-[215px] md:h-auto drop-shadow z-1 before:md:block before:hidden before:bg-primary before:bg-opacity-60 before:absolute before:-right-4 before:-bottom-4 before:w-full before:h-full before:z-0")
+                p(class="text-lg font-medium text-black break-words lg:text-2xl line-clamp line-clamp-2 tracking-1") 03 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷
+                p(class="mt-2 text-gray-800 break-words text-15 !leading-[30px] lg:mt-6 line-clamp line-clamp-2 lg:line-clamp-3") 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹
+            picture(class="absolute left:0 md:left-auto md:right-6 w-full md:w-[650px] h-[215px] md:h-auto z-1 before:md:block before:hidden before:bg-primary before:bg-opacity-60 before:absolute before:-right-4 before:-bottom-4 before:w-full before:h-full before:z-0")
               img(class="relative object-cover w-full h-full" src="./images/recommend/recommend3.jpg" alt="")
 
       // 圖文區塊
@@ -260,8 +262,8 @@ html(lang="zh-Hant-TW")
             each val in [1, 2, 3]
               +card("農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷", "牆面照片裡的小農，臉上掛著靦腆而自信的笑容，李智遠總幹事說：「現在有 65 位農友登錄，用 Line 群組即時溝通，提供銷售訊息。」")              
           div(class="mt-6 text-center lg:mt-8")
-            a(class="flex items-center justify-center mx-auto gap-x-3 w-[170px] py-3 border border-primary-dark rounded-lg group duration-200 hover:bg-primary" href="#")
-              span(class="text-primary-dark text-[15px] font-bold duration-200 group-hover:text-white") More
+            a(class="flex items-center justify-center mx-auto gap-x-3 lg:w-[170px] w-[130px] lg:py-3 py-[6px] border border-primary-dark lg:rounded-lg rounded-md group duration-200 hover:bg-primary" href="#")
+              span(class="font-bold duration-200 text-primary-dark text-15 group-hover:text-white") More
               svg(class="duration-200 fill-current text-primary-dark group-hover:text-white" width="6" height="11" viewbox="0 0 6 11" xmlns="http://www.w3.org/2000/svg")
                 path(fill-rule="evenodd" clip-rule="evenodd" d="M0.146447 0.479943C0.341709 0.284681 0.658291 0.284681 0.853553 0.479943L5.52022 5.14661C5.71548 5.34187 5.71548 5.65845 5.52022 5.85372L0.853553 10.5204C0.658291 10.7156 0.341709 10.7156 0.146447 10.5204C-0.0488155 10.3251 -0.0488155 10.0085 0.146447 9.81328L4.45956 5.50016L0.146447 1.18705C-0.0488155 0.991787 -0.0488155 0.675205 0.146447 0.479943Z")
 
@@ -280,12 +282,12 @@ html(lang="zh-Hant-TW")
               blockquote.fb-xfbml-parse-ignore(cite="https://www.facebook.com/afayayaya/?locale=zh_TW")
                 a(href="https://www.facebook.com/afayayaya/?locale=zh_TW") 鮮享農YA - 農糧署
           div(class="relative flex justify-center mx-auto max-w-[270px] w-full")
-            p(class="absolute left-[-28px] top-0 bg-gray-200 text-xs text-gray-800 rounded-tl rounded-bl px-[6px] py-[6px]" style="writing-mode: vertical-lr;") 隨機
+            p(class="absolute left-[-28px] top-0 bg-gray-200 text-xs text-gray-800 rounded-tl rounded-bl px-[6px] py-[6px] tracking-[4px]" style="writing-mode: vertical-lr;") 隨機
             div(class="w-full max-w-[270px] fb-page")(data-href="https://www.facebook.com/p/%E4%BA%8C%E6%9E%97%E8%BE%B2%E6%B0%91%E7%9B%B4%E9%8A%B7%E7%AB%99-100067769569720/?paipv=0&eav=AfZh0vw1jPhLRdjbaN_1sBQLYinwuawlIelWghbiBy7SM8SKZF7JUm-lsnuvX786_nA&_rdr" data-tabs="timeline" data-height="311" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true")
               blockquote.fb-xfbml-parse-ignore(cite="https://www.facebook.com/p/%E4%BA%8C%E6%9E%97%E8%BE%B2%E6%B0%91%E7%9B%B4%E9%8A%B7%E7%AB%99-100067769569720/?paipv=0&eav=AfZh0vw1jPhLRdjbaN_1sBQLYinwuawlIelWghbiBy7SM8SKZF7JUm-lsnuvX786_nA&_rdr")
                 a(href="https://www.facebook.com/p/%E4%BA%8C%E6%9E%97%E8%BE%B2%E6%B0%91%E7%9B%B4%E9%8A%B7%E7%AB%99-100067769569720/?paipv=0&eav=AfZh0vw1jPhLRdjbaN_1sBQLYinwuawlIelWghbiBy7SM8SKZF7JUm-lsnuvX786_nA&_rdr") 二林農民直銷站
           div(class="relative flex justify-center mx-auto max-w-[270px] w-full")
-            p(class="absolute left-[-28px] top-0 bg-gray-200 text-xs text-gray-800 rounded-tl rounded-bl px-[6px] py-[6px]" style="writing-mode: vertical-lr;") 隨機
+            p(class="absolute left-[-28px] top-0 bg-gray-200 text-xs text-gray-800 rounded-tl rounded-bl px-[6px] py-[6px] tracking-[4px]" style="writing-mode: vertical-lr;") 隨機
             div(class="w-full max-w-[270px] fb-page")(data-href="https://www.facebook.com/longjingshowroom/?locale=zh_TW" data-tabs="timeline" data-height="311" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true")
               blockquote.fb-xfbml-parse-ignore(cite="https://www.facebook.com/longjingshowroom/?locale=zh_TW")
                 a(href="https://www.facebook.com/longjingshowroom/?locale=zh_TW") 龍井區農會-識食好農展售中心

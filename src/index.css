@@ -2,13 +2,13 @@
 
 .article-bg {
   &:before {
-    background-image: url("/images/background/index_article.jpg");
+    background-image: url("../images/background/index_article.jpg");
   }
 }
 
 .recommend-bg {
   &:before {
-    background-image: url("/images/background/index_article.jpg");
+    background-image: url("../images/background/index_article.jpg");
   }
 }
 
@@ -30,16 +30,20 @@
   }
 }
 
+.swiper-main .swiper-slide {
+  @apply before:absolute before:inset-0 before:z-1 before:w-full before:h-full before:bg-black before:bg-opacity-20;
+}
+
 .swiper-main-pagination {
-  @apply flex items-center justify-center !bottom-8;
+  @apply hidden lg:flex items-center justify-center !bottom-8;
 }
 
 .swiper-pagination-bullet {
-  @apply bg-white opacity-50 first:w-[6px] first:h-[6px] last:w-[6px] last:h-[6px] w-[10px] h-[10px];
+  @apply !bg-white !opacity-50 first:!w-[6px] first:!h-[6px] last:!w-[6px] last:!h-[6px] !w-[10px] !h-[10px];
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  @apply bg-white;
+  @apply !opacity-100;
 }
 
 .swiper-button-prev:after,

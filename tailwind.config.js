@@ -79,8 +79,28 @@ module.exports = {
         "gradient-right ": "#C9F974",
         "gradient-black-75": "rgba(0, 0, 0, 0.75)",
       },
+      ringColor: {
+        primary: "#87BE23",
+      },
+      fontSize: {
+        13: [
+          "13px",
+          {
+            lineHeight: "18px",
+          },
+        ],
+        15: [
+          "15px",
+          {
+            lineHeight: "24px",
+          },
+        ],
+      },
       maxWidth: {
         "screen-xl": "1200px",
+      },
+      letterSpacing: {
+        1: "1px",
       },
       dropShadow: {
         DEFAULT: "0px 0px 8px rgba(0, 0, 0, 0.2)",

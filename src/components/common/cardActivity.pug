@@ -1,9 +1,9 @@
 
 mixin cardActivity(data1, data2)
   a(class="inline-block group" href="#")
-    picture(class="block overflow-hidden rounded-lg")
+    picture(class="block overflow-hidden lg:rounded-lg rounded-md")
       img(class="w-full h-[123px] lg:h-[277px] object-cover duration-300 group-hover:scale-105" src="./images/recommend/recommend2.jpg", alt="")
-    p(class="text-lg text-black font-medium mt-3 lg:mt-4 line-clamp line-clamp-2 break-words duration-300 group-hover:text-primary-dark")=data1
+    p(class="text-base lg:text-lg text-black font-medium mt-3 lg:mt-4 line-clamp line-clamp-2 break-words duration-300 group-hover:text-primary-dark")=data1
     div(class="flex justify-between lg:mt-3 mt-2")
-      p(class="text-[15px] text-gray-800 line-clamp line-clamp-1 break-words")=data2
+      p(class="text-15 text-gray-800 line-clamp line-clamp-1 break-words")=data2
       img(class="bg-white hidden lg:block" src="./images/icons/Circle-Right-Full.svg", alt="")

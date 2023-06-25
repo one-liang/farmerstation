@@ -6,63 +6,63 @@ html(lang="zh-Hant-TW")
   +head("about")
   body
     include ./components/common/header.pug
-    main(class="mt-[60px]")
+    main(class="mt-[52px] lg:mt-[72px]")
       // 浮動 banner
       div(class="bg-primary-light border-b border-primary-dark px-5 lg:px-0 py-[10px] lg:py-3 sticky top-[60px] z-20")
         div(class="max-w-screen-xl mx-auto")
-          p(class="text-primary-dark text-[15px] lg:text-base") 關於我們
+          p(class="text-primary-dark text-15 lg:text-base") 關於我們
       // 主圖
-      section(class="bg-white relative")
-        div(class="max-w-screen-xl mx-auto relative overflow-hidden lg:rounded-lg before:absolute before:inset-0 before:w-full before:h-full before:bg-gradient-to-r before:from-black/50 before:via-black/0 before:to-black/50")
+      section(class="relative bg-white")
+        div(class="relative max-w-screen-xl mx-auto overflow-hidden lg:rounded-lg before:absolute before:inset-0 before:w-full before:h-full before:bg-gradient-to-r before:from-black/50 before:via-black/0 before:to-black/50")
           img(class="w-full h-[150px] lg:h-[250px] object-cover" src="./images/about/about-bg.png", alt="")
-          h1(class="absolute top-14 lg:top-16 left-5 lg:left-8 text-2xl lg:text-4xl font-bold text-white") 關於我們
-      section(class="max-w-screen-xl mx-auto mt-6 lg:mt-8 mb-14 lg:mb-20 px-5 lg:px-0")
+          h1(class="absolute text-2xl font-bold text-white top-14 lg:top-16 left-5 lg:left-8 lg:text-4xl") 關於我們
+      section(class="max-w-screen-xl px-5 mx-auto mt-6 lg:mt-8 mb-14 lg:mb-20 lg:px-0")
         // 麵包屑
         +breadcrumbs("首頁", "關於我們")
         div(class="max-w-[800px] mx-auto mt-6 lg:mt-8")
-          h2(class="text-black text-3xl font-bold") 關於本站
-          p(class="text-gray-800 text-base mt-6 lg:mt-8")
+          h2(class="text-3xl font-bold text-black") 關於本站
+          p(class="mt-6 text-base text-gray-800 lg:mt-8")
             | 農糧署為加強農特產品銷售之推動，輔導地方政府及農民團體辦理農民直銷站之設置與經營，以拓展農產品行銷管道。透過直銷站傳達在地食材的魅力、建立與消費者的關係，成為連接在地生產者和消費者的平台，並在民眾的飲食活動中促動地產地消之實踐。
             br
             | 本站「食農知味─臺灣農民直銷站資訊網」為一整合農民直銷站及食農教育士培訓訊息之資訊平台，網站內容包括全國直銷站地圖、站點營運資訊、直銷站及農特產品實景照片、最新活動訊息等。除加強直銷站之形象與服務功能，也讓消費者能更輕鬆接觸在地農產品，激發地產地消需求，穩定在地農產品之供給成長。
-          h2(class="text-black text-3xl font-bold mt-6 lg:mt-8") 識別設計理念
-          img(class="w-full h-auto object-cover mt-6 lg:mt-8" src="./images/about/about1.jpg", alt="")
-          p(class="text-gray-800 text-base mt-6 lg:mt-8") 為傳達「食農知味」的精神，特委請「習翌設計」林峰白總監為「食農知味」打造品牌識別設計。
-          h3(class="text-black text-lg font-medium mt-4 lg:mt-5") 為什麼會叫「食農知味」？
-          p(class="text-gray-800 text-base mt-4 lg:mt-5") 「食、農、知、味」，代表「食物、農業、知識、味道」，這四個重要元素，貫串了食農教育士及農民直銷站的核心價值。
-          h3(class="text-black text-lg font-medium mt-4 lg:mt-5") 食農知味在做什麼？
-          p(class="text-gray-800 text-base mt-4 lg:mt-5") 
+          h2(class="mt-6 text-3xl font-bold text-black lg:mt-8") 識別設計理念
+          img(class="object-cover w-full h-auto mt-6 lg:mt-8" src="./images/about/about1.jpg", alt="")
+          p(class="mt-6 text-base text-gray-800 lg:mt-8") 為傳達「食農知味」的精神，特委請「習翌設計」林峰白總監為「食農知味」打造品牌識別設計。
+          h3(class="mt-4 text-lg font-medium text-black lg:mt-5") 為什麼會叫「食農知味」？
+          p(class="mt-4 text-base text-gray-800 lg:mt-5") 「食、農、知、味」，代表「食物、農業、知識、味道」，這四個重要元素，貫串了食農教育士及農民直銷站的核心價值。
+          h3(class="mt-4 text-lg font-medium text-black lg:mt-5") 食農知味在做什麼？
+          p(class="mt-4 text-base text-gray-800 lg:mt-5") 
             | 我們有三大核心任務：
             br
             | 傳遞價值的故事、 溝通連結的知識、地產地消的集市食農知味的目標，是讓食農教育士成為橋樑，建立生產者與消費者的連結，讓每個來到農民直銷站的人，都感到滿滿的安心、信任。
-          h3(class="text-black text-lg font-medium mt-4 lg:mt-5") LOGO的圖形是什麼含意呢？
-          p(class="text-gray-800 text-base mt-4 lg:mt-5") 兩隻手象徵著生產者與消費者間「GIVE& TAKE（給予和接受）」的雙向關係；微笑的柑橘象徵優良臺灣農產品及食農教育士的親切服務。
-          h3(class="text-black text-lg font-medium mt-4 lg:mt-5") 設計時有什麼特別的參考或靈感來源嗎？
-          p(class="text-gray-800 text-base mt-4 lg:mt-5")
+          h3(class="mt-4 text-lg font-medium text-black lg:mt-5") LOGO的圖形是什麼含意呢？
+          p(class="mt-4 text-base text-gray-800 lg:mt-5") 兩隻手象徵著生產者與消費者間「GIVE& TAKE（給予和接受）」的雙向關係；微笑的柑橘象徵優良臺灣農產品及食農教育士的親切服務。
+          h3(class="mt-4 text-lg font-medium text-black lg:mt-5") 設計時有什麼特別的參考或靈感來源嗎？
+          p(class="mt-4 text-base text-gray-800 lg:mt-5")
             | 最直接的靈感，其實來自總監的兒時回憶。
             br
             | 小時候陪著母親去市場買菜，攤販們臉上滿溢的笑容，深刻留在總監心中，這是超市無法取代的人情味，也是農民直銷站及食農教育士希望呈現的形象。
-          img(class="w-full h-auto object-cover mt-6 lg:mt-8" src="./images/about/about2.jpg", alt="")
-          p(class="text-gray-800 text-base mt-4 lg:mt-5") 
+          img(class="object-cover w-full h-auto mt-6 lg:mt-8" src="./images/about/about2.jpg", alt="")
+          p(class="mt-4 text-base text-gray-800 lg:mt-5") 
             | ｜食農知味圖形｜
             br 
             | 線條從兩隻「手」的指頭，延伸出線條元素。
-          img(class="w-full h-auto object-cover mt-6 lg:mt-8" src="./images/about/about3.jpg", alt="")
-          p(class="text-gray-800 text-base mt-4 lg:mt-5") 
+          img(class="object-cover w-full h-auto mt-6 lg:mt-8" src="./images/about/about3.jpg", alt="")
+          p(class="mt-4 text-base text-gray-800 lg:mt-5") 
             | ｜食農知味圖形｜
             br 
             | 幾何圖形圓潤的方形、菱形與圓形，代表臺灣多元豐富的水果蔬菜。
-          img(class="w-full h-auto object-cover mt-6 lg:mt-8" src="./images/about/about4.jpg", alt="")
-          p(class="text-gray-800 text-base mt-4 lg:mt-5") 
+          img(class="object-cover w-full h-auto mt-6 lg:mt-8" src="./images/about/about4.jpg", alt="")
+          p(class="mt-4 text-base text-gray-800 lg:mt-5") 
             | ｜食農知味圖形｜
             br 
             | 圖形組合線條與幾何圖形的三層組合，也連結著食農知味的三大核心任務。
-          h2(class="text-black text-3xl font-bold mt-6 lg:mt-8") 全國農民直銷站
-          p(class="text-gray-800 text-base mt-4 lg:mt-5") 
+          h2(class="mt-6 text-3xl font-bold text-black lg:mt-8") 全國農民直銷站
+          p(class="mt-4 text-base text-gray-800 lg:mt-5") 
             |農民直銷站之目的在於落實地產地消精神，減少流通成本，縮短食物里程，提供在地小農進駐銷售自產農產品管道。由農民以當日或當季自產之生鮮農產品或初級加工品，自行訂價並擔負產品安全責任，以提供消費者新鮮、安全、友善、高品質及具地方特色之農產品，並透過面對面互動，將安心直接傳送給消費者，亦讓農民親身感受農產品市場的銷售資訊。截至2021年10月為止，農糧署共輔導全臺成立42間農民直銷站，歡迎點入
-            a(class="text-primary-dark underline hover:no-underline" href="#") 「全國農民直銷站」
+            a(class="underline text-primary-dark hover:no-underline" href="#") 「全國農民直銷站」
             | 頁面一探究竟！
-          h2(class="text-black text-3xl font-bold mt-6 lg:mt-8") 食農教育士
-          p(class="text-gray-800 text-base mt-4 lg:mt-5") 食農教育士是推廣在地農產的一群人，於各地農會的農民直銷站服務。食農教育士經過專業培訓，總是站在第一線為大眾講述農產的故事，也回饋消費者對農產的想法給生產者知曉，擔任消費者與生產者之間的橋樑。食農教育士將擔任說菜人，帶你一起認識地方物產的故事。
+          h2(class="mt-6 text-3xl font-bold text-black lg:mt-8") 食農教育士
+          p(class="mt-4 text-base text-gray-800 lg:mt-5") 食農教育士是推廣在地農產的一群人，於各地農會的農民直銷站服務。食農教育士經過專業培訓，總是站在第一線為大眾講述農產的故事，也回饋消費者對農產的想法給生產者知曉，擔任消費者與生產者之間的橋樑。食農教育士將擔任說菜人，帶你一起認識地方物產的故事。
     include ./components/common/footer.pug
     include ./components/common/gotop.pug

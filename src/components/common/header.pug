@@ -1,8 +1,8 @@
 header(class="fixed top-0 z-40 w-full bg-white")
-  div(class=" mx-auto max-w-screen-2xl xl:px-[68px] lg:px-12 px-5 lg:py-0 py-3 flex items-center justify-between")
-    a(class="w-48 !top-16 z-40" href="#")
+  div(class="h-[52px] lg:h-[72px] mx-auto max-w-screen-2xl xl:px-[68px] lg:px-12 px-5 lg:py-0 py-3 flex items-center justify-between")
+    a(class="w-[135px] lg:w-48 !top-16 z-40" href="#")
       img(src="./images/Farmer.svg" alt="")
-    div(class="static z-30 lg:!hidden !block before:block before:bg-white before:w-full before:h-16 before:absolute before:top-0 before:left-0")
+    div(class="static z-30 lg:!hidden !block before:block before:bg-white before:w-full before:h-[52px] before:absolute before:top-0 before:left-0")
     nav(class="flex items-center gap-x-10")
       ul(id="menu" class="fixed transform -translate-y-full transition-transform duration-200 ease-in-out left-0 w-full h-screen overflow-auto lg:translate-y-0 lg:static lg:overflow-visible lg:divide-y-0 divide-y divide-black divide-opacity-10 z-20 items-center leading-9 bg-white px-[40px] pt-5 lg:pt-0 lg:px-0 lg:h-auto lg:flex gap-x-12 lg:w-auto lg:left-auto top-0")
         li
@@ -14,13 +14,13 @@ header(class="fixed top-0 z-40 w-full bg-white")
               path(class="add" d="M10.0003 1.66669C5.40866 1.66669 1.66699 5.40835 1.66699 10C1.66699 14.5917 5.40866 18.3334 10.0003 18.3334C14.592 18.3334 18.3337 14.5917 18.3337 10C18.3337 5.40835 14.592 1.66669 10.0003 1.66669ZM13.3337 10.625H10.6253V13.3334C10.6253 13.675 10.342 13.9584 10.0003 13.9584C9.65866 13.9584 9.37533 13.675 9.37533 13.3334V10.625H6.66699C6.32533 10.625 6.04199 10.3417 6.04199 10C6.04199 9.65835 6.32533 9.37502 6.66699 9.37502H9.37533V6.66669C9.37533 6.32502 9.65866 6.04169 10.0003 6.04169C10.342 6.04169 10.6253 6.32502 10.6253 6.66669V9.37502H13.3337C13.6753 9.37502 13.9587 9.65835 13.9587 10C13.9587 10.3417 13.6753 10.625 13.3337 10.625Z" fill="#87BE23")
               path(class="hidden minus" d="M10.0003 1.66669C5.40866 1.66669 1.66699 5.40835 1.66699 10C1.66699 14.5917 5.40866 18.3334 10.0003 18.3334C14.592 18.3334 18.3337 14.5917 18.3337 10C18.3337 5.40835 14.592 1.66669 10.0003 1.66669ZM13.267 10.625H6.60033C6.25866 10.625 5.97533 10.3417 5.97533 10C5.97533 9.65835 6.25866 9.37502 6.60033 9.37502H13.267C13.6087 9.37502 13.892 9.65835 13.892 10C13.892 10.3417 13.617 10.625 13.267 10.625Z" fill="#87BE23")
           // 展開內容
-          div(class="dropdown-content hidden lg:absolute static top-full flex-col bg-white lg:drop-shadow lg:px-3 lg:py-4 z-10 peer-hover:lg:flex hover:flex lg:w-[200px] w-full")
+          div(class="dropdown-content hidden lg:absolute static top-full flex-col bg-white lg:drop-shadow lg:px-3 lg:py-4 z-10 peer-hover:lg:flex hover:flex lg:w-[200px] w-full rounded-bl-lg rounded-br-lg")
             a(class="lg:p-3 py-2 pl-[6px] lg:inline-block flex items-center justify-between duration-200 rounded-lg lg:hover:text-primary-dark lg:hover:bg-primary-light" href="#")
               span(class="flex items-center gap-x-2 lg:before:hidden before:block before:bg-black before:w-[6px] before:h-[6px] before:rounded-full") 當令食材
-              img(class="block lg:hidden" src="/images/icons/Circle-Right.svg" alt="")
+              img(class="block lg:hidden" src="./images/icons/Circle-Right.svg" alt="")
             a(class="lg:p-3 py-2 pl-[6px] lg:inline-block flex items-center justify-between duration-200 rounded-lg lg:hover:text-primary-dark lg:hover:bg-primary-light" href="#")
               span(class="flex items-center gap-x-2 lg:before:hidden before:block before:bg-black before:w-[6px] before:h-[6px] before:rounded-full") 達人推薦
-              img(class="block lg:hidden" src="/images/icons/Circle-Right.svg" alt="")
+              img(class="block lg:hidden" src="./images/icons/Circle-Right.svg" alt="")
         li
           button(class="dropdownBtn font-medium lg:font-normal duration-200 peer whitespace-nowrap text-lg text-left w-full flex items-center justify-between lg:w-auto lg:block lg:text-base lg:py-[18px] py-3 lg:hover:text-primary-dark" type="button")
             span 農民直送
@@ -28,13 +28,13 @@ header(class="fixed top-0 z-40 w-full bg-white")
               path(class="add" d="M10.0003 1.66669C5.40866 1.66669 1.66699 5.40835 1.66699 10C1.66699 14.5917 5.40866 18.3334 10.0003 18.3334C14.592 18.3334 18.3337 14.5917 18.3337 10C18.3337 5.40835 14.592 1.66669 10.0003 1.66669ZM13.3337 10.625H10.6253V13.3334C10.6253 13.675 10.342 13.9584 10.0003 13.9584C9.65866 13.9584 9.37533 13.675 9.37533 13.3334V10.625H6.66699C6.32533 10.625 6.04199 10.3417 6.04199 10C6.04199 9.65835 6.32533 9.37502 6.66699 9.37502H9.37533V6.66669C9.37533 6.32502 9.65866 6.04169 10.0003 6.04169C10.342 6.04169 10.6253 6.32502 10.6253 6.66669V9.37502H13.3337C13.6753 9.37502 13.9587 9.65835 13.9587 10C13.9587 10.3417 13.6753 10.625 13.3337 10.625Z" fill="#87BE23")
               path(class="hidden minus" d="M10.0003 1.66669C5.40866 1.66669 1.66699 5.40835 1.66699 10C1.66699 14.5917 5.40866 18.3334 10.0003 18.3334C14.592 18.3334 18.3337 14.5917 18.3337 10C18.3337 5.40835 14.592 1.66669 10.0003 1.66669ZM13.267 10.625H6.60033C6.25866 10.625 5.97533 10.3417 5.97533 10C5.97533 9.65835 6.25866 9.37502 6.60033 9.37502H13.267C13.6087 9.37502 13.892 9.65835 13.892 10C13.892 10.3417 13.617 10.625 13.267 10.625Z" fill="#87BE23")          
           // 展開內容
-          div(class="dropdown-content hidden lg:absolute static top-full flex-col bg-white lg:drop-shadow lg:px-3 lg:py-4 z-10 peer-hover:lg:flex hover:flex lg:w-[200px] w-full")
+          div(class="dropdown-content hidden lg:absolute static top-full flex-col bg-white lg:drop-shadow lg:px-3 lg:py-4 z-10 peer-hover:lg:flex hover:flex lg:w-[200px] w-full rounded-bl-lg rounded-br-lg")
             a(class="lg:p-3 py-2 pl-[6px] lg:inline-block flex items-center justify-between duration-200 rounded-lg lg:hover:text-primary-dark lg:hover:bg-primary-light" href="#")
               span(class="flex items-center gap-x-2 lg:before:hidden before:block before:bg-black before:w-[6px] before:h-[6px] before:rounded-full") 當令食材
-              img(class="block lg:hidden" src="/images/icons/Circle-Right.svg" alt="")
+              img(class="block lg:hidden" src="./images/icons/Circle-Right.svg" alt="")
             a(class="lg:p-3 py-2 pl-[6px] lg:inline-block flex items-center justify-between duration-200 rounded-lg lg:hover:text-primary-dark lg:hover:bg-primary-light" href="#")
               span(class="flex items-center gap-x-2 lg:before:hidden before:block before:bg-black before:w-[6px] before:h-[6px] before:rounded-full") 達人推薦
-              img(class="block lg:hidden" src="/images/icons/Circle-Right.svg" alt="")
+              img(class="block lg:hidden" src="./images/icons/Circle-Right.svg" alt="")
         li
           button(class="dropdownBtn font-medium lg:font-normal duration-200 peer whitespace-nowrap text-lg text-left w-full flex items-center justify-between lg:w-auto lg:block lg:text-base lg:py-[18px] py-3 lg:hover:text-primary-dark" type="button")
             span 食農教育
@@ -42,44 +42,44 @@ header(class="fixed top-0 z-40 w-full bg-white")
               path(class="add" d="M10.0003 1.66669C5.40866 1.66669 1.66699 5.40835 1.66699 10C1.66699 14.5917 5.40866 18.3334 10.0003 18.3334C14.592 18.3334 18.3337 14.5917 18.3337 10C18.3337 5.40835 14.592 1.66669 10.0003 1.66669ZM13.3337 10.625H10.6253V13.3334C10.6253 13.675 10.342 13.9584 10.0003 13.9584C9.65866 13.9584 9.37533 13.675 9.37533 13.3334V10.625H6.66699C6.32533 10.625 6.04199 10.3417 6.04199 10C6.04199 9.65835 6.32533 9.37502 6.66699 9.37502H9.37533V6.66669C9.37533 6.32502 9.65866 6.04169 10.0003 6.04169C10.342 6.04169 10.6253 6.32502 10.6253 6.66669V9.37502H13.3337C13.6753 9.37502 13.9587 9.65835 13.9587 10C13.9587 10.3417 13.6753 10.625 13.3337 10.625Z" fill="#87BE23")
               path(class="hidden minus" d="M10.0003 1.66669C5.40866 1.66669 1.66699 5.40835 1.66699 10C1.66699 14.5917 5.40866 18.3334 10.0003 18.3334C14.592 18.3334 18.3337 14.5917 18.3337 10C18.3337 5.40835 14.592 1.66669 10.0003 1.66669ZM13.267 10.625H6.60033C6.25866 10.625 5.97533 10.3417 5.97533 10C5.97533 9.65835 6.25866 9.37502 6.60033 9.37502H13.267C13.6087 9.37502 13.892 9.65835 13.892 10C13.892 10.3417 13.617 10.625 13.267 10.625Z" fill="#87BE23")          
           // 展開內容
-          div(class="dropdown-content hidden lg:absolute static top-full flex-col bg-white lg:drop-shadow lg:px-3 lg:py-4 z-10 peer-hover:lg:flex hover:flex lg:w-[200px] w-full")
+          div(class="dropdown-content hidden lg:absolute static top-full flex-col bg-white lg:drop-shadow lg:px-3 lg:py-4 z-10 peer-hover:lg:flex hover:flex lg:w-[200px] w-full rounded-bl-lg rounded-br-lg")
             a(class="lg:p-3 py-2 pl-[6px] lg:inline-block flex items-center justify-between duration-200 rounded-lg lg:hover:text-primary-dark lg:hover:bg-primary-light" href="#")
               span(class="flex items-center gap-x-2 lg:before:hidden before:block before:bg-black before:w-[6px] before:h-[6px] before:rounded-full") 當令食材
-              img(class="block lg:hidden" src="/images/icons/Circle-Right.svg" alt="")
+              img(class="block lg:hidden" src="./images/icons/Circle-Right.svg" alt="")
             a(class="lg:p-3 py-2 pl-[6px] lg:inline-block flex items-center justify-between duration-200 rounded-lg lg:hover:text-primary-dark lg:hover:bg-primary-light" href="#")
               span(class="flex items-center gap-x-2 lg:before:hidden before:block before:bg-black before:w-[6px] before:h-[6px] before:rounded-full") 達人推薦
-              img(class="block lg:hidden" src="/images/icons/Circle-Right.svg" alt="")
+              img(class="block lg:hidden" src="./images/icons/Circle-Right.svg" alt="")
         li(class="mt-3 !border-0 lg:mt-0")
-          a(class="font-medium lg:font-normal block w-full px-3 py-[10px] lg:py-2 text-sm text-center text-white duration-200 border rounded-lg whitespace-nowrap bg-primary border-primary-dark lg:text-left lg:w-auto lg:inline-block lg:hover:bg-primary-dark" href="#") 登入專區
+          a(class="font-medium lg:font-normal block w-full px-3 py-[10px] lg:py-2 text-15 text-center text-white duration-200 border rounded-lg whitespace-nowrap bg-primary border-primary lg:text-left lg:w-auto lg:inline-block lg:hover:bg-primary-dark" href="#") 登入專區
         li(class="mt-10 !border-0 flex gap-x-6 lg:mt-0 lg:hidden")
           // facebook
-          a(class="box-border flex items-center justify-center w-10 h-10 duration-200 bg-gray-400 rounded-full" href="#")
+          a(class="box-border flex items-center justify-center w-10 h-10 duration-200 bg-gray-400 rounded-full" href="https://www.facebook.com/farmerstation.tw/?ref=embed_page")
             svg(class="w-[18px] h-[18px] text-white fill-current" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg")
               path(d="M18.75 10.0025C18.75 5.16953 14.833 1.25253 10 1.25253C5.16699 1.25253 1.25 5.16953 1.25 10.0025C1.25 14.3707 4.44922 17.9903 8.63281 18.6466V12.5318H6.41113V10.0025H8.63281V8.0748C8.63281 5.88217 9.93848 4.6705 11.938 4.6705C12.895 4.6705 13.8965 4.8414 13.8965 4.8414V6.99472H12.7925C11.7056 6.99472 11.3672 7.66977 11.3672 8.36191V10.0025H13.7939L13.406 12.5318H11.3672V18.6466C15.5508 17.9903 18.75 14.3707 18.75 10.0025Z")
           // youtube
-          a(class="box-border flex items-center justify-center w-10 h-10 duration-200 bg-gray-400 rounded-full" href="#")
+          a(class="box-border flex items-center justify-center w-10 h-10 duration-200 bg-gray-400 rounded-full" href="https://www.youtube.com/@user-be6qc3hi1h")
             svg(class="w-[18px] h-[18px] text-white fill-current" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg")
               path(d="M14.167 3.33334H5.83366C3.33366 3.33334 1.66699 5.00001 1.66699 7.50001V12.5C1.66699 15 3.33366 16.6667 5.83366 16.6667H14.167C16.667 16.6667 18.3337 15 18.3337 12.5V7.50001C18.3337 5.00001 16.667 3.33334 14.167 3.33334ZM11.5753 10.8583L9.51698 12.0917C8.68364 12.5917 8.00031 12.2084 8.00031 11.2334V8.75835C8.00031 7.78335 8.68364 7.40002 9.51698 7.90002L11.5753 9.13334C12.367 9.61667 12.367 10.3833 11.5753 10.8583Z")            
       ul(class="z-40 flex lg:gap-x-6 gap-x-4")
         // search
         li
-          a(id="searchBtn" class="box-border flex items-center justify-center w-10 h-10 duration-200 border border-gray-400 rounded-full lg:w-9 lg:h-9 lg:bg-gray-400 lg:hover:bg-primary-dark" href="javascript:;")
-            svg(class="w-4 h-4 text-gray-400 fill-current lg:text-white" viewbox="0 0 18 18" xmlns="http://www.w3.org/2000/svg")
+          a(id="searchBtn" class="box-border flex items-center justify-center w-10 h-10 duration-200 border border-gray-100 rounded-full lg:w-9 lg:h-9 lg:bg-gray-400 lg:hover:bg-primary-dark" href="javascript:;")
+            svg(class="w-5 h-5 text-gray-400 fill-current lg:text-white" viewbox="0 0 18 18" xmlns="http://www.w3.org/2000/svg")
               path(fill-rule="evenodd" clip-rule="evenodd" d="M7.83335 0.25C3.64518 0.25 0.25 3.64517 0.25 7.83332C0.25 12.0215 3.64518 15.4166 7.83335 15.4166C12.0215 15.4166 15.4167 12.0215 15.4167 7.83332C15.4167 3.64517 12.0215 0.25 7.83335 0.25ZM1.41667 7.83332C1.41667 4.2895 4.28951 1.41666 7.83335 1.41666C11.3772 1.41666 14.25 4.2895 14.25 7.83332C14.25 11.3771 11.3772 14.25 7.83335 14.25C4.28951 14.25 1.41667 11.3771 1.41667 7.83332Z")
               path(d="M14.4681 13.6431C14.2403 13.4153 13.871 13.4153 13.6432 13.6431C13.4153 13.8709 13.4153 14.2403 13.6431 14.4681L16.7542 17.5791C16.982 17.8069 17.3513 17.807 17.5791 17.5791C17.8069 17.3513 17.807 16.982 17.5791 16.7542L14.4681 13.6431Z")
         // facebook
         li(class="hidden lg:block")
-          a(class="box-border flex items-center justify-center w-10 h-10 duration-200 border border-gray-400 rounded-full lg:w-9 lg:h-9 lg:bg-gray-400 lg:hover:bg-primary-dark" href="#")
-            svg(class="w-4 h-4 text-gray-400 fill-current lg:text-white" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg")
+          a(class="box-border flex items-center justify-center w-10 h-10 duration-200 border border-gray-100 rounded-full lg:w-9 lg:h-9 lg:bg-gray-400 lg:hover:bg-primary-dark" href="https://www.facebook.com/farmerstation.tw/?ref=embed_page")
+            svg(class="w-5 h-5 text-gray-400 fill-current lg:text-white" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg")
               path(d="M18.75 10.0025C18.75 5.16953 14.833 1.25253 10 1.25253C5.16699 1.25253 1.25 5.16953 1.25 10.0025C1.25 14.3707 4.44922 17.9903 8.63281 18.6466V12.5318H6.41113V10.0025H8.63281V8.0748C8.63281 5.88217 9.93848 4.6705 11.938 4.6705C12.895 4.6705 13.8965 4.8414 13.8965 4.8414V6.99472H12.7925C11.7056 6.99472 11.3672 7.66977 11.3672 8.36191V10.0025H13.7939L13.406 12.5318H11.3672V18.6466C15.5508 17.9903 18.75 14.3707 18.75 10.0025Z")
         // youtube
         li(class="hidden lg:block")
-          a(class="box-border flex items-center justify-center w-10 h-10 duration-200 border border-gray-400 rounded-full lg:w-9 lg:h-9 lg:bg-gray-400 lg:hover:bg-primary-dark" href="#")
-            svg(class="w-4 h-4 text-gray-400 fill-current lg:text-white" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg")
+          a(class="box-border flex items-center justify-center w-10 h-10 duration-200 border border-gray-100 rounded-full lg:w-9 lg:h-9 lg:bg-gray-400 lg:hover:bg-primary-dark" href="https://www.youtube.com/@user-be6qc3hi1h")
+            svg(class="w-5 h-5 text-gray-400 fill-current lg:text-white" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg")
               path(d="M14.167 3.33334H5.83366C3.33366 3.33334 1.66699 5.00001 1.66699 7.50001V12.5C1.66699 15 3.33366 16.6667 5.83366 16.6667H14.167C16.667 16.6667 18.3337 15 18.3337 12.5V7.50001C18.3337 5.00001 16.667 3.33334 14.167 3.33334ZM11.5753 10.8583L9.51698 12.0917C8.68364 12.5917 8.00031 12.2084 8.00031 11.2334V8.75835C8.00031 7.78335 8.68364 7.40002 9.51698 7.90002L11.5753 9.13334C12.367 9.61667 12.367 10.3833 11.5753 10.8583Z")
         // menu
         li(class="block lg:hidden")
-          button(id="menuButton" class="box-border flex items-center justify-center w-10 h-10 duration-200 border border-gray-400 rounded-full lg:w-9 lg:h-9 lg:bg-gray-400 lg:hover:bg-primary-dark" type="button")
+          button(id="menuButton" class="box-border flex items-center justify-center w-10 h-10 duration-200 border border-gray-100 rounded-full lg:w-9 lg:h-9 lg:bg-gray-400 lg:hover:bg-primary-dark" type="button")
             svg(class="w-[26px] h-4 fill-current" viewbox="0 0 26 6" fill="none" xmlns="http://www.w3.org/2000/svg")
               circle(id="menuCircle1" cx="3" cy="3" r="3" fill="#87BE23")
               circle(id="menuCircle2" cx="13" cy="3" r="3" fill="#FAB900")
@@ -87,7 +87,7 @@ header(class="fixed top-0 z-40 w-full bg-white")
               rect(id="menuLine" class="opacity-0" width="26" height="6" rx="3" fill="#87BE23")
 
 // 背景色
-div(id="header-bg" class="inset-0 w-full h-full bg-black opacity-50 cursor-default z-10")
+div(id="header-bg" class="inset-0 z-10 w-full h-full bg-black opacity-50 cursor-default")
 
 //- search popup
 dialog(id="modal" class="modal")
@@ -97,7 +97,7 @@ dialog(id="modal" class="modal")
       img(class="" src="./images/icons/Cross.svg", alt="")
     div(class="flex items-center gap-x-2")
       img(class="w-[17.5px] h-[17.5px]" src="./images/icons/Search.svg", alt="")
-      p(class="text-lg text-black font-medium") 站內搜索
-    div(class="flex gap-x-3 mt-2")
-      input(class="w-full flex-grow px-4 py-3 bg-gray-100 border border-gray-200 rounded-lg text-[15px] placeholder-gray-500" type="text" placeholder="請輸入關鍵字")
-      button(class="button-default button-active flex-shrink-0" type="submit") 搜尋
+      p(class="text-lg font-medium text-black") 站內搜索
+    div(class="flex flex-col mt-2 lg:flex-row gap-x-3 lg:gap-y-0 gap-y-4")
+      input(class="flex-grow w-full px-4 py-3 placeholder-gray-500 bg-gray-100 border border-gray-200 rounded-lg text-15 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" type="text" placeholder="請輸入關鍵字")
+      button(class="flex-shrink-0 button-default button-active text-15" type="submit") 搜尋

@@ -8,7 +8,7 @@ html(lang="zh-Hant-TW")
   +head("farmers")
   body
     include ./components/common/header.pug
-    main(class="mt-[60px]")
+    main(class="mt-[52px] lg:mt-[72px]")
       // 主圖 
       section(class="relative bg-white")
         div(class="relative max-w-screen-xl mx-auto overflow-hidden xl:rounded-lg before:absolute before:inset-0 before:w-full before:h-full before:bg-gradient-to-r before:from-black/50 before:via-black/0 before:to-black/50")
@@ -68,8 +68,8 @@ html(lang="zh-Hant-TW")
                     img(class="w-6 h-6" src="./images/icons/Location.svg" alt="")
                     p(class="text-xl font-bold lg:text-2xl text-secondary-dark") 花蓮
                   div(class="flex items-center pl-3 ml-3 border-l border-secondary-dark")
-                    p(class="text-[15px] lg:text-base font-bold text-secondary-dark") 8
-                    p(class="text-[15px] lg:text-base text-secondary-dark") 處據點
+                    p(class="font-bold text-15 lg:text-base text-secondary-dark") 8
+                    p(class="text-15 lg:text-base text-secondary-dark") 處據點
                 div(class="flex items-center mt-4 gap-x-1 lg:mt-5")
                   span(class="flex-shrink-0 bg-gray-200 text-gray-800 text-xs px-[6px] py-[3px] rounded") 隨機
                   p(class="text-base font-medium text-black break-words duration-200 group-hover:text-primary-dark lg:text-lg line-clamp line-clamp-1") 花蓮縣玉溪地區農會農民直銷站
@@ -92,8 +92,8 @@ html(lang="zh-Hant-TW")
           each val in [1, 2, 3, 4, 5, 6]
             +card("農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷", "牆面照片裡的小農，臉上掛著靦腆而自信的笑容，李智遠總幹事說：「現在有 65 位農友登錄，用 Line 群組即時溝通，提供銷售訊息。」")
         div(class="mt-6 text-center lg:mt-5")
-          a(class="flex items-center justify-center mx-auto gap-x-3 w-[170px] py-3 border border-primary-dark rounded-lg group duration-200 hover:bg-primary" href="#")
-            span(class="text-primary-dark text-[15px] font-bold duration-200 group-hover:text-white") More
+          a(class="flex items-center justify-center mx-auto gap-x-3 lg:w-[170px] w-[130px] lg:py-3 py-[6px] border border-primary-dark lg:rounded-lg rounded-md group duration-200 hover:bg-primary" href="#")
+            span(class="font-bold duration-200 text-primary-dark text-15 group-hover:text-white") More
             svg(class="duration-200 fill-current text-primary-dark group-hover:text-white" width="6" height="11" viewbox="0 0 6 11" xmlns="http://www.w3.org/2000/svg")
               path(fill-rule="evenodd" clip-rule="evenodd" d="M0.146447 0.479943C0.341709 0.284681 0.658291 0.284681 0.853553 0.479943L5.52022 5.14661C5.71548 5.34187 5.71548 5.65845 5.52022 5.85372L0.853553 10.5204C0.658291 10.7156 0.341709 10.7156 0.146447 10.5204C-0.0488155 10.3251 -0.0488155 10.0085 0.146447 9.81328L4.45956 5.50016L0.146447 1.18705C-0.0488155 0.991787 -0.0488155 0.675205 0.146447 0.479943Z")
 

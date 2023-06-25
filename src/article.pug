@@ -12,39 +12,39 @@ html(lang="zh-Hant-TW")
     script(src="./src/swiper-bundle.min.js") 
   body
     include ./components/common/header.pug
-    main(class="mt-[60px]")
+    main(class="mt-[52px] lg:mt-[72px]")
       // 主圖
-      section(class="bg-white relative")
-        div(class="max-w-screen-xl mx-auto relative overflow-hidden xl:rounded-lg before:absolute before:inset-0 before:w-full before:h-full before:bg-gradient-to-r before:from-black/50 before:via-black/0 before:to-black/50")
+      section(class="relative bg-white")
+        div(class="relative max-w-screen-xl mx-auto overflow-hidden xl:rounded-lg before:absolute before:inset-0 before:w-full before:h-full before:bg-gradient-to-r before:from-black/50 before:via-black/0 before:to-black/50")
           img(class="w-full h-[150px] xl:h-[250px] object-cover" src="./images/article/article-bg.png", alt="")
-          h1(class="absolute top-14 xl:top-16 left-5 xl:left-8 text-2xl xl:text-4xl font-bold text-white") 課程活動(文章底層頁)
-      section(class="max-w-screen-xl mx-auto mt-6 xl:mt-8 mb-14 xl:mb-20 px-5 xl:px-0")
+          h1(class="absolute text-2xl font-bold text-white top-14 xl:top-16 left-5 xl:left-8 xl:text-4xl") 課程活動(文章底層頁)
+      section(class="max-w-screen-xl px-5 mx-auto mt-6 xl:mt-8 mb-14 xl:mb-20 xl:px-0")
         // 麵包屑
         +breadcrumbs("首頁", "課程活動")
 
-        div(class="flex flex-col lg:flex-row gap-x-16 mt-6 xl:mt-8 min-h-screen")
+        div(class="flex flex-col min-h-screen mt-6 lg:flex-row gap-x-16 xl:mt-8")
           div(class="w-full lg:w-[800px]")
             h2(class="text-3xl font-bold text-black") 疫情下的在地．安心真價值—臺日直銷站論壇暨食農教育士授證典禮 ，將於12月22日(三)於農糧署北辦舉辦
             div(class="flex lg:items-center lg:justify-between flex-col lg:flex-row mt-5 lg:mt-[26px] gap-y-4 lg:gap-y-0")
               div(class="flex lg:items-center flex-col lg:flex-row lg:gap-x-10 gap-y-[10px] lg:gap-y-0")
-                p(class="text-gray-500 text-sm") 圖 | 財團法人中國生產力中心
-                p(class="text-gray-500 text-sm") 文 | 財團法人中國生產力中心
-              div(class="flex items-center gap-x-5 lg:justify-start justify-between")
-                p(class="text-gray-500 text-sm") 2022-07-12
-                div(class="group relative w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center cursor-pointer" tabindex="-1")
+                p(class="text-sm text-gray-500") 圖 | 財團法人中國生產力中心
+                p(class="text-sm text-gray-500") 文 | 財團法人中國生產力中心
+              div(class="flex items-center justify-between gap-x-5 lg:justify-start")
+                p(class="text-sm text-gray-500") 2022-07-12
+                div(class="relative flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full cursor-pointer group" tabindex="-1")
                   img(class="" src="./images/icons/Share.svg", alt="")
-                  div(class="absolute top-12 right-0 lg:right-auto z-1 invisible origin-top-right lg:origin-top-center -translate-y-2 scale-95 transform opacity-0 transition-all duration-300 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:scale-100 group-focus-within:opacity-100")
+                  div(class="absolute right-0 invisible transition-all duration-300 origin-top-right transform scale-95 -translate-y-2 opacity-0 top-12 lg:right-auto z-1 lg:origin-top-center group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:scale-100 group-focus-within:opacity-100")
                     ul(class="triangle-share before:right-0 before:lg:right-auto before:lg:left-1/2 before:left-auto bg-white rounded-lg w-[169px] grid grid-cols-1 divide-y divide-gray-100 px-3 py-2 shadow")
                       li
-                        a(class="flex items-center gap-x-2 p-3" href="#") 
+                        a(class="flex items-center p-3 gap-x-2" href="https://www.facebook.com/farmerstation.tw/?ref=embed_page") 
                           img(src="./images/icons/Facebook.svg", alt="")
                           span(class="text-sm text-gray-600") Facebook
                       li
-                        a(class="flex items-center gap-x-2 p-3" href="#") 
+                        a(class="flex items-center p-3 gap-x-2" href="#") 
                           img(src="./images/icons/Line.svg", alt="")
                           span(class="text-sm text-gray-600") Line
                       li
-                        a(class="flex items-center gap-x-2 p-3" href="#") 
+                        a(class="flex items-center p-3 gap-x-2" href="#") 
                           img(src="./images/icons/Twitter.svg", alt="")
                           span(class="text-sm text-gray-600") Twitter
             div(class="article")
@@ -66,7 +66,7 @@ html(lang="zh-Hant-TW")
                 iframe(width="560" height="315" src="https://www.youtube.com/embed/v0sNznWAQ7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="")
 
             // tag group
-            div(class="flex flex-wrap gap-x-3 gap-y-4 lg:gap-y-0 mt-8")
+            div(class="flex flex-wrap mt-8 gap-x-3 gap-y-4 lg:gap-y-0")
               // tag active 樣式 tag-button-active
               a(class="tag-button-default" href="#") #食農教育士
               a(class="tag-button-default" href="#") #竹北市
@@ -76,73 +76,73 @@ html(lang="zh-Hant-TW")
 
           div(class="sticky top-16 w-full lg:w-[336px] mt-8 lg:mt-0 flex flex-col gap-y-8" style="height:max-content;")
             // 相關文章
-            div(class="bg-gray-100 px-5 lg:px-8 py-5 lg:py-4 rounded-lg")
-              p(class="text-black font-medium") 相關文章
-              ul(class="mt-1 flex flex-col gap-y-3 divide-y divide-black divide-opacity-10")
+            div(class="px-5 py-5 bg-gray-100 rounded-lg lg:px-8 lg:py-4")
+              p(class="font-medium text-black") 相關文章
+              ul(class="flex flex-col mt-1 divide-y divide-black gap-y-3 divide-opacity-10")
                 li(class="pt-3")
                   a(class="flex items-center gap-x-4 group" href="#")
                     picture(class="flex-shrink-0 w-[75px] h-[56px] overflow-hidden rounded-md")
-                      img(class="w-full h-auto object-cover duration-200 group-hover:scale-105" src="./images/article/article-list1.png", alt="")
-                    p(class="text-sm text-black line-clamp line-clamp-2 duration-200 group-hover:text-primary-dark") 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹
+                      img(class="object-cover w-full h-auto duration-200 group-hover:scale-105" src="./images/article/article-list1.png", alt="")
+                    p(class="text-sm text-black duration-200 line-clamp line-clamp-2 group-hover:text-primary-dark") 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹
                 li(class="pt-3")
                   a(class="flex items-center gap-x-4 group" href="#")
                     picture(class="flex-shrink-0 w-[75px] h-[56px] overflow-hidden rounded-md")
-                      img(class="w-full h-auto object-cover duration-200 group-hover:scale-105" src="./images/article/article-list2.png", alt="")
-                    p(class="text-sm text-black line-clamp line-clamp-2 duration-200 group-hover:text-primary-dark") 介紹農民直銷站精選照片
+                      img(class="object-cover w-full h-auto duration-200 group-hover:scale-105" src="./images/article/article-list2.png", alt="")
+                    p(class="text-sm text-black duration-200 line-clamp line-clamp-2 group-hover:text-primary-dark") 介紹農民直銷站精選照片
                 li(class="pt-3")
                   a(class="flex items-center gap-x-4 group" href="#")
                     picture(class="flex-shrink-0 w-[75px] h-[56px] overflow-hidden rounded-md")
-                      img(class="w-full h-auto object-cover duration-200 group-hover:scale-105" src="./images/article/article-list3.png", alt="")
-                    p(class="text-sm text-black line-clamp line-clamp-2 duration-200 group-hover:text-primary-dark") 介紹農民直銷站精選照片介紹農民直銷站
+                      img(class="object-cover w-full h-auto duration-200 group-hover:scale-105" src="./images/article/article-list3.png", alt="")
+                    p(class="text-sm text-black duration-200 line-clamp line-clamp-2 group-hover:text-primary-dark") 介紹農民直銷站精選照片介紹農民直銷站
 
             // 全臺農民直銷據點
-            div(class="bg-gray-100 px-5 lg:px-8 py-5 lg:py-4 rounded-lg")
-              p(class="text-black font-medium") 全臺農民直銷據點
-              ul(class="accordion mt-4 flex flex-col gap-y-2")
+            div(class="px-5 py-5 bg-gray-100 rounded-lg lg:px-8 lg:py-4")
+              p(class="font-medium text-black") 全臺農民直銷據點
+              ul(class="flex flex-col mt-4 accordion gap-y-2")
                 li(class="accordion-item")
                   button(class="accordion-button")
-                    span(class="text-black text-sm") 北區
+                    span(class="text-sm text-black") 北區
                     svg(class="block w-5 h-5 pointer-events-none" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg")
                       path(class="accordion-add" d="M10.0003 1.66669C5.40866 1.66669 1.66699 5.40835 1.66699 10C1.66699 14.5917 5.40866 18.3334 10.0003 18.3334C14.592 18.3334 18.3337 14.5917 18.3337 10C18.3337 5.40835 14.592 1.66669 10.0003 1.66669ZM13.3337 10.625H10.6253V13.3334C10.6253 13.675 10.342 13.9584 10.0003 13.9584C9.65866 13.9584 9.37533 13.675 9.37533 13.3334V10.625H6.66699C6.32533 10.625 6.04199 10.3417 6.04199 10C6.04199 9.65835 6.32533 9.37502 6.66699 9.37502H9.37533V6.66669C9.37533 6.32502 9.65866 6.04169 10.0003 6.04169C10.342 6.04169 10.6253 6.32502 10.6253 6.66669V9.37502H13.3337C13.6753 9.37502 13.9587 9.65835 13.9587 10C13.9587 10.3417 13.6753 10.625 13.3337 10.625Z" fill="#87BE23")
                       path(class="hidden accordion-minus" d="M10.0003 1.66669C5.40866 1.66669 1.66699 5.40835 1.66699 10C1.66699 14.5917 5.40866 18.3334 10.0003 18.3334C14.592 18.3334 18.3337 14.5917 18.3337 10C18.3337 5.40835 14.592 1.66669 10.0003 1.66669ZM13.267 10.625H6.60033C6.25866 10.625 5.97533 10.3417 5.97533 10C5.97533 9.65835 6.25866 9.37502 6.60033 9.37502H13.267C13.6087 9.37502 13.892 9.65835 13.892 10C13.892 10.3417 13.617 10.625 13.267 10.625Z" fill="#87BE23")
                   div(class="accordion-content")
                     div(class="flex lg:items-center flex-col lg:flex-row lg:gap-y-0 gap-y-6 lg:gap-x-[30px] py-3 border-t border-black border-opacity-10")
-                      a(class="text-[13px] text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 北北基
-                      a(class="text-[13px] text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 桃園
-                      a(class="text-[13px] text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 新竹
+                      a(class="text-13 text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 北北基
+                      a(class="text-13 text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 桃園
+                      a(class="text-13 text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 新竹
                 li(class="accordion-item")
                   button(class="accordion-button")
-                    span(class="text-black text-sm") 中區
+                    span(class="text-sm text-black") 中區
                     svg(class="block w-5 h-5 pointer-events-none" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg")
                       path(class="accordion-add" d="M10.0003 1.66669C5.40866 1.66669 1.66699 5.40835 1.66699 10C1.66699 14.5917 5.40866 18.3334 10.0003 18.3334C14.592 18.3334 18.3337 14.5917 18.3337 10C18.3337 5.40835 14.592 1.66669 10.0003 1.66669ZM13.3337 10.625H10.6253V13.3334C10.6253 13.675 10.342 13.9584 10.0003 13.9584C9.65866 13.9584 9.37533 13.675 9.37533 13.3334V10.625H6.66699C6.32533 10.625 6.04199 10.3417 6.04199 10C6.04199 9.65835 6.32533 9.37502 6.66699 9.37502H9.37533V6.66669C9.37533 6.32502 9.65866 6.04169 10.0003 6.04169C10.342 6.04169 10.6253 6.32502 10.6253 6.66669V9.37502H13.3337C13.6753 9.37502 13.9587 9.65835 13.9587 10C13.9587 10.3417 13.6753 10.625 13.3337 10.625Z" fill="#87BE23")
                       path(class="hidden accordion-minus" d="M10.0003 1.66669C5.40866 1.66669 1.66699 5.40835 1.66699 10C1.66699 14.5917 5.40866 18.3334 10.0003 18.3334C14.592 18.3334 18.3337 14.5917 18.3337 10C18.3337 5.40835 14.592 1.66669 10.0003 1.66669ZM13.267 10.625H6.60033C6.25866 10.625 5.97533 10.3417 5.97533 10C5.97533 9.65835 6.25866 9.37502 6.60033 9.37502H13.267C13.6087 9.37502 13.892 9.65835 13.892 10C13.892 10.3417 13.617 10.625 13.267 10.625Z" fill="#87BE23")
                   div(class="accordion-content")
                     div(class="flex lg:items-center flex-col lg:flex-row lg:gap-y-0 gap-y-6 lg:gap-x-[30px] py-3 border-t border-black border-opacity-10")
-                      a(class="text-[13px] text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 台中
-                      a(class="text-[13px] text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 彰化
-                      a(class="text-[13px] text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 南投
+                      a(class="text-13 text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 台中
+                      a(class="text-13 text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 彰化
+                      a(class="text-13 text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 南投
                 li(class="accordion-item")
                   button(class="accordion-button")
-                    span(class="text-black text-sm") 南區
+                    span(class="text-sm text-black") 南區
                     svg(class="block w-5 h-5 pointer-events-none" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg")
                       path(class="accordion-add" d="M10.0003 1.66669C5.40866 1.66669 1.66699 5.40835 1.66699 10C1.66699 14.5917 5.40866 18.3334 10.0003 18.3334C14.592 18.3334 18.3337 14.5917 18.3337 10C18.3337 5.40835 14.592 1.66669 10.0003 1.66669ZM13.3337 10.625H10.6253V13.3334C10.6253 13.675 10.342 13.9584 10.0003 13.9584C9.65866 13.9584 9.37533 13.675 9.37533 13.3334V10.625H6.66699C6.32533 10.625 6.04199 10.3417 6.04199 10C6.04199 9.65835 6.32533 9.37502 6.66699 9.37502H9.37533V6.66669C9.37533 6.32502 9.65866 6.04169 10.0003 6.04169C10.342 6.04169 10.6253 6.32502 10.6253 6.66669V9.37502H13.3337C13.6753 9.37502 13.9587 9.65835 13.9587 10C13.9587 10.3417 13.6753 10.625 13.3337 10.625Z" fill="#87BE23")
                       path(class="hidden accordion-minus" d="M10.0003 1.66669C5.40866 1.66669 1.66699 5.40835 1.66699 10C1.66699 14.5917 5.40866 18.3334 10.0003 18.3334C14.592 18.3334 18.3337 14.5917 18.3337 10C18.3337 5.40835 14.592 1.66669 10.0003 1.66669ZM13.267 10.625H6.60033C6.25866 10.625 5.97533 10.3417 5.97533 10C5.97533 9.65835 6.25866 9.37502 6.60033 9.37502H13.267C13.6087 9.37502 13.892 9.65835 13.892 10C13.892 10.3417 13.617 10.625 13.267 10.625Z" fill="#87BE23")
                   div(class="accordion-content")
                     div(class="flex lg:items-center flex-col lg:flex-row lg:gap-y-0 gap-y-6 lg:gap-x-[30px] py-3 border-t border-black border-opacity-10")
-                      a(class="text-[13px] text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 雲林
-                      a(class="text-[13px] text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 嘉義
-                      a(class="text-[13px] text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 台南
+                      a(class="text-13 text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 雲林
+                      a(class="text-13 text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 嘉義
+                      a(class="text-13 text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 台南
                 li(class="accordion-item")
                   button(class="accordion-button")
-                    span(class="text-black text-sm") 東區
+                    span(class="text-sm text-black") 東區
                     svg(class="block w-5 h-5 pointer-events-none" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg")
                       path(class="accordion-add" d="M10.0003 1.66669C5.40866 1.66669 1.66699 5.40835 1.66699 10C1.66699 14.5917 5.40866 18.3334 10.0003 18.3334C14.592 18.3334 18.3337 14.5917 18.3337 10C18.3337 5.40835 14.592 1.66669 10.0003 1.66669ZM13.3337 10.625H10.6253V13.3334C10.6253 13.675 10.342 13.9584 10.0003 13.9584C9.65866 13.9584 9.37533 13.675 9.37533 13.3334V10.625H6.66699C6.32533 10.625 6.04199 10.3417 6.04199 10C6.04199 9.65835 6.32533 9.37502 6.66699 9.37502H9.37533V6.66669C9.37533 6.32502 9.65866 6.04169 10.0003 6.04169C10.342 6.04169 10.6253 6.32502 10.6253 6.66669V9.37502H13.3337C13.6753 9.37502 13.9587 9.65835 13.9587 10C13.9587 10.3417 13.6753 10.625 13.3337 10.625Z" fill="#87BE23")
                       path(class="hidden accordion-minus" d="M10.0003 1.66669C5.40866 1.66669 1.66699 5.40835 1.66699 10C1.66699 14.5917 5.40866 18.3334 10.0003 18.3334C14.592 18.3334 18.3337 14.5917 18.3337 10C18.3337 5.40835 14.592 1.66669 10.0003 1.66669ZM13.267 10.625H6.60033C6.25866 10.625 5.97533 10.3417 5.97533 10C5.97533 9.65835 6.25866 9.37502 6.60033 9.37502H13.267C13.6087 9.37502 13.892 9.65835 13.892 10C13.892 10.3417 13.617 10.625 13.267 10.625Z" fill="#87BE23")
                   div(class="accordion-content")
                     div(class="flex lg:items-center flex-col lg:flex-row lg:gap-y-0 gap-y-6 lg:gap-x-[30px] py-3 border-t border-black border-opacity-10")
-                      a(class="text-[13px] text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 宜蘭
-                      a(class="text-[13px] text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 花蓮
-                      a(class="text-[13px] text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 台東
+                      a(class="text-13 text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 宜蘭
+                      a(class="text-13 text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 花蓮
+                      a(class="text-13 text-gray-800 mx-8 lg:mx-0 duration-200 hover:text-primary-dark relative before:absolute before:block before:first:lg:!hidden before:w-[6px] before:h-[6px] before:lg:bg-gray-200 before:bg-black before:rounded-full before:-left-4 before:top-1/2 before:-translate-y-1/2" href="#") 台東
 
         // 猜你喜歡
         div(class="mt-8 lg:mt-14")
@@ -177,10 +177,10 @@ html(lang="zh-Hant-TW")
             img(src="./images/icons/Arrow-Left.svg", alt="")
           div(class="swiper-button-next swiper-button-activity-next !hidden lg:!flex items-center justify-center !w-9 !h-9 border border-gray-400 rounded-full !right-[-58px]")
             img(src="./images/icons/Arrow-Right.svg", alt="")
-          div(class="mt-6 lg:mt-5 text-center")
+          div(class="mt-6 text-center lg:mt-5")
             a(class="flex items-center justify-center mx-auto gap-x-3 w-[130px] lg:w-[170px] py-2 lg:py-3 border border-primary-dark rounded-lg group duration-200 hover:bg-primary" href="#")
-              span(class="text-primary-dark text-[15px] font-bold duration-200 group-hover:text-white") More
-              svg(class="fill-current text-primary-dark duration-200 group-hover:text-white" width="6" height="11" viewbox="0 0 6 11" xmlns="http://www.w3.org/2000/svg")
+              span(class="font-bold duration-200 text-primary-dark text-15 group-hover:text-white") More
+              svg(class="duration-200 fill-current text-primary-dark group-hover:text-white" width="6" height="11" viewbox="0 0 6 11" xmlns="http://www.w3.org/2000/svg")
                 path(fill-rule="evenodd" clip-rule="evenodd" d="M0.146447 0.479943C0.341709 0.284681 0.658291 0.284681 0.853553 0.479943L5.52022 5.14661C5.71548 5.34187 5.71548 5.65845 5.52022 5.85372L0.853553 10.5204C0.658291 10.7156 0.341709 10.7156 0.146447 10.5204C-0.0488155 10.3251 -0.0488155 10.0085 0.146447 9.81328L4.45956 5.50016L0.146447 1.18705C-0.0488155 0.991787 -0.0488155 0.675205 0.146447 0.479943Z")
 
     include ./components/common/footer.pug

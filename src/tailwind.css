@@ -58,7 +58,7 @@
   }
 
   .button-default {
-    @apply px-3 py-2 whitespace-nowrap rounded-lg duration-200;
+    @apply lg:text-base text-sm px-3 py-[9px] whitespace-nowrap lg:rounded-lg rounded-md duration-200;
   }
 
   .button-normal {

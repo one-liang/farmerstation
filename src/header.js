@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // 漢堡選單
   menuButton.addEventListener("click", function () {
-    menu.classList.toggle("!top-16");
+    menu.classList.toggle("!top-[52px]");
     menu.classList.toggle("!translate-y-0");
 
     menuCircles.forEach((item) => {

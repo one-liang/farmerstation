@@ -43,5 +43,20 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  function limitTextLength(text, maxLength) {
+    if (text.length > maxLength) {
+      return text.substring(0, maxLength) + "...";
+    } else {
+      return text;
+    }
+  }
+
+  let hotTag = document.querySelectorAll(".hotTag");
+
+  for (let i = 0; i < hotTag.length; i++) {
+    let text = hotTag[i].textContent;
+    hotTag[i].textContent = limitTextLength(text, 15);
+  }
 });
 // tag end

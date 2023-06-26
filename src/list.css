@@ -1,7 +1,7 @@
 @import url("./tailwind.css");
 
 @media (min-width: 1280px) {
-  /* .swiper-list:nth-child(2n + 3)::before {
+  .swiper-container:nth-child(2n + 3)::before {
     content: "";
     position: absolute;
     top: -32px;
@@ -9,7 +9,7 @@
     height: 1px;
     background-color: rgba(0, 0, 0, 0.1);
     width: calc(300% + 80px);
-  } */
+  }
 
   .card-h:nth-child(3n + 4)::before {
     content: "";
@@ -41,15 +41,15 @@
 }
 
 .swiper-list-pagination {
-  @apply flex items-center justify-center !bottom-8;
+  @apply flex items-center justify-center !bottom-3;
 }
 
 .swiper-pagination-bullet {
-  @apply bg-white opacity-50 first:w-[6px] first:h-[6px] last:w-[6px] last:h-[6px] w-[10px] h-[10px];
+  @apply !bg-white !opacity-50 first:!w-[6px] first:!h-[6px] last:!w-[6px] last:!h-[6px] !w-[10px] !h-[10px];
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  @apply bg-white;
+  @apply !opacity-100;
 }
 
 .swiper-button-prev:after,
@@ -62,9 +62,9 @@
   .swiper-activity .swiper-slide {
     @apply !w-[185px];
   }
-}
 
-.swiper-button-prev:after,
-.swiper-button-next:after {
-  content: none !important;
+  .swiper-button-prev,
+  .swiper-button-next {
+    @apply !hidden;
+  }
 }

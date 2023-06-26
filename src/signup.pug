@@ -12,7 +12,7 @@ html(lang="zh-Hant-TW")
       // 主圖 
       section(class="relative bg-white")
         div(class="relative max-w-screen-xl mx-auto overflow-hidden xl:rounded-lg before:absolute before:inset-0 before:w-full before:h-full before:bg-gradient-to-r before:from-black/50 before:via-black/0 before:to-black/50")
-          img(class="w-full h-[150px] xl:h-[250px] object-cover" src="./images/tag/tag-bg.png", alt="")
+          img(class="w-full h-[150px] xl:h-[250px] object-cover" src="./images/login/login-bg.png", alt="")
           h1(class="absolute text-2xl font-bold text-white top-14 xl:top-16 left-5 xl:left-8 xl:text-4xl") 登入專區
       section(class="max-w-[800px] mx-auto mt-[44px] xl:mt-[52px] lg:mt-[72px] mb-14 xl:mb-[116px] px-5 xl:px-0")
         ul(class="flex gap-x-6")
@@ -30,10 +30,9 @@ html(lang="zh-Hant-TW")
                 p(class="text-base text-black") 縣市區
                 // error 狀態 !border-error-dark !bg-error-light" 
                 div(class="group relative inline-block text-left mt-2 z-[1]" tabindex="-1")
-                  button(class="inline-flex justify-between w-full px-4 py-3 text-sm font-medium text-gray-400 bg-white border border-black rounded-lg border-opacity-10 focus-within:outline focus-within:outline-2 focus-within:border-transparent focus-within:outline-black" type="button")
+                  button(class="inline-flex items-center justify-between w-full px-4 py-3 text-sm font-medium text-gray-400 bg-white border border-black rounded-lg border-opacity-10 focus-within:outline focus-within:outline-2 focus-within:border-transparent focus-within:outline-black" type="button")
                     span(class="") 請選擇
-                    svg(class="w-5 h-5 ml-2 -mr-1" viewbox="0 0 20 20" fill="currentColor")
-                      path(fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd")
+                    img(src="./images/icons/DropDown.svg", alt="")
                   div(class="invisible transition-all duration-200 origin-top transform scale-95 -translate-y-2 opacity-0 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:scale-100 group-focus-within:opacity-100")
                     div(class="absolute top-0 right-0 mt-2 w-full max-h-[218px] overflow-y-auto origin-top divide-y divide-gray-100 rounded-lg border border-gray-200 bg-white outline-none")
                       div(class="")
@@ -53,15 +52,14 @@ html(lang="zh-Hant-TW")
                 // error 訊息，用 !hidden 做隱藏
                 div(class="flex items-center gap-x-1 mt-2 !hidden")
                   img(src="./images/icons/Danger.svg", alt="")
-                  span(class="text-error-dark") 必填欄位
+                  span(class="text-sm text-error-dark") 必填欄位
               label(class="flex flex-col" for="stronghold")
                 p(class="text-base text-black") 據點名稱(筆畫排序)
                 // error 狀態 !border-error-dark !bg-error-light" 
                 div(class="relative z-0 inline-block mt-2 text-left group" tabindex="-1")
-                  button(class="inline-flex justify-between w-full px-4 py-3 text-sm font-medium text-gray-400 bg-white border border-black rounded-lg border-opacity-10 focus-within:outline focus-within:outline-2 focus-within:border-transparent focus-within:outline-black" type="button")
+                  button(class="inline-flex items-center justify-between w-full px-4 py-3 text-sm font-medium text-gray-400 bg-white border border-black rounded-lg border-opacity-10 focus-within:outline focus-within:outline-2 focus-within:border-transparent focus-within:outline-black" type="button")
                     span(class="") 請選擇
-                    svg(class="w-5 h-5 ml-2 -mr-1" viewbox="0 0 20 20" fill="currentColor")
-                      path(fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd")
+                    img(src="./images/icons/DropDown.svg", alt="")
                   div(class="invisible transition-all duration-200 origin-top transform scale-95 -translate-y-2 opacity-0 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:scale-100 group-focus-within:opacity-100")
                     div(class="absolute top-0 right-0 mt-2 w-full max-h-[218px] overflow-y-auto origin-top divide-y divide-gray-100 rounded-lg border border-gray-200 bg-white outline-none")
                       div(class="")
@@ -81,7 +79,7 @@ html(lang="zh-Hant-TW")
                 // error 訊息，用 !hidden 做隱藏
                 div(class="flex items-center gap-x-1 mt-2 !hidden")
                   img(src="./images/icons/Danger.svg", alt="")
-                  span(class="text-error-dark") 必填欄位
+                  span(class="text-sm text-error-dark") 必填欄位
               label(class="flex flex-col" for="account")
                 p(class="text-base text-black") 登入帳號 
                 // error 狀態 !border-error-dark !bg-error-light" 
@@ -89,7 +87,7 @@ html(lang="zh-Hant-TW")
                 // error 訊息，用 !hidden 做隱藏
                 div(class="flex items-center mt-2 gap-x-1")
                   img(src="./images/icons/Danger.svg", alt="")
-                  span(class="text-error-dark") 必填欄位
+                  span(class="text-sm text-error-dark") 必填欄位
               label(class="flex flex-col" for="password")
                 p(class="text-base text-black") 登入密碼 
                 // error 狀態 !border-error-dark !bg-error-light"
@@ -97,7 +95,7 @@ html(lang="zh-Hant-TW")
                 // error 訊息，用 !hidden 做隱藏
                 div(class="flex items-center gap-x-1 mt-2 !hidden")
                   img(src="./images/icons/Danger.svg", alt="")
-                  span(class="text-error-dark") 必填欄位
+                  span(class="text-sm text-error-dark") 必填欄位
               label(class="flex flex-col" for="confirmPassword")
                 p(class="text-base text-black") 確認密碼 
                 // error 狀態 !border-error-dark !bg-error-light"
@@ -105,7 +103,7 @@ html(lang="zh-Hant-TW")
                 // error 訊息，用 !hidden 做隱藏
                 div(class="flex items-center gap-x-1 mt-2 !hidden")
                   img(src="./images/icons/Danger.svg", alt="")
-                  span(class="text-error-dark") 必填欄位
+                  span(class="text-sm text-error-dark") 必填欄位
               label(class="flex flex-col" for="verificationCode")
                 p(class="text-base text-black") 輸入驗證碼 
                 // error 狀態 !border-error-dark !bg-error-light"
@@ -113,7 +111,7 @@ html(lang="zh-Hant-TW")
                 // error 訊息，用 !hidden 做隱藏
                 div(class="flex items-center gap-x-1 mt-2 !hidden")
                   img(src="./images/icons/Danger.svg", alt="")
-                  span(class="text-error-dark") 必填欄位
+                  span(class="text-sm text-error-dark") 必填欄位
               label(class="flex flex-col" for="email")
                 p(class="text-base text-black") 電子信箱 
                 // error 狀態 !border-error-dark !bg-error-light"
@@ -121,7 +119,7 @@ html(lang="zh-Hant-TW")
                 // error 訊息，用 !hidden 做隱藏
                 div(class="flex items-center gap-x-1 mt-2 !hidden")
                   img(src="./images/icons/Danger.svg", alt="")
-                  span(class="text-error-dark") 必填欄位
+                  span(class="text-sm text-error-dark") 必填欄位
               label(class="flex flex-col" for="confirmEmail")
                 p(class="text-base text-black") 確認電子信箱 
                 // error 狀態 !border-error-dark !bg-error-light"
@@ -129,9 +127,9 @@ html(lang="zh-Hant-TW")
                 // error 訊息，用 !hidden 做隱藏
                 div(class="flex items-center gap-x-1 mt-2 !hidden")
                   img(src="./images/icons/Danger.svg", alt="")
-                  span(class="text-error-dark") 必填欄位
+                  span(class="text-sm text-error-dark") 必填欄位
             div(class="mt-8 text-center")
-              button(class="text-white text-15 text-center py-3 w-[225px] bg-primary border border-primary-dark rounded-lg duration-200 hover:bg-primary-dark" type="button") 註冊
+              button(class="text-white text-15 text-center lg:py-3 py-[6px] lg:w-[225px] w-full bg-primary border border-primary-dark lg:rounded-lg rounded-md duration-200 hover:bg-primary-dark" type="button") 註冊
 
     include ./components/common/footer.pug
     include ./components/common/gotop.pug

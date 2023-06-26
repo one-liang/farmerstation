@@ -26,11 +26,15 @@
 }
 
 .article p {
-  @apply text-gray-800 text-base mb-6 lg:mb-8;
+  @apply text-gray-800 text-base mb-6 lg:mb-8 lg:leading-[30px] leading-[28px];
 }
 
 .article img {
   @apply max-w-[800px] mx-auto mb-6 lg:mb-8 xl:w-auto w-full rounded;
+}
+
+.article figure img {
+  @apply mb-0;
 }
 
 .article figure {
@@ -38,7 +42,7 @@
 }
 
 .article figure figcaption {
-  @apply text-gray-600 text-center mt-3;
+  @apply text-gray-600 text-center mt-3 text-15;
 }
 
 .article .video-wrapper {
@@ -73,8 +77,12 @@
   @apply text-left;
 }
 
+.accordion-item {
+  @apply bg-white rounded-lg;
+}
+
 .accordion-button {
-  @apply bg-white flex items-center justify-between w-full px-5 py-3 rounded-lg;
+  @apply flex items-center justify-between w-full px-5 py-3 lg:text-base text-15;
 }
 
 .accordion-content {

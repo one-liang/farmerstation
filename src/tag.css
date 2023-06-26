@@ -73,8 +73,12 @@
   @apply text-left;
 }
 
+.accordion-item {
+  @apply bg-white rounded-lg;
+}
+
 .accordion-button {
-  @apply bg-white flex items-center justify-between w-full px-5 py-3 rounded-lg;
+  @apply flex items-center justify-between w-full px-5 py-3 lg:text-base text-15;
 }
 
 .accordion-content {

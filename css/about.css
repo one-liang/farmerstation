@@ -885,6 +885,10 @@ html {
   top: 48%;
 }
 
+.top-\[52px\] {
+  top: 52px;
+}
+
 .top-\[60px\] {
   top: 60px;
 }
@@ -2085,8 +2089,16 @@ html {
   line-height: 2.25rem;
 }
 
+.leading-\[28px\] {
+  line-height: 28px;
+}
+
 .leading-\[32px\] {
   line-height: 32px;
+}
+
+.leading-\[36px\] {
+  line-height: 36px;
 }
 
 .tracking-1 {
@@ -2918,6 +2930,10 @@ html {
     top: 7%;
   }
 
+  .lg\:top-\[72px\] {
+    top: 72px;
+  }
+
   .lg\:top-\[74\%\] {
     top: 74%;
   }
@@ -3517,6 +3533,10 @@ html {
 
   .lg\:font-normal {
     font-weight: 400;
+  }
+
+  .lg\:leading-\[30px\] {
+    line-height: 30px;
   }
 
   .lg\:leading-\[48px\] {

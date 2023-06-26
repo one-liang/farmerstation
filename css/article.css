@@ -1045,6 +1045,10 @@ html {
   margin-bottom: 3.5rem;
 }
 
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -2214,6 +2218,10 @@ html {
   font-weight: 500;
 }
 
+.\!leading-5 {
+  line-height: 1.25rem !important;
+}
+
 .\!leading-\[30px\] {
   line-height: 30px !important;
 }
@@ -2688,14 +2696,14 @@ html {
   left: -1rem;
 }
 
-.before\:-right-2::before {
-  content: var(--tw-content);
-  right: -0.5rem;
-}
-
 .before\:-right-4::before {
   content: var(--tw-content);
   right: -1rem;
+}
+
+.before\:-right-\[6px\]::before {
+  content: var(--tw-content);
+  right: -6px;
 }
 
 .before\:left-0::before {
@@ -2723,9 +2731,9 @@ html {
   top: 50%;
 }
 
-.before\:top-2::before {
+.before\:top-\[4px\]::before {
   content: var(--tw-content);
-  top: 0.5rem;
+  top: 4px;
 }
 
 .before\:z-0::before {
@@ -4016,9 +4024,9 @@ html {
     -webkit-line-clamp: 3;
   }
 
-  .before\:lg\:-right-3::before {
+  .before\:lg\:-right-\[8px\]::before {
     content: var(--tw-content);
-    right: -0.75rem;
+    right: -8px;
   }
 
   .before\:lg\:left-1\/2::before {
@@ -4031,9 +4039,9 @@ html {
     right: auto;
   }
 
-  .before\:lg\:top-3::before {
+  .before\:lg\:top-\[6px\]::before {
     content: var(--tw-content);
-    top: 0.75rem;
+    top: 6px;
   }
 
   .lg\:before\:hidden::before {

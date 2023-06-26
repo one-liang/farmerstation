@@ -168,14 +168,14 @@ html(lang="zh-Hant-TW")
 
             div(class="px-4 lg:px-0")
               // 卡片
-              a(class="group block bg-white w-full lg:w-[430px] h-full lg:h-[438px] p-6 lg:px-10 lg:pb-10 lg:pt-12 rounded-lg relative before:absolute before:-right-2 before:lg:-right-3 before:top-2 before:lg:top-3 before:bg-secondary-light before:w-full before:h-full before:rounded-lg before:z-[-1]" href="#")
+              a(class="group block bg-white w-full lg:w-[430px] h-full lg:h-[438px] p-6 lg:px-10 lg:pb-10 lg:pt-12 rounded-lg relative before:absolute before:-right-[6px] before:lg:-right-[8px] before:top-[4px] before:lg:top-[6px] before:bg-secondary-light before:w-full before:h-full before:rounded-lg before:z-[-1]" href="#")
                 div(class="flex items-center")
                   div(class="flex items-center gap-x-4")
                     img(class="w-6 h-6" src="./images/icons/Location.svg" alt="")
                     p(class="text-xl font-bold lg:text-2xl text-secondary-dark") 花蓮
                   div(class="flex items-center pl-3 ml-3 border-l border-secondary-dark")
-                    p(class="font-bold text-15 lg:text-base text-secondary-dark") 8
-                    p(class="text-15 lg:text-base text-secondary-dark") 處據點
+                    p(class="font-bold text-15 lg:text-base text-secondary-dark !leading-5") 8
+                    p(class="text-15 lg:text-base text-secondary-dark ml-1 !leading-5") 處據點
                 div(class="flex items-center mt-4 gap-x-1 lg:mt-5")
                   span(class="flex-shrink-0 bg-gray-200 text-gray-800 text-xs px-[6px] py-[3px] rounded") 隨機
                   p(class="text-base font-medium text-black break-words duration-200 group-hover:text-primary-dark lg:text-lg line-clamp line-clamp-1") 花蓮縣玉溪地區農會農民直銷站
@@ -184,11 +184,18 @@ html(lang="zh-Hant-TW")
                     img(class="object-cover w-full h-full duration-200 group-hover:scale-105" src="./images/farmers/farmers-map1.png" alt="")
 
           // 其他小圖
-          div(class="flex items-center px-5 mt-10 overflow-x-scroll lg:justify-center gap-x-8 lg:gap-x-16 lg:mt-14 lg:px-0 lg:overflow-x-auto")
-            img(class="w-[160px] lg:w-[200px] h-[160px] lg:h-[200px] object-contain" src="./images/index/map-list1.png" alt="")
-            img(class="w-[160px] lg:w-[200px] h-[160px] lg:h-[200px] object-contain" src="./images/index/map-list2.png" alt="")
-            img(class="w-[160px] lg:w-[200px] h-[160px] lg:h-[200px] object-contain" src="./images/index/map-list3.png" alt="")
-            img(class="w-[160px] lg:w-[200px] h-[160px] lg:h-[200px] object-contain" src="./images/index/map-list4.png" alt="")
+          div(class="items-center hidden px-5 mt-10 overflow-x-scroll lg:flex lg:justify-center gap-x-8 lg:gap-x-16 lg:mt-14 lg:px-0 lg:overflow-x-auto")
+            img(class="w-[160px] lg:w-[200px] h-[160px] lg:h-[200px] object-contain" src="./images/index/map-list1.svg" alt="")
+            img(class="w-[160px] lg:w-[200px] h-[160px] lg:h-[200px] object-contain" src="./images/index/map-list2.svg" alt="")
+            img(class="w-[160px] lg:w-[200px] h-[160px] lg:h-[200px] object-contain" src="./images/index/map-list3.svg" alt="")
+            img(class="w-[160px] lg:w-[200px] h-[160px] lg:h-[200px] object-contain" src="./images/index/map-list4.svg" alt="")
+          // 手機版跑馬燈
+          marquee(class="block mt-10 lg:hidden" behavior="alternate")
+            div(class="flex items-center px-5 lg:justify-center gap-x-8")
+              img(class="w-[160px] lg:w-[200px] h-[160px] lg:h-[200px] object-contain" src="./images/index/map-list1.svg" alt="")
+              img(class="w-[160px] lg:w-[200px] h-[160px] lg:h-[200px] object-contain" src="./images/index/map-list2.svg" alt="")
+              img(class="w-[160px] lg:w-[200px] h-[160px] lg:h-[200px] object-contain" src="./images/index/map-list3.svg" alt="")
+              img(class="w-[160px] lg:w-[200px] h-[160px] lg:h-[200px] object-contain" src="./images/index/map-list4.svg" alt="")
 
       // 活力好站
       section(class="max-w-screen-xl px-5 mx-auto mt-8 mb-14 lg:my-14 xl:px-0")

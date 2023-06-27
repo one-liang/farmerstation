@@ -108,18 +108,18 @@
     </dialog>
     <main class="mt-[52px] lg:mt-[72px]">
       <!-- 浮動 banner-->
-      <div class="bg-gray-100 px-5 lg:px-0 py-3 sticky lg:top-[72px] top-[52px] z-20">
+      <div class="fixed top-0 left-0 z-20 w-full px-5 py-3 transition-all duration-300 ease-out bg-gray-100 lg:px-0" id="banner">
         <div class="flex max-w-screen-xl mx-auto overflow-x-auto gap-x-4 lg:gap-x-6">
           <!-- active 狀態 !bg-primary !text-white !border-primary-dark--><a class="inline-block text-gray-600 text-sm px-[10px] py-[5px] lg:text-base whitespace-nowrap border border-gray-200 lg:rounded-lg rounded-md duration-200 hover:bg-primary hover:text-white hover:border-primary-dark !bg-primary !text-white !border-primary-dark" href="#">北北基    </a><a class="inline-block text-gray-600 text-sm px-[10px] py-[5px] lg:text-base whitespace-nowrap border border-gray-200 lg:rounded-lg rounded-md duration-200 hover:bg-primary hover:text-white hover:border-primary-dark" href="#">桃園    </a><a class="inline-block text-gray-600 text-sm px-[10px] py-[5px] lg:text-base whitespace-nowrap border border-gray-200 lg:rounded-lg rounded-md duration-200 hover:bg-primary hover:text-white hover:border-primary-dark" href="#">新竹    </a><a class="inline-block text-gray-600 text-sm px-[10px] py-[5px] lg:text-base whitespace-nowrap border border-gray-200 lg:rounded-lg rounded-md duration-200 hover:bg-primary hover:text-white hover:border-primary-dark" href="#">苗栗    </a><a class="inline-block text-gray-600 text-sm px-[10px] py-[5px] lg:text-base whitespace-nowrap border border-gray-200 lg:rounded-lg rounded-md duration-200 hover:bg-primary hover:text-white hover:border-primary-dark" href="#">臺中    </a><a class="inline-block text-gray-600 text-sm px-[10px] py-[5px] lg:text-base whitespace-nowrap border border-gray-200 lg:rounded-lg rounded-md duration-200 hover:bg-primary hover:text-white hover:border-primary-dark" href="#">彰化    </a><a class="inline-block text-gray-600 text-sm px-[10px] py-[5px] lg:text-base whitespace-nowrap border border-gray-200 lg:rounded-lg rounded-md duration-200 hover:bg-primary hover:text-white hover:border-primary-dark" href="#">南投    </a><a class="inline-block text-gray-600 text-sm px-[10px] py-[5px] lg:text-base whitespace-nowrap border border-gray-200 lg:rounded-lg rounded-md duration-200 hover:bg-primary hover:text-white hover:border-primary-dark" href="#">雲林    </a><a class="inline-block text-gray-600 text-sm px-[10px] py-[5px] lg:text-base whitespace-nowrap border border-gray-200 lg:rounded-lg rounded-md duration-200 hover:bg-primary hover:text-white hover:border-primary-dark" href="#">嘉義    </a><a class="inline-block text-gray-600 text-sm px-[10px] py-[5px] lg:text-base whitespace-nowrap border border-gray-200 lg:rounded-lg rounded-md duration-200 hover:bg-primary hover:text-white hover:border-primary-dark" href="#">臺南    </a><a class="inline-block text-gray-600 text-sm px-[10px] py-[5px] lg:text-base whitespace-nowrap border border-gray-200 lg:rounded-lg rounded-md duration-200 hover:bg-primary hover:text-white hover:border-primary-dark" href="#">高雄    </a><a class="inline-block text-gray-600 text-sm px-[10px] py-[5px] lg:text-base whitespace-nowrap border border-gray-200 lg:rounded-lg rounded-md duration-200 hover:bg-primary hover:text-white hover:border-primary-dark" href="#">屏東    </a><a class="inline-block text-gray-600 text-sm px-[10px] py-[5px] lg:text-base whitespace-nowrap border border-gray-200 lg:rounded-lg rounded-md duration-200 hover:bg-primary hover:text-white hover:border-primary-dark" href="#">宜蘭    </a><a class="inline-block text-gray-600 text-sm px-[10px] py-[5px] lg:text-base whitespace-nowrap border border-gray-200 lg:rounded-lg rounded-md duration-200 hover:bg-primary hover:text-white hover:border-primary-dark" href="#">花蓮    </a><a class="inline-block text-gray-600 text-sm px-[10px] py-[5px] lg:text-base whitespace-nowrap border border-gray-200 lg:rounded-lg rounded-md duration-200 hover:bg-primary hover:text-white hover:border-primary-dark" href="#">臺東    </a>
         </div>
       </div>
       <!-- 主圖 -->
-      <section class="bg-white relative mt-[-66px] z-30">
+      <section class="relative bg-white">
         <div class="relative max-w-screen-xl mx-auto overflow-hidden xl:rounded-lg before:absolute before:inset-0 before:w-full before:h-full before:bg-gradient-to-r before:from-black/50 before:via-black/0 before:to-black/50"><img class="w-full h-[150px] xl:h-[250px] object-cover" src="../images/farmers/farmers-list-bg1.png" alt="">
           <h1 class="absolute text-2xl font-bold text-white top-14 xl:top-16 left-5 xl:left-8 xl:text-4xl">北北基</h1>
         </div>
       </section>
-      <section class="max-w-screen-xl px-5 mx-auto mt-6 xl:mt-8 mb-14 xl:mb-8 xl:px-0">
+      <section class="max-w-screen-xl px-5 mx-auto mt-6 mb-6 xl:mt-8 xl:mb-8 xl:px-0">
         <!-- 麵包屑-->
         <ul class="text-gray-500 text-sm flex items-center gap-x-[6px]">
           <li><a href="#">首頁</a></li>
@@ -129,7 +129,7 @@
           <li> <a href="#">北北基</a></li>
         </ul>
       </section>
-      <section class="grid max-w-screen-xl grid-cols-1 px-5 mx-auto mt-6 lg:mt-8 xl:px-0 lg:grid-cols-2 gap-x-0 lg:gap-x-16 gap-y-8">
+      <section class="grid max-w-screen-xl grid-cols-1 px-5 mx-auto mt-6 lg:mt-8 xl:px-0 lg:grid-cols-2 gap-x-0 lg:gap-x-16 lg:gap-y-16 gap-y-8">
         <div class="swiper-container">
           <div class="swiper swiper-list w-full h-[264px] lg:h-[426px] rounded-lg overflow-hidden">
             <!-- Additional required wrapper-->
@@ -582,35 +582,47 @@
           <div class="swiper swiper-activity">
             <div class="swiper-wrapper">
               <!-- Slides-->
-              <div class="swiper-slide"><a class="relative inline-block card group" href="#">
-                  <picture class="block overflow-hidden rounded-md lg:rounded-lg"><img class="w-full h-[123px] lg:h-[277px] object-cover duration-300 group-hover:scale-105" src="../images/recommend/recommend1.jpg" alt=""/></picture>
+              <div class="swiper-slide"><a class="inline-block group" href="#">
+                  <picture class="block overflow-hidden rounded-md lg:rounded-lg"><img class="w-full h-[123px] lg:h-[277px] object-cover duration-300 group-hover:scale-105" src="../images/recommend/recommend2.jpg" alt=""/></picture>
                   <p class="mt-3 text-base font-medium text-black break-words duration-300 lg:text-lg lg:mt-4 line-clamp line-clamp-2 group-hover:text-primary-dark">1 - 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷</p>
-                  <p class="text-15 text-gray-800 !hidden lg:!display-box lg:mt-3 line-clamp line-clamp-2 break-words">牆面照片裡的小農，臉上掛著靦腆而自信的笑容，李智遠總幹事說：「現在有 65 位農友登錄，用 Line 群組即時溝通，提供銷售訊息。」</p></a>
+                  <div class="flex justify-between mt-2 lg:mt-3">
+                    <p class="text-sm text-gray-500 break-words lg:text-15 line-clamp line-clamp-1">2023.04.13</p><img class="hidden bg-white lg:block" src="../images/icons/Circle-Right-Full.svg" alt=""/>
+                  </div></a>
               </div>
-              <div class="swiper-slide"><a class="relative inline-block card group" href="#">
-                  <picture class="block overflow-hidden rounded-md lg:rounded-lg"><img class="w-full h-[123px] lg:h-[277px] object-cover duration-300 group-hover:scale-105" src="../images/recommend/recommend1.jpg" alt=""/></picture>
+              <div class="swiper-slide"><a class="inline-block group" href="#">
+                  <picture class="block overflow-hidden rounded-md lg:rounded-lg"><img class="w-full h-[123px] lg:h-[277px] object-cover duration-300 group-hover:scale-105" src="../images/recommend/recommend2.jpg" alt=""/></picture>
                   <p class="mt-3 text-base font-medium text-black break-words duration-300 lg:text-lg lg:mt-4 line-clamp line-clamp-2 group-hover:text-primary-dark">2 - 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷</p>
-                  <p class="text-15 text-gray-800 !hidden lg:!display-box lg:mt-3 line-clamp line-clamp-2 break-words">牆面照片裡的小農，臉上掛著靦腆而自信的笑容，李智遠總幹事說：「現在有 65 位農友登錄，用 Line 群組即時溝通，提供銷售訊息。」</p></a>
+                  <div class="flex justify-between mt-2 lg:mt-3">
+                    <p class="text-sm text-gray-500 break-words lg:text-15 line-clamp line-clamp-1">2023.04.13</p><img class="hidden bg-white lg:block" src="../images/icons/Circle-Right-Full.svg" alt=""/>
+                  </div></a>
               </div>
-              <div class="swiper-slide"><a class="relative inline-block card group" href="#">
-                  <picture class="block overflow-hidden rounded-md lg:rounded-lg"><img class="w-full h-[123px] lg:h-[277px] object-cover duration-300 group-hover:scale-105" src="../images/recommend/recommend1.jpg" alt=""/></picture>
+              <div class="swiper-slide"><a class="inline-block group" href="#">
+                  <picture class="block overflow-hidden rounded-md lg:rounded-lg"><img class="w-full h-[123px] lg:h-[277px] object-cover duration-300 group-hover:scale-105" src="../images/recommend/recommend2.jpg" alt=""/></picture>
                   <p class="mt-3 text-base font-medium text-black break-words duration-300 lg:text-lg lg:mt-4 line-clamp line-clamp-2 group-hover:text-primary-dark">3 - 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷</p>
-                  <p class="text-15 text-gray-800 !hidden lg:!display-box lg:mt-3 line-clamp line-clamp-2 break-words">牆面照片裡的小農，臉上掛著靦腆而自信的笑容，李智遠總幹事說：「現在有 65 位農友登錄，用 Line 群組即時溝通，提供銷售訊息。」</p></a>
+                  <div class="flex justify-between mt-2 lg:mt-3">
+                    <p class="text-sm text-gray-500 break-words lg:text-15 line-clamp line-clamp-1">2023.04.13</p><img class="hidden bg-white lg:block" src="../images/icons/Circle-Right-Full.svg" alt=""/>
+                  </div></a>
               </div>
-              <div class="swiper-slide"><a class="relative inline-block card group" href="#">
-                  <picture class="block overflow-hidden rounded-md lg:rounded-lg"><img class="w-full h-[123px] lg:h-[277px] object-cover duration-300 group-hover:scale-105" src="../images/recommend/recommend1.jpg" alt=""/></picture>
+              <div class="swiper-slide"><a class="inline-block group" href="#">
+                  <picture class="block overflow-hidden rounded-md lg:rounded-lg"><img class="w-full h-[123px] lg:h-[277px] object-cover duration-300 group-hover:scale-105" src="../images/recommend/recommend2.jpg" alt=""/></picture>
                   <p class="mt-3 text-base font-medium text-black break-words duration-300 lg:text-lg lg:mt-4 line-clamp line-clamp-2 group-hover:text-primary-dark">4 - 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷</p>
-                  <p class="text-15 text-gray-800 !hidden lg:!display-box lg:mt-3 line-clamp line-clamp-2 break-words">牆面照片裡的小農，臉上掛著靦腆而自信的笑容，李智遠總幹事說：「現在有 65 位農友登錄，用 Line 群組即時溝通，提供銷售訊息。」</p></a>
+                  <div class="flex justify-between mt-2 lg:mt-3">
+                    <p class="text-sm text-gray-500 break-words lg:text-15 line-clamp line-clamp-1">2023.04.13</p><img class="hidden bg-white lg:block" src="../images/icons/Circle-Right-Full.svg" alt=""/>
+                  </div></a>
               </div>
-              <div class="swiper-slide"><a class="relative inline-block card group" href="#">
-                  <picture class="block overflow-hidden rounded-md lg:rounded-lg"><img class="w-full h-[123px] lg:h-[277px] object-cover duration-300 group-hover:scale-105" src="../images/recommend/recommend1.jpg" alt=""/></picture>
+              <div class="swiper-slide"><a class="inline-block group" href="#">
+                  <picture class="block overflow-hidden rounded-md lg:rounded-lg"><img class="w-full h-[123px] lg:h-[277px] object-cover duration-300 group-hover:scale-105" src="../images/recommend/recommend2.jpg" alt=""/></picture>
                   <p class="mt-3 text-base font-medium text-black break-words duration-300 lg:text-lg lg:mt-4 line-clamp line-clamp-2 group-hover:text-primary-dark">5 - 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷</p>
-                  <p class="text-15 text-gray-800 !hidden lg:!display-box lg:mt-3 line-clamp line-clamp-2 break-words">牆面照片裡的小農，臉上掛著靦腆而自信的笑容，李智遠總幹事說：「現在有 65 位農友登錄，用 Line 群組即時溝通，提供銷售訊息。」</p></a>
+                  <div class="flex justify-between mt-2 lg:mt-3">
+                    <p class="text-sm text-gray-500 break-words lg:text-15 line-clamp line-clamp-1">2023.04.13</p><img class="hidden bg-white lg:block" src="../images/icons/Circle-Right-Full.svg" alt=""/>
+                  </div></a>
               </div>
-              <div class="swiper-slide"><a class="relative inline-block card group" href="#">
-                  <picture class="block overflow-hidden rounded-md lg:rounded-lg"><img class="w-full h-[123px] lg:h-[277px] object-cover duration-300 group-hover:scale-105" src="../images/recommend/recommend1.jpg" alt=""/></picture>
+              <div class="swiper-slide"><a class="inline-block group" href="#">
+                  <picture class="block overflow-hidden rounded-md lg:rounded-lg"><img class="w-full h-[123px] lg:h-[277px] object-cover duration-300 group-hover:scale-105" src="../images/recommend/recommend2.jpg" alt=""/></picture>
                   <p class="mt-3 text-base font-medium text-black break-words duration-300 lg:text-lg lg:mt-4 line-clamp line-clamp-2 group-hover:text-primary-dark">6 - 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷</p>
-                  <p class="text-15 text-gray-800 !hidden lg:!display-box lg:mt-3 line-clamp line-clamp-2 break-words">牆面照片裡的小農，臉上掛著靦腆而自信的笑容，李智遠總幹事說：「現在有 65 位農友登錄，用 Line 群組即時溝通，提供銷售訊息。」</p></a>
+                  <div class="flex justify-between mt-2 lg:mt-3">
+                    <p class="text-sm text-gray-500 break-words lg:text-15 line-clamp line-clamp-1">2023.04.13</p><img class="hidden bg-white lg:block" src="../images/icons/Circle-Right-Full.svg" alt=""/>
+                  </div></a>
               </div>
             </div>
           </div>

@@ -2,6 +2,7 @@ include ./components/common/head.pug
 include ./components/common/breadcrumbs.pug
 include ./components/common/title.pug
 include ./components/list/card.pug
+include ./components/list/cardActivity.pug
 
 doctype html
 html(lang="zh-Hant-TW")
@@ -18,7 +19,7 @@ html(lang="zh-Hant-TW")
     include ./components/list/header.pug
     main(class="mt-[52px] lg:mt-[72px]")
       // 浮動 banner
-      div(class="bg-gray-100 px-5 lg:px-0 py-3 sticky lg:top-[72px] top-[52px] z-20")
+      div(id="banner" class="fixed top-0 left-0 z-20 w-full px-5 py-3 transition-all duration-300 ease-out bg-gray-100 lg:px-0")
         div(class="flex max-w-screen-xl mx-auto overflow-x-auto gap-x-4 lg:gap-x-6")
           // active 狀態 !bg-primary !text-white !border-primary-dark
           a(class="inline-block text-gray-600 text-sm px-[10px] py-[5px] lg:text-base whitespace-nowrap border border-gray-200 lg:rounded-lg rounded-md duration-200 hover:bg-primary hover:text-white hover:border-primary-dark !bg-primary !text-white !border-primary-dark" href="#") 北北基    
@@ -37,16 +38,16 @@ html(lang="zh-Hant-TW")
           a(class="inline-block text-gray-600 text-sm px-[10px] py-[5px] lg:text-base whitespace-nowrap border border-gray-200 lg:rounded-lg rounded-md duration-200 hover:bg-primary hover:text-white hover:border-primary-dark" href="#") 花蓮    
           a(class="inline-block text-gray-600 text-sm px-[10px] py-[5px] lg:text-base whitespace-nowrap border border-gray-200 lg:rounded-lg rounded-md duration-200 hover:bg-primary hover:text-white hover:border-primary-dark" href="#") 臺東    
       // 主圖 
-      section(class="bg-white relative mt-[-66px] z-30")
+      section(class="relative bg-white")
         div(class="relative max-w-screen-xl mx-auto overflow-hidden xl:rounded-lg before:absolute before:inset-0 before:w-full before:h-full before:bg-gradient-to-r before:from-black/50 before:via-black/0 before:to-black/50")
           img(class="w-full h-[150px] xl:h-[250px] object-cover" src="../images/farmers/farmers-list-bg1.png" alt="")
           h1(class="absolute text-2xl font-bold text-white top-14 xl:top-16 left-5 xl:left-8 xl:text-4xl") 北北基
-      section(class="max-w-screen-xl px-5 mx-auto mt-6 xl:mt-8 mb-14 xl:mb-8 xl:px-0")
+      section(class="max-w-screen-xl px-5 mx-auto mt-6 mb-6 xl:mt-8 xl:mb-8 xl:px-0")
         // 麵包屑
         +breadcrumbs("首頁", "全臺農民直銷據點", "北北基")
 
       //- 區塊輪播卡
-      section(class="grid max-w-screen-xl grid-cols-1 px-5 mx-auto mt-6 lg:mt-8 xl:px-0 lg:grid-cols-2 gap-x-0 lg:gap-x-16 gap-y-8")
+      section(class="grid max-w-screen-xl grid-cols-1 px-5 mx-auto mt-6 lg:mt-8 xl:px-0 lg:grid-cols-2 gap-x-0 lg:gap-x-16 lg:gap-y-16 gap-y-8")
         each val in [1, 2, 3, 4, 5]
           div(class="swiper-container")
             div(class="swiper swiper-list w-full h-[264px] lg:h-[426px] rounded-lg overflow-hidden")
@@ -157,7 +158,7 @@ html(lang="zh-Hant-TW")
               // Slides
               each val in [1, 2, 3, 4, 5, 6]
                 div(class="swiper-slide")
-                  +card(`${val} - 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷`, "牆面照片裡的小農，臉上掛著靦腆而自信的笑容，李智遠總幹事說：「現在有 65 位農友登錄，用 Line 群組即時溝通，提供銷售訊息。」")
+                  +cardActivity(`${val} - 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷`, "2023.04.13")
           div(class="swiper-button-prev swiper-button-activity-prev !hidden lg:!flex items-center justify-center !w-9 !h-9 border border-gray-400 rounded-full !left-[-58px]")
             img(src="../images/icons/Arrow-Left.svg" alt="")
           div(class="swiper-button-next swiper-button-activity-next !hidden lg:!flex items-center justify-center !w-9 !h-9 border border-gray-400 rounded-full !right-[-58px]")

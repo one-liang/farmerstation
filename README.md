@@ -7,6 +7,7 @@
 - [Category Page](https://one-liang.github.io/farmerstation/category)
 - [Article Page](https://one-liang.github.io/farmerstation/article)
 - [Tag Page](https://one-liang.github.io/farmerstation/tag)
+- [Tag2 Page](https://one-liang.github.io/farmerstation/tag2)
 - [Login Page](https://one-liang.github.io/farmerstation/login)
 - [Signup Page](https://one-liang.github.io/farmerstation/signup)
 - [Forget Password Page](https://one-liang.github.io/farmerstation/password)

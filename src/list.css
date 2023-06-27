@@ -90,3 +90,11 @@
     @apply !hidden;
   }
 }
+
+.dropdown-menu {
+  @apply invisible transition-all duration-200 origin-top transform scale-95 -translate-y-2 opacity-0;
+}
+
+.dropdown-menu.active {
+  @apply visible scale-100 translate-y-0 opacity-100;
+}

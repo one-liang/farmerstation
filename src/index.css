@@ -1,15 +1,15 @@
 @import url("./tailwind.css");
 
 .article-bg:before {
-  @apply blur-sm;
+  /* @apply blur-sm; */
 
   background-image: url("../images/background/index_article.jpg");
 }
 
 .recommend-bg:before {
-  @apply blur-sm;
+  /* @apply blur-sm; */
 
-  background-image: url("../images/background/index_article.jpg");
+  background-image: url("../images/background/recommend_bg.jpg");
 }
 
 .basis-147 {
@@ -52,7 +52,11 @@
 }
 
 .map-list-title {
-  @apply flex lg:block items-center justify-between text-left w-full bg-white lg:bg-transparent text-black lg:text-primary text-base lg:text-2xl px-5 lg:px-0 pt-[10px] lg:pt-0 pb-[10px] lg:pb-3 lg:mb-3 border lg:border-b lg:border-t-0 lg:border-r-0 lg:border-l-0 rounded-md lg:rounded-none border-primary-dark duration-200 focus-within:bg-secondary-dark focus-within:lg:bg-transparent focus-within:text-white focus-within:lg:text-black focus-within:border-secondary-dark focus-within:lg:border-primary-dark focus-within:rounded-bl-none focus-within:rounded-br-none;
+  @apply flex lg:block items-center justify-between text-left w-full bg-white lg:bg-transparent text-black lg:text-primary text-base lg:text-2xl px-5 lg:px-0 pt-[10px] lg:pt-0 pb-[10px] lg:pb-3 lg:mb-3 border lg:border-b lg:border-t-0 lg:border-r-0 lg:border-l-0 rounded-md lg:rounded-none border-primary-dark duration-200;
+}
+
+.map-list-title-show {
+  @apply bg-secondary-dark lg:bg-transparent text-white lg:text-black border-secondary-dark lg:border-primary-dark rounded-bl-none rounded-br-none;
 }
 
 .map-list-title-active {
@@ -81,4 +85,12 @@
 
 .fb-page span iframe {
   @apply !w-full;
+}
+
+.dropdown-menu {
+  @apply invisible transition-all duration-200 origin-top transform scale-95 -translate-y-2 opacity-0;
+}
+
+.dropdown-menu.active {
+  @apply visible scale-100 translate-y-0 opacity-100;
 }

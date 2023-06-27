@@ -76,51 +76,80 @@ document.addEventListener("DOMContentLoaded", function () {
       const areaListElement = document.querySelector(`.${area}-list`);
 
       // 為區域元素添加 mouseover 事件監聽器
-      areaElement.addEventListener("mouseover", () => {
-        // 在 mouseover 時添加對應的活躍類別
-        areaElement.classList.add("map-active");
-        const listItems = areaListElement.querySelectorAll(".map-list-item");
-        listItems.forEach((item) => {
-          item.classList.add("map-list-item-active");
+      if (window.innerWidth >= 1024) {
+        areaElement.addEventListener("mouseover", () => {
+          // 在 mouseover 時添加對應的活躍類別
+          areaElement.classList.add("map-active");
+          const listItems = areaListElement.querySelectorAll(".map-list-item");
+          listItems.forEach((item) => {
+            item.classList.add("map-list-item-active");
+          });
+          const title = areaListElement.querySelector(".map-list-title");
+          title.classList.add("map-list-title-active");
         });
-        const title = areaListElement.querySelector(".map-list-title");
-        title.classList.add("map-list-title-active");
+
+        // 為區域元素添加 mouseout 事件監聽器
+        areaElement.addEventListener("mouseout", () => {
+          // 在 mouseout 時移除對應的活躍類別
+          areaElement.classList.remove("map-active");
+          const listItems = areaListElement.querySelectorAll(".map-list-item");
+          listItems.forEach((item) => {
+            item.classList.remove("map-list-item-active");
+          });
+          const title = areaListElement.querySelector(".map-list-title");
+          title.classList.remove("map-list-title-active");
+        });
+
+        // 處理區域列表 mouseover 和 mouseout 事件
+        areaListElement.addEventListener("mouseover", () => {
+          // 在 mouseover 時添加對應的活躍類別
+          areaElement.classList.add("map-active");
+          const listItems = areaListElement.querySelectorAll(".map-list-item");
+          listItems.forEach((item) => {
+            item.classList.add("map-list-item-active");
+          });
+          const title = areaListElement.querySelector(".map-list-title");
+          title.classList.add("map-list-title-active");
+        });
+
+        // 為區域列表添加 mouseout 事件監聽器
+        areaListElement.addEventListener("mouseout", () => {
+          // 在 mouseout 時移除對應的活躍類別
+          areaElement.classList.remove("map-active");
+          const listItems = areaListElement.querySelectorAll(".map-list-item");
+          listItems.forEach((item) => {
+            item.classList.remove("map-list-item-active");
+          });
+          const title = areaListElement.querySelector(".map-list-title");
+          title.classList.remove("map-list-title-active");
+        });
+      }
+    });
+  }
+
+  if (window.innerWidth < 1024) {
+    const dropdowns = document.querySelectorAll(".dropdown");
+    dropdowns.forEach(function (dropdown) {
+      const btn = dropdown.querySelector(".dropdown-btn");
+      const menu = dropdown.querySelector(".dropdown-menu");
+      const add = dropdown.querySelector(".dropdown-add");
+      const minus = dropdown.querySelector(".dropdown-minus");
+
+      btn.addEventListener("click", function (event) {
+        event.stopPropagation();
+        btn.classList.toggle("map-list-title-show");
+        menu.classList.toggle("active");
+        add.classList.toggle("!hidden");
+        minus.classList.toggle("!inline-block");
       });
 
-      // 為區域元素添加 mouseout 事件監聽器
-      areaElement.addEventListener("mouseout", () => {
-        // 在 mouseout 時移除對應的活躍類別
-        areaElement.classList.remove("map-active");
-        const listItems = areaListElement.querySelectorAll(".map-list-item");
-        listItems.forEach((item) => {
-          item.classList.remove("map-list-item-active");
-        });
-        const title = areaListElement.querySelector(".map-list-title");
-        title.classList.remove("map-list-title-active");
-      });
-
-      // 處理區域列表 mouseover 和 mouseout 事件
-      areaListElement.addEventListener("mouseover", () => {
-        // 在 mouseover 時添加對應的活躍類別
-        areaElement.classList.add("map-active");
-        const listItems = areaListElement.querySelectorAll(".map-list-item");
-        listItems.forEach((item) => {
-          item.classList.add("map-list-item-active");
-        });
-        const title = areaListElement.querySelector(".map-list-title");
-        title.classList.add("map-list-title-active");
-      });
-
-      // 為區域列表添加 mouseout 事件監聽器
-      areaListElement.addEventListener("mouseout", () => {
-        // 在 mouseout 時移除對應的活躍類別
-        areaElement.classList.remove("map-active");
-        const listItems = areaListElement.querySelectorAll(".map-list-item");
-        listItems.forEach((item) => {
-          item.classList.remove("map-list-item-active");
-        });
-        const title = areaListElement.querySelector(".map-list-title");
-        title.classList.remove("map-list-title-active");
+      window.addEventListener("click", function () {
+        if (menu.classList.contains("active")) {
+          btn.classList.remove("map-list-title-show");
+          menu.classList.remove("active");
+          add.classList.remove("!hidden");
+          minus.classList.remove("!inline-block");
+        }
       });
     });
   }

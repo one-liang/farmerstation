@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const headerBg = document.querySelector("#header-bg");
   const modal = document.querySelector("#modal");
   const searchBtn = document.querySelector("#searchBtn");
+  const closeBtn = document.querySelector(".close-button");
 
   // 漢堡選單
   menuButton.addEventListener("click", function () {
@@ -92,5 +93,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   searchBtn.addEventListener("click", function () {
     modal.showModal();
+    document.body.style.overflow = "hidden";
+  });
+
+  closeBtn.addEventListener("click", function () {
+    modal.close();
+    document.body.style.overflow = "auto";
   });
 });

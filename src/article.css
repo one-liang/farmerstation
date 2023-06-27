@@ -10,8 +10,10 @@
   border-style: solid;
   border-width: 0 8px 12px 8px;
   border-color: transparent transparent #ffffff transparent;
+}
 
-  @media screen (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
+  .triangle-share:before {
     left: auto;
     right: 0;
   }
@@ -22,7 +24,7 @@
 }
 
 .article h2 {
-  @apply text-black text-xl mb-6 lg:mb-8;
+  @apply mb-6 text-xl text-black lg:mb-8;
 }
 
 .article p {
@@ -42,7 +44,7 @@
 }
 
 .article figure figcaption {
-  @apply text-gray-600 text-center mt-3 text-15;
+  @apply mt-3 text-center text-gray-600 text-15;
 }
 
 .article .video-wrapper {
@@ -98,4 +100,12 @@
 .swiper-button-prev:after,
 .swiper-button-next:after {
   content: none !important;
+}
+
+.dropdown-menu {
+  @apply absolute right-0 invisible transition-all duration-300 origin-top origin-top-right transform scale-95 -translate-y-2 opacity-0 top-12 lg:right-auto z-1;
+}
+
+.dropdown-menu.active {
+  @apply visible scale-100 translate-y-0 opacity-100;
 }

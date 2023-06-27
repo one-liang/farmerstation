@@ -83,5 +83,26 @@ document.addEventListener("DOMContentLoaded", function () {
       prevEl: ".swiper-button-activity-prev",
     },
   });
+
+  const dropdowns = document.querySelectorAll('.dropdown');
+  console.log("dropdowns: ", dropdowns);
+  dropdowns.forEach(function (dropdown) {
+    const btn = dropdown.querySelector('.dropdown-btn');
+    const menu = dropdown.querySelector('.dropdown-menu');
+    console.log("btn: ", btn);
+    console.log("menu: ", menu);
+
+    btn.addEventListener('click', function (event) {
+      event.stopPropagation();
+      menu.classList.toggle('active');
+    });
+
+    window.addEventListener('click', function () {
+      if (menu.classList.contains('active')) {
+        menu.classList.remove('active');
+      }
+    });
+  });
+
 });
 // article end

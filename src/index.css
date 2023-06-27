@@ -1,10 +1,14 @@
 @import url("./tailwind.css");
 
 .article-bg:before {
+  @apply blur-sm;
+
   background-image: url("../images/background/index_article.jpg");
 }
 
 .recommend-bg:before {
+  @apply blur-sm;
+
   background-image: url("../images/background/index_article.jpg");
 }
 

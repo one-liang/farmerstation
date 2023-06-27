@@ -44,7 +44,7 @@
   }
 
   .modal {
-    @apply bg-white px-6 lg:px-10 py-8 rounded-lg relative overflow-visible;
+    @apply relative px-6 py-8 overflow-visible bg-white rounded-lg lg:px-10;
   }
 
   .modal::backdrop {
@@ -58,15 +58,15 @@
   }
 
   .button-default {
-    @apply lg:text-base text-sm px-3 py-[9px] whitespace-nowrap lg:rounded-lg rounded-md duration-200;
+    @apply px-3 py-2 text-sm duration-200 rounded-md whitespace-nowrap lg:rounded-lg;
   }
 
   .button-normal {
-    @apply bg-gray-100 text-gray-600 border border-gray-200;
+    @apply text-gray-600 bg-gray-100 border border-gray-200;
   }
 
   .button-active {
-    @apply bg-primary text-white border border-primary-dark;
+    @apply text-white border bg-primary border-primary-dark;
   }
 
   .tag-button-default {

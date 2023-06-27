@@ -2280,16 +2280,12 @@ html {
   -webkit-line-clamp: 2;
 }
 
-.article-bg {
-  &:before {
-    background-image: url("../images/background/index_article.jpg");
-  }
+.article-bg:before {
+  background-image: url("../images/background/index_article.jpg");
 }
 
-.recommend-bg {
-  &:before {
-    background-image: url("../images/background/index_article.jpg");
-  }
+.recommend-bg:before {
+  background-image: url("../images/background/index_article.jpg");
 }
 
 .basis-147 {

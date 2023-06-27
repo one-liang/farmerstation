@@ -3043,10 +3043,6 @@ html {
     height: auto;
   }
 
-  .md\:w-\[168px\] {
-    width: 168px;
-  }
-
   .md\:w-\[250px\] {
     width: 250px;
   }
@@ -3674,6 +3670,11 @@ html {
   .lg\:py-\[18px\] {
     padding-top: 18px;
     padding-bottom: 18px;
+  }
+
+  .lg\:py-\[24px\] {
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .lg\:py-\[88px\] {

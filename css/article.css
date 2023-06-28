@@ -4192,11 +4192,6 @@ html {
     --tw-text-opacity: 1;
     color: rgb(243 147 19 / var(--tw-text-opacity));
   }
-
-  .peer:hover ~ .peer-hover\:lg\:text-white {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
 }
 
 @media (min-width: 1280px) {

@@ -67,6 +67,10 @@
   @apply relative flex items-center justify-between text-base text-black duration-200 whitespace-nowrap lg:inline-block gap-x-8 lg:gap-x-0;
 }
 
+.map-list-item:hover {
+  @apply !text-secondary-dark;
+}
+
 .map-list-item-active {
   @apply !text-secondary-dark;
 }

@@ -80,10 +80,6 @@ document.addEventListener("DOMContentLoaded", function () {
         areaElement.addEventListener("mouseover", () => {
           // 在 mouseover 時添加對應的活躍類別
           areaElement.classList.add("map-active");
-          const listItems = areaListElement.querySelectorAll(".map-list-item");
-          listItems.forEach((item) => {
-            item.classList.add("map-list-item-active");
-          });
           const title = areaListElement.querySelector(".map-list-title");
           title.classList.add("map-list-title-active");
         });
@@ -92,10 +88,6 @@ document.addEventListener("DOMContentLoaded", function () {
         areaElement.addEventListener("mouseout", () => {
           // 在 mouseout 時移除對應的活躍類別
           areaElement.classList.remove("map-active");
-          const listItems = areaListElement.querySelectorAll(".map-list-item");
-          listItems.forEach((item) => {
-            item.classList.remove("map-list-item-active");
-          });
           const title = areaListElement.querySelector(".map-list-title");
           title.classList.remove("map-list-title-active");
         });
@@ -104,10 +96,6 @@ document.addEventListener("DOMContentLoaded", function () {
         areaListElement.addEventListener("mouseover", () => {
           // 在 mouseover 時添加對應的活躍類別
           areaElement.classList.add("map-active");
-          const listItems = areaListElement.querySelectorAll(".map-list-item");
-          listItems.forEach((item) => {
-            item.classList.add("map-list-item-active");
-          });
           const title = areaListElement.querySelector(".map-list-title");
           title.classList.add("map-list-title-active");
         });

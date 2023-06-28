@@ -894,10 +894,6 @@ html {
   top: 67%;
 }
 
-.top-\[72px\] {
-  top: 72px;
-}
-
 .top-full {
   top: 100%;
 }
@@ -2182,6 +2178,10 @@ html {
   color: rgb(243 147 19 / var(--tw-text-opacity));
 }
 
+.text-transparent {
+  color: transparent;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -3099,10 +3099,6 @@ html {
 }
 
 @media (min-width: 1024px) {
-  .lg\:pointer-events-auto {
-    pointer-events: auto;
-  }
-
   .lg\:visible {
     visibility: visible;
   }

@@ -166,30 +166,36 @@
               <p class="hidden text-gray-600">休息中</p>
               <div class="relative flex items-center pl-3 ml-3 border-l border-black cursor-pointer dropdown border-opacity-20" tabindex="-1">
                 <div class="flex items-center dropdown-btn gap-x-2"><span class="text-sm">查看時間</span><img src="../images/icons/DropDown.svg" alt=""></div>
-                <div class="fixed z-10 invisible transition-all duration-300 origin-top transform scale-95 -translate-x-1/2 -translate-y-1/2 opacity-0 dropdown-menu lg:absolute top-1/2 lg:top-10 left-1/2 lg:origin-top-center lg:-translate-y-2">
-                  <ul class="triangle-share space-y-[10px] before:right-0 before:lg:right-auto before:lg:left-1/2 before:left-auto bg-white rounded-lg w-[169px] grid grid-cols-1 divide-y divide-gray-100 px-4 py-2 shadow">
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期日</span><span>11:30–15:00</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期一</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期二</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期三</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期四</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期五</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期六</span><span>11:30–15:00</span></div>
-                    </li>
-                  </ul>
+                <div class="fixed lg:z-10 z-50 lg:w-auto w-full lg:h-auto h-full invisible transition-all duration-300 origin-top transform scale-95 lg:-translate-x-1/2 -translate-x-0 lg:!-translate-y-2 !-translate-y-0 opacity-0 dropdown-menu lg:absolute top-0 lg:top-10 lg:left-1/2 left-0 lg:origin-top-center  before:bg-black before:absolute before:inset-0 before:w-full before:h-full before:bg-opacity-50 before:lg:rounded-lg before:rounded-none">
+                  <div class="triangle-share w-[294px] lg:w-[169px] relative lg:z-0 z-40 lg:left-auto left-1/2 lg:top-auto top-1/2 lg:translate-x-0 -translate-x-1/2 lg:translate-y-0 -translate-y-1/2 before:right-0 before:lg:right-auto before:lg:left-1/2 before:left-auto bg-white lg:rounded-lg rounded-md lg:px-4 lg:py-2 pt-6 px-8 pb-6 shadow">
+                    <button class="absolute flex items-center justify-center rounded-full dropdown-close-btn -top-4 -right-4 lg:hidden w-9 h-9 bg-primary" type="button"><img src="../images/icons/Cross.svg" alt=""></button>
+                    <div class="flex items-center lg:hidden gap-x-2"><img src="../images/icons/Clock.svg" alt="">
+                      <p class="text-base text-black">營業時間</p>
+                    </div>
+                    <ul class="space-y-[10px] grid grid-cols-1 divide-y divide-gray-100 lg:mt-0 mt-4">
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期日</span><span>11:30–15:00</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期一</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期二</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期三</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期四</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期五</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期六</span><span>11:30–15:00</span></div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </li>
@@ -246,30 +252,36 @@
               <p class="text-gray-600">休息中</p>
               <div class="relative flex items-center pl-3 ml-3 border-l border-black cursor-pointer dropdown gap-x-2 border-opacity-20" tabindex="-1">
                 <div class="flex items-center dropdown-btn gap-x-2"><span class="text-sm">查看時間</span><img src="../images/icons/DropDown.svg" alt=""></div>
-                <div class="fixed z-10 invisible transition-all duration-300 origin-top transform scale-95 -translate-x-1/2 -translate-y-1/2 opacity-0 dropdown-menu lg:absolute top-1/2 lg:top-10 left-1/2 lg:origin-top-center lg:-translate-y-2">
-                  <ul class="triangle-share space-y-[10px] before:right-0 before:lg:right-auto before:lg:left-1/2 before:left-auto bg-white rounded-lg w-[169px] grid grid-cols-1 divide-y divide-gray-100 px-4 py-2 shadow">
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期日</span><span>11:30–15:00</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期一</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期二</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期三</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期四</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期五</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期六</span><span>11:30–15:00</span></div>
-                    </li>
-                  </ul>
+                <div class="fixed lg:z-10 z-50 lg:w-auto w-full lg:h-auto h-full invisible transition-all duration-300 origin-top transform scale-95 lg:-translate-x-1/2 -translate-x-0 lg:!-translate-y-2 !-translate-y-0 opacity-0 dropdown-menu lg:absolute top-0 lg:top-10 lg:left-1/2 left-0 lg:origin-top-center  before:bg-black before:absolute before:inset-0 before:w-full before:h-full before:bg-opacity-50 before:lg:rounded-lg before:rounded-none">
+                  <div class="triangle-share w-[294px] lg:w-[169px] relative lg:z-0 z-40 lg:left-auto left-1/2 lg:top-auto top-1/2 lg:translate-x-0 -translate-x-1/2 lg:translate-y-0 -translate-y-1/2 before:right-0 before:lg:right-auto before:lg:left-1/2 before:left-auto bg-white lg:rounded-lg rounded-md lg:px-4 lg:py-2 pt-6 px-8 pb-6 shadow">
+                    <button class="absolute flex items-center justify-center rounded-full dropdown-close-btn -top-4 -right-4 lg:hidden w-9 h-9 bg-primary" type="button"><img src="../images/icons/Cross.svg" alt=""></button>
+                    <div class="flex items-center lg:hidden gap-x-2"><img src="../images/icons/Clock.svg" alt="">
+                      <p class="text-base text-black">營業時間                  </p>
+                    </div>
+                    <ul class="space-y-[10px] grid grid-cols-1 divide-y divide-gray-100 lg:mt-0 mt-4">
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期日</span><span>11:30–15:00</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期一</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期二</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期三</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期四</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期五</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期六</span><span>11:30–15:00</span></div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </li>
@@ -326,30 +338,36 @@
               <p class="hidden text-gray-600">休息中</p>
               <div class="relative flex items-center pl-3 ml-3 border-l border-black cursor-pointer dropdown border-opacity-20" tabindex="-1">
                 <div class="flex items-center dropdown-btn gap-x-2"><span class="text-sm">查看時間</span><img src="../images/icons/DropDown.svg" alt=""></div>
-                <div class="fixed z-10 invisible transition-all duration-300 origin-top transform scale-95 -translate-x-1/2 -translate-y-1/2 opacity-0 dropdown-menu lg:absolute top-1/2 lg:top-10 left-1/2 lg:origin-top-center lg:-translate-y-2">
-                  <ul class="triangle-share space-y-[10px] before:right-0 before:lg:right-auto before:lg:left-1/2 before:left-auto bg-white rounded-lg w-[169px] grid grid-cols-1 divide-y divide-gray-100 px-4 py-2 shadow">
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期日</span><span>11:30–15:00</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期一</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期二</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期三</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期四</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期五</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期六</span><span>11:30–15:00</span></div>
-                    </li>
-                  </ul>
+                <div class="fixed lg:z-10 z-50 lg:w-auto w-full lg:h-auto h-full invisible transition-all duration-300 origin-top transform scale-95 lg:-translate-x-1/2 -translate-x-0 lg:!-translate-y-2 !-translate-y-0 opacity-0 dropdown-menu lg:absolute top-0 lg:top-10 lg:left-1/2 left-0 lg:origin-top-center  before:bg-black before:absolute before:inset-0 before:w-full before:h-full before:bg-opacity-50 before:lg:rounded-lg before:rounded-none">
+                  <div class="triangle-share w-[294px] lg:w-[169px] relative lg:z-0 z-40 lg:left-auto left-1/2 lg:top-auto top-1/2 lg:translate-x-0 -translate-x-1/2 lg:translate-y-0 -translate-y-1/2 before:right-0 before:lg:right-auto before:lg:left-1/2 before:left-auto bg-white lg:rounded-lg rounded-md lg:px-4 lg:py-2 pt-6 px-8 pb-6 shadow">
+                    <button class="absolute flex items-center justify-center rounded-full dropdown-close-btn -top-4 -right-4 lg:hidden w-9 h-9 bg-primary" type="button"><img src="../images/icons/Cross.svg" alt=""></button>
+                    <div class="flex items-center lg:hidden gap-x-2"><img src="../images/icons/Clock.svg" alt="">
+                      <p class="text-base text-black">營業時間</p>
+                    </div>
+                    <ul class="space-y-[10px] grid grid-cols-1 divide-y divide-gray-100 lg:mt-0 mt-4">
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期日</span><span>11:30–15:00</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期一</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期二</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期三</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期四</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期五</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期六</span><span>11:30–15:00</span></div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </li>
@@ -406,30 +424,36 @@
               <p class="text-gray-600">休息中</p>
               <div class="relative flex items-center pl-3 ml-3 border-l border-black cursor-pointer dropdown gap-x-2 border-opacity-20" tabindex="-1">
                 <div class="flex items-center dropdown-btn gap-x-2"><span class="text-sm">查看時間</span><img src="../images/icons/DropDown.svg" alt=""></div>
-                <div class="fixed z-10 invisible transition-all duration-300 origin-top transform scale-95 -translate-x-1/2 -translate-y-1/2 opacity-0 dropdown-menu lg:absolute top-1/2 lg:top-10 left-1/2 lg:origin-top-center lg:-translate-y-2">
-                  <ul class="triangle-share space-y-[10px] before:right-0 before:lg:right-auto before:lg:left-1/2 before:left-auto bg-white rounded-lg w-[169px] grid grid-cols-1 divide-y divide-gray-100 px-4 py-2 shadow">
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期日</span><span>11:30–15:00</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期一</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期二</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期三</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期四</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期五</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期六</span><span>11:30–15:00</span></div>
-                    </li>
-                  </ul>
+                <div class="fixed lg:z-10 z-50 lg:w-auto w-full lg:h-auto h-full invisible transition-all duration-300 origin-top transform scale-95 lg:-translate-x-1/2 -translate-x-0 lg:!-translate-y-2 !-translate-y-0 opacity-0 dropdown-menu lg:absolute top-0 lg:top-10 lg:left-1/2 left-0 lg:origin-top-center  before:bg-black before:absolute before:inset-0 before:w-full before:h-full before:bg-opacity-50 before:lg:rounded-lg before:rounded-none">
+                  <div class="triangle-share w-[294px] lg:w-[169px] relative lg:z-0 z-40 lg:left-auto left-1/2 lg:top-auto top-1/2 lg:translate-x-0 -translate-x-1/2 lg:translate-y-0 -translate-y-1/2 before:right-0 before:lg:right-auto before:lg:left-1/2 before:left-auto bg-white lg:rounded-lg rounded-md lg:px-4 lg:py-2 pt-6 px-8 pb-6 shadow">
+                    <button class="absolute flex items-center justify-center rounded-full dropdown-close-btn -top-4 -right-4 lg:hidden w-9 h-9 bg-primary" type="button"><img src="../images/icons/Cross.svg" alt=""></button>
+                    <div class="flex items-center lg:hidden gap-x-2"><img src="../images/icons/Clock.svg" alt="">
+                      <p class="text-base text-black">營業時間                  </p>
+                    </div>
+                    <ul class="space-y-[10px] grid grid-cols-1 divide-y divide-gray-100 lg:mt-0 mt-4">
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期日</span><span>11:30–15:00</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期一</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期二</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期三</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期四</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期五</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期六</span><span>11:30–15:00</span></div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </li>
@@ -486,30 +510,36 @@
               <p class="hidden text-gray-600">休息中</p>
               <div class="relative flex items-center pl-3 ml-3 border-l border-black cursor-pointer dropdown border-opacity-20" tabindex="-1">
                 <div class="flex items-center dropdown-btn gap-x-2"><span class="text-sm">查看時間</span><img src="../images/icons/DropDown.svg" alt=""></div>
-                <div class="fixed z-10 invisible transition-all duration-300 origin-top transform scale-95 -translate-x-1/2 -translate-y-1/2 opacity-0 dropdown-menu lg:absolute top-1/2 lg:top-10 left-1/2 lg:origin-top-center lg:-translate-y-2">
-                  <ul class="triangle-share space-y-[10px] before:right-0 before:lg:right-auto before:lg:left-1/2 before:left-auto bg-white rounded-lg w-[169px] grid grid-cols-1 divide-y divide-gray-100 px-4 py-2 shadow">
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期日</span><span>11:30–15:00</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期一</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期二</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期三</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期四</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期五</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期六</span><span>11:30–15:00</span></div>
-                    </li>
-                  </ul>
+                <div class="fixed lg:z-10 z-50 lg:w-auto w-full lg:h-auto h-full invisible transition-all duration-300 origin-top transform scale-95 lg:-translate-x-1/2 -translate-x-0 lg:!-translate-y-2 !-translate-y-0 opacity-0 dropdown-menu lg:absolute top-0 lg:top-10 lg:left-1/2 left-0 lg:origin-top-center  before:bg-black before:absolute before:inset-0 before:w-full before:h-full before:bg-opacity-50 before:lg:rounded-lg before:rounded-none">
+                  <div class="triangle-share w-[294px] lg:w-[169px] relative lg:z-0 z-40 lg:left-auto left-1/2 lg:top-auto top-1/2 lg:translate-x-0 -translate-x-1/2 lg:translate-y-0 -translate-y-1/2 before:right-0 before:lg:right-auto before:lg:left-1/2 before:left-auto bg-white lg:rounded-lg rounded-md lg:px-4 lg:py-2 pt-6 px-8 pb-6 shadow">
+                    <button class="absolute flex items-center justify-center rounded-full dropdown-close-btn -top-4 -right-4 lg:hidden w-9 h-9 bg-primary" type="button"><img src="../images/icons/Cross.svg" alt=""></button>
+                    <div class="flex items-center lg:hidden gap-x-2"><img src="../images/icons/Clock.svg" alt="">
+                      <p class="text-base text-black">營業時間</p>
+                    </div>
+                    <ul class="space-y-[10px] grid grid-cols-1 divide-y divide-gray-100 lg:mt-0 mt-4">
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期日</span><span>11:30–15:00</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期一</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期二</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期三</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期四</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期五</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期六</span><span>11:30–15:00</span></div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </li>
@@ -566,30 +596,36 @@
               <p class="text-gray-600">休息中</p>
               <div class="relative flex items-center pl-3 ml-3 border-l border-black cursor-pointer dropdown gap-x-2 border-opacity-20" tabindex="-1">
                 <div class="flex items-center dropdown-btn gap-x-2"><span class="text-sm">查看時間</span><img src="../images/icons/DropDown.svg" alt=""></div>
-                <div class="fixed z-10 invisible transition-all duration-300 origin-top transform scale-95 -translate-x-1/2 -translate-y-1/2 opacity-0 dropdown-menu lg:absolute top-1/2 lg:top-10 left-1/2 lg:origin-top-center lg:-translate-y-2">
-                  <ul class="triangle-share space-y-[10px] before:right-0 before:lg:right-auto before:lg:left-1/2 before:left-auto bg-white rounded-lg w-[169px] grid grid-cols-1 divide-y divide-gray-100 px-4 py-2 shadow">
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期日</span><span>11:30–15:00</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期一</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期二</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期三</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期四</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期五</span><span>11:30–21:30</span></div>
-                    </li>
-                    <li class="!first:pt-0 pt-[10px]">
-                      <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期六</span><span>11:30–15:00</span></div>
-                    </li>
-                  </ul>
+                <div class="fixed lg:z-10 z-50 lg:w-auto w-full lg:h-auto h-full invisible transition-all duration-300 origin-top transform scale-95 lg:-translate-x-1/2 -translate-x-0 lg:!-translate-y-2 !-translate-y-0 opacity-0 dropdown-menu lg:absolute top-0 lg:top-10 lg:left-1/2 left-0 lg:origin-top-center  before:bg-black before:absolute before:inset-0 before:w-full before:h-full before:bg-opacity-50 before:lg:rounded-lg before:rounded-none">
+                  <div class="triangle-share w-[294px] lg:w-[169px] relative lg:z-0 z-40 lg:left-auto left-1/2 lg:top-auto top-1/2 lg:translate-x-0 -translate-x-1/2 lg:translate-y-0 -translate-y-1/2 before:right-0 before:lg:right-auto before:lg:left-1/2 before:left-auto bg-white lg:rounded-lg rounded-md lg:px-4 lg:py-2 pt-6 px-8 pb-6 shadow">
+                    <button class="absolute flex items-center justify-center rounded-full dropdown-close-btn -top-4 -right-4 lg:hidden w-9 h-9 bg-primary" type="button"><img src="../images/icons/Cross.svg" alt=""></button>
+                    <div class="flex items-center lg:hidden gap-x-2"><img src="../images/icons/Clock.svg" alt="">
+                      <p class="text-base text-black">營業時間                  </p>
+                    </div>
+                    <ul class="space-y-[10px] grid grid-cols-1 divide-y divide-gray-100 lg:mt-0 mt-4">
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期日</span><span>11:30–15:00</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期一</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期二</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期三</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期四</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期五</span><span>11:30–21:30</span></div>
+                      </li>
+                      <li class="!first:pt-0 pt-[10px] lg:px-0 px-4">
+                        <div class="flex items-center text-sm text-gray-600 gap-x-4"><span>星期六</span><span>11:30–15:00</span></div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </li>

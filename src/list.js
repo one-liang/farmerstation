@@ -101,13 +101,14 @@ document.addEventListener("DOMContentLoaded", function () {
   dropdowns.forEach(function (dropdown) {
     const btn = dropdown.querySelector(".dropdown-btn");
     const menu = dropdown.querySelector(".dropdown-menu");
+    const closeBtn = dropdown.querySelector(".dropdown-close-btn");
 
     btn.addEventListener("click", function (event) {
       event.stopPropagation();
       menu.classList.toggle("active");
     });
 
-    window.addEventListener("click", function () {
+    closeBtn.addEventListener("click", function () {
       if (menu.classList.contains("active")) {
         menu.classList.remove("active");
       }

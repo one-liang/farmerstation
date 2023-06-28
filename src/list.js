@@ -41,20 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
       nextEl: ".swiper-button-list-next",
       prevEl: ".swiper-button-list-prev",
     },
-    // on: {
-    //   slideChange: function () {
-    //     let activeIndex = this.activeIndex;
-    //     let bullets = document.querySelectorAll(".swiper-pagination-bullet");
-    //     for (let i = 0; i < bullets.length; i++) {
-    //       if (Math.abs(i - activeIndex) > 2) {
-    //         // 只顯示靠近 active bullet 的 6 個 bullets
-    //         bullets[i].style.display = "none";
-    //       } else {
-    //         bullets[i].style.display = "";
-    //       }
-    //     }
-    //   },
-    // },
   });
 
   // 活力好站
@@ -62,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesPerView: "auto",
     spaceBetween: 40,
     freeMode: true,
+    autoHeight: true,
     breakpoints: {
       // when window width is >= 1024px
       1024: {

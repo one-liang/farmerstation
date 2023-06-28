@@ -20,7 +20,7 @@
 }
 
 .article {
-  @apply mt-[30px] lg:mt-[24px] border-b border-black border-opacity-10;
+  @apply mt-[24px] border-b border-black border-opacity-10;
 }
 
 .article h2 {
@@ -80,11 +80,11 @@
 }
 
 .accordion-item {
-  @apply bg-white rounded-lg;
+  @apply bg-white rounded-md;
 }
 
 .accordion-button {
-  @apply flex items-center justify-between w-full px-5 py-3 lg:text-base text-15;
+  @apply flex items-center justify-between w-full px-5 py-3 text-base;
 }
 
 .accordion-content {

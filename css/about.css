@@ -894,6 +894,10 @@ html {
   top: 67%;
 }
 
+.top-\[72px\] {
+  top: 72px;
+}
+
 .top-full {
   top: 100%;
 }
@@ -3372,6 +3376,10 @@ html {
 
   .lg\:rounded-r-lg {
     border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  .lg\:rounded-br-lg {
     border-bottom-right-radius: 0.5rem;
   }
 

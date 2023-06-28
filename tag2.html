@@ -48,11 +48,11 @@
             <li class="mt-3 !border-0 lg:mt-0"><a class="font-medium lg:font-normal block w-full px-3 py-[10px] lg:py-2 text-15 text-center text-white duration-200 border rounded-lg whitespace-nowrap bg-primary border-primary lg:text-left lg:w-auto lg:inline-block lg:hover:bg-primary-dark" href="#">登入專區</a></li>
             <li class="mt-10 !border-0 flex gap-x-6 lg:mt-0 lg:hidden">
               <!-- facebook--><a class="box-border flex items-center justify-center w-10 h-10 duration-200 bg-gray-400 rounded-full" href="https://www.facebook.com/farmerstation.tw/?ref=embed_page">
-                <svg class="w-[18px] h-[18px] text-white fill-current" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-5 h-5 text-white fill-current" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path d="M18.75 10.0025C18.75 5.16953 14.833 1.25253 10 1.25253C5.16699 1.25253 1.25 5.16953 1.25 10.0025C1.25 14.3707 4.44922 17.9903 8.63281 18.6466V12.5318H6.41113V10.0025H8.63281V8.0748C8.63281 5.88217 9.93848 4.6705 11.938 4.6705C12.895 4.6705 13.8965 4.8414 13.8965 4.8414V6.99472H12.7925C11.7056 6.99472 11.3672 7.66977 11.3672 8.36191V10.0025H13.7939L13.406 12.5318H11.3672V18.6466C15.5508 17.9903 18.75 14.3707 18.75 10.0025Z"></path>
                 </svg></a>
               <!-- youtube--><a class="box-border flex items-center justify-center w-10 h-10 duration-200 bg-gray-400 rounded-full" href="https://www.youtube.com/@user-be6qc3hi1h">
-                <svg class="w-[18px] h-[18px] text-white fill-current" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-5 h-5 text-white fill-current" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14.167 3.33334H5.83366C3.33366 3.33334 1.66699 5.00001 1.66699 7.50001V12.5C1.66699 15 3.33366 16.6667 5.83366 16.6667H14.167C16.667 16.6667 18.3337 15 18.3337 12.5V7.50001C18.3337 5.00001 16.667 3.33334 14.167 3.33334ZM11.5753 10.8583L9.51698 12.0917C8.68364 12.5917 8.00031 12.2084 8.00031 11.2334V8.75835C8.00031 7.78335 8.68364 7.40002 9.51698 7.90002L11.5753 9.13334C12.367 9.61667 12.367 10.3833 11.5753 10.8583Z">           </path>
                 </svg></a>
             </li>
@@ -94,8 +94,8 @@
     <dialog class="modal" id="modal">
       <form>
         <!-- close button-->
-        <button class="absolute right-[-18px] top-[-18px] rounded-full bg-primary w-9 h-9 flex items-center justify-center" formmethod="dialog" type="submit"><img src="./images/icons/Cross.svg" alt=""></button>
-        <div class="flex items-center gap-x-2"><img class="w-[17.5px] h-[17.5px]" src="./images/icons/Search.svg" alt="">
+        <button class="close-button absolute right-[-18px] top-[-18px] rounded-full bg-primary w-9 h-9 flex items-center justify-center" formmethod="dialog" type="submit"><img src="./images/icons/Cross.svg" alt=""></button>
+        <div class="flex items-center gap-x-2"><img class="w-[17.5px] h-[17.5px]" src="./images/icons/Search-Black.svg" alt="">
           <p class="text-lg font-medium text-black">站內搜索</p>
         </div>
         <div class="flex flex-col mt-2 lg:flex-row gap-x-3 lg:gap-y-0 gap-y-4">
@@ -105,28 +105,16 @@
       </form>
     </dialog>
     <main class="mt-[52px] lg:mt-[72px]">
-      <!-- 浮動 banner-->
-      <div class="bg-primary-light border-b border-primary-dark px-5 lg:px-0 py-[10px] lg:py-3 w-full fixed top-0 left-0 transition-all duration-300 ease-out z-20" id="banner">
-        <div class="max-w-screen-xl mx-auto">
-          <p class="text-primary-dark text-15 lg:text-base">#番茄</p>
-        </div>
-      </div>
-      <!-- 主圖-->
-      <section class="relative bg-white">
-        <div class="relative max-w-screen-xl mx-auto overflow-hidden xl:rounded-lg before:absolute before:inset-0 before:w-full before:h-full before:bg-gradient-to-r before:from-black/50 before:via-black/0 before:to-black/50"><img class="w-full h-[150px] xl:h-[250px] object-cover" src="./images/tag/tag-bg.png" alt="">
-          <h1 class="absolute text-2xl font-bold text-white top-14 xl:top-16 left-5 xl:left-8 xl:text-4xl">#番茄(Tag結果頁)</h1>
-        </div>
-      </section>
       <section class="max-w-screen-xl px-5 mx-auto mt-6 xl:mt-8 mb-14 xl:mb-20 xl:px-0">
-        <!-- 麵包屑-->
-        <ul class="text-gray-500 text-sm flex items-center gap-x-[6px]">
-          <li><a href="#">首頁</a></li>
-          <li>/</li>
-          <li> <a href="#">#番茄</a></li>
-        </ul>
-        <div class="flex flex-col min-h-screen mt-6 lg:flex-row gap-x-16 xl:mt-8">
+        <div class="flex flex-col min-h-screen lg:flex-row gap-x-16">
           <div class="w-full lg:w-[800px]">
-            <div class="space-y-8 lg:divide-y lg:divide-black lg:divide-opacity-10"><a class="flex items-center gap-x-6 group lg:pt-8 first:!pt-0" href="#">
+            <!-- 麵包屑-->
+            <ul class="text-gray-500 text-sm flex items-center gap-x-[6px]">
+              <li><a href="#">首頁</a></li>
+              <li>/</li>
+              <li> <a href="#">#番茄</a></li>
+            </ul>
+            <div class="mt-6 space-y-8 lg:divide-y lg:divide-black lg:divide-opacity-10 xl:mt-8"><a class="flex items-center gap-x-6 group lg:pt-8 first:!pt-0" href="#">
                 <picture class="block flex-shrink-0 w-[150px] lg:w-[235px] h-[112px] lg:h-[176px] lg:rounded-lg rounded-md overflow-hidden"><img class="object-cover w-full h-auto duration-200 group-hover:scale-105" src="./images/tag/tag1.png" alt=""/></picture>
                 <div>
                   <p class="text-base font-medium text-black duration-200 lg:text-lg line-clamp line-clamp-2 tracking-1 group-hover:text-primary-dark">農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照農民直銷站精選照片介紹</p>
@@ -201,11 +189,11 @@
               </ul>
             </div>
           </div>
-          <div class="sticky top-[109px] w-full lg:w-[336px] mt-8 lg:mt-0 flex flex-col gap-y-8" style="height:max-content;">
+          <div class="sticky top-[72px] w-full lg:w-[336px] mt-8 lg:mt-0 flex flex-col gap-y-8" style="height:max-content;">
             <!-- 熱門主題-->
             <div class="px-5 py-5 bg-gray-100 rounded-lg lg:px-6 lg:py-4">
               <p class="text-lg font-medium text-black lg:text-base">熱門主題</p>
-              <ul class="flex flex-wrap mt-4 gap-x-6 gap-y-5">
+              <ul class="flex flex-wrap mt-4 gap-x-4 gap-y-3">
                 <!-- active 狀態 !bg-primary !border-primary-dark !text-white-->
                 <li><a class="inline-block px-3 py-2 text-sm text-gray-600 break-words duration-200 border border-gray-200 rounded-lg hotTag hover:bg-primary hover:border-primary-dark hover:text-white" href="#">#課程活動</a></li>
                 <li><a class="inline-block px-3 py-2 text-sm text-gray-600 break-words duration-200 border border-gray-200 rounded-lg hotTag hover:bg-primary hover:border-primary-dark hover:text-white" href="#">#農民直銷站</a></li>

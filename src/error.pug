@@ -1,0 +1,19 @@
+include ./components/common/title.pug
+include ./components/common/head.pug
+include ./components/common/card.pug
+
+doctype html
+html(lang="zh-Hant-TW")
+  +head("error")
+  head
+
+  body(class="relative")
+    include ./components/common/header.pug
+    main(class="mt-[52px] lg:mt-[72px] h-[calc(100vh-500px)]")
+      div(class="mt-[200px] flex flex-col items-center justify-center gap-y-2 text-center")
+        p(class="text-8xl") 404
+        p(class="text-2xl") Not Found
+        p(class="text-base") 找不到您要的頁面
+
+      include ./components/common/gotop.pug
+    include ./components/common/footer.pug

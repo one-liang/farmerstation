@@ -1026,6 +1026,10 @@ html {
   margin-top: 18px;
 }
 
+.mt-\[200px\] {
+  margin-top: 200px;
+}
+
 .mt-\[24px\] {
   margin-top: 24px;
 }
@@ -1198,6 +1202,10 @@ html {
 
 .h-\[6px\] {
   height: 6px;
+}
+
+.h-\[calc\(100vh-500px\)\] {
+  height: calc(100vh - 500px);
 }
 
 .h-auto {
@@ -2034,6 +2042,11 @@ html {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
 }
 
 .text-\[10px\] {

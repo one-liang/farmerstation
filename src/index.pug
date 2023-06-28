@@ -65,7 +65,7 @@ html(lang="zh-Hant-TW")
                   img(class="group-hover:animate-bounce-x" src="./images/icons/Circle-Right-Full.svg" alt="")
 
       // 最新文章
-      section(class="article-bg relative mt-8 lg:mt-14 px-5 xl:px-0 py-12 lg:py-[88px] before:absolute before:inset-0 before:bg-cover before:bg-no-repeat before:bg-center before:w-full before:lg:h-full before:h-[338px] before:z-1 after:absolute after:inset-0 after:bg-black after:bg-opacity-50 after:w-full after:lg:h-full after:h-[338px] after:z-[2]")
+      section(class="article-bg relative mt-8 lg:mt-14 px-5 xl:px-0 py-12 lg:py-[88px] before:absolute before:inset-0 before:bg-cover before:bg-no-repeat before:bg-center before:w-full before:lg:h-full before:h-[338px] before:z-1")
         div(class="max-w-screen-xl mx-auto flex flex-col lg:flex-row lg:gap-x-[76px] relative z-[3]")
           // 文字區塊
           +title("white", "Latest Articles", "最新文章", "可以放一段文字可以放一段文字可以放可以放一段文字可以放一段文字可以放一段文字可以放一段文字")
@@ -134,7 +134,7 @@ html(lang="zh-Hant-TW")
           +title("black", "Farmers Market", "全臺農民直銷據點")
           div(class="relative mt-12 map")
             // 北區
-            div(class="north-list dropdown absolute sm:top-[10%] md:top-[6%] lg:top-[7%] left-[28%] sm:left-[51%] md:left-[32%] lg:left-[37%] lg:w-[310px]")
+            div(class="north-list dropdown z-[2] absolute sm:top-[10%] md:top-[6%] lg:top-[7%] left-[28%] sm:left-[51%] md:left-[29%] lg:left-[32%] lg:w-[310px]")
               button(class="map-list-title dropdown-btn" type="button")
                 span 北區
                 img(class="inline-block w-4 h-4 lg:hidden dropdown-add" src="./images/icons/Add.svg" alt="")
@@ -150,7 +150,7 @@ html(lang="zh-Hant-TW")
                   span 新竹 (7)
                   img(class="inline-block lg:hidden" src="./images/icons/Right.svg" alt="")
             // 中區
-            div(class="west-list dropdown absolute top-[32%] left-[8%] sm:left-[30%] lg:left-[8%] xl:left-[16%] lg:w-[425px]")
+            div(class="west-list dropdown z-[2] absolute top-[32%] left-[8%] sm:left-[30%] lg:left-[8%] xl:left-[16%] lg:w-[425px]")
               button(class="map-list-title dropdown-btn" type="button")
                 span 中區
                 img(class="inline-block w-4 h-4 lg:hidden dropdown-add" src="./images/icons/Add.svg" alt="")
@@ -169,7 +169,7 @@ html(lang="zh-Hant-TW")
                   span 彰化 (3)
                   img(class="inline-block lg:hidden" src="./images/icons/Right.svg" alt="")
             // 南區
-            div(class="south-list dropdown group absolute top-[67%] sm:top-[72%] lg:top-[74%] left-[3%] sm:left-[20%] lg:left-[27%] lg:w-[235px]")
+            div(class="south-list dropdown z-[2] group absolute top-[67%] sm:top-[72%] lg:top-[74%] left-[3%] sm:left-[20%] lg:left-[22%] lg:w-[235px]")
               button(class="map-list-title dropdown-btn" type="button")
                 span 南區
                 img(class="inline-block w-4 h-4 lg:hidden dropdown-add" src="./images/icons/Add.svg" alt="")
@@ -182,7 +182,7 @@ html(lang="zh-Hant-TW")
                   span 屏東 (2)
                   img(class="inline-block lg:hidden" src="./images/icons/Right.svg" alt="")
             // 東區
-            div(class="east-list dropdown group absolute top-[48%] left-[60%] sm:left-[60%] lg:w-[300px]")
+            div(class="east-list dropdown z-[2] group absolute top-[48%] left-[60%] sm:left-[60%] lg:w-[300px]")
               button(class="map-list-title dropdown-btn lg:text-right" type="button")
                 span 東區
                 img(class="inline-block w-4 h-4 lg:hidden dropdown-add" src="./images/icons/Add.svg" alt="")

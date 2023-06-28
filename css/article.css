@@ -3022,11 +3022,6 @@ html {
   z-index: 2;
 }
 
-.after\:h-\[338px\]::after {
-  content: var(--tw-content);
-  height: 338px;
-}
-
 .after\:h-full::after {
   content: var(--tw-content);
   height: 100%;
@@ -3037,20 +3032,9 @@ html {
   width: 100%;
 }
 
-.after\:bg-black::after {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .after\:bg-opacity-100::after {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
-}
-
-.after\:bg-opacity-50::after {
-  content: var(--tw-content);
-  --tw-bg-opacity: 0.5;
 }
 
 .first\:\!pt-0:first-child {
@@ -3243,8 +3227,8 @@ html {
     left: 1.5rem;
   }
 
-  .md\:left-\[32\%\] {
-    left: 32%;
+  .md\:left-\[29\%\] {
+    left: 29%;
   }
 
   .md\:left-auto {
@@ -3364,12 +3348,12 @@ html {
     left: 130px;
   }
 
-  .lg\:left-\[27\%\] {
-    left: 27%;
+  .lg\:left-\[22\%\] {
+    left: 22%;
   }
 
-  .lg\:left-\[37\%\] {
-    left: 37%;
+  .lg\:left-\[32\%\] {
+    left: 32%;
   }
 
   .lg\:left-\[8\%\] {
@@ -4171,11 +4155,6 @@ html {
     content: var(--tw-content);
     --tw-bg-opacity: 1;
     background-color: rgb(217 217 217 / var(--tw-bg-opacity));
-  }
-
-  .after\:lg\:h-full::after {
-    content: var(--tw-content);
-    height: 100%;
   }
 
   .before\:first\:lg\:\!hidden:first-child::before {

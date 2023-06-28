@@ -45,46 +45,48 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // 猜你喜歡
-  const swiperMore = new Swiper(".swiper-more", {
-    slidesPerView: "auto",
-    spaceBetween: 40,
-    freeMode: true,
-    autoHeight: true,
-    breakpoints: {
-      // when window width is >= 1024px
-      1024: {
-        loop: true,
-        freeMode: false,
-        slidesPerView: 3,
-        slidesPerGroup: 3,
+  setTimeout(() => {
+    const swiperMore = new Swiper(".swiper-more", {
+      slidesPerView: "auto",
+      spaceBetween: 40,
+      freeMode: true,
+      autoHeight: true,
+      breakpoints: {
+        // when window width is >= 1024px
+        1024: {
+          loop: true,
+          freeMode: false,
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+        },
       },
-    },
-    navigation: {
-      nextEl: ".swiper-button-more-next",
-      prevEl: ".swiper-button-more-prev",
-    },
-  });
+      navigation: {
+        nextEl: ".swiper-button-more-next",
+        prevEl: ".swiper-button-more-prev",
+      },
+    });
 
-  // 近期活動
-  const swiperActivity = new Swiper(".swiper-activity", {
-    slidesPerView: "auto",
-    spaceBetween: 40,
-    freeMode: true,
-    autoHeight: true,
-    breakpoints: {
-      // when window width is >= 1024px
-      1024: {
-        loop: true,
-        freeMode: false,
-        slidesPerView: 3,
-        slidesPerGroup: 3,
+    // 近期活動
+    const swiperActivity = new Swiper(".swiper-activity", {
+      slidesPerView: "auto",
+      spaceBetween: 40,
+      freeMode: true,
+      autoHeight: true,
+      breakpoints: {
+        // when window width is >= 1024px
+        1024: {
+          loop: true,
+          freeMode: false,
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+        },
       },
-    },
-    navigation: {
-      nextEl: ".swiper-button-activity-next",
-      prevEl: ".swiper-button-activity-prev",
-    },
-  });
+      navigation: {
+        nextEl: ".swiper-button-activity-next",
+        prevEl: ".swiper-button-activity-prev",
+      },
+    });
+  }, 1000);
 
   const dropdowns = document.querySelectorAll(".dropdown");
   console.log("dropdowns: ", dropdowns);

@@ -3,46 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  @font-face {
-    font-family: "NotoSansTC";
-    font-weight: 400;
-    src: url("../fonts/NotoSansTC-Regular.otf") format("woff2");
-  }
-
-  @font-face {
-    font-family: "NotoSansTC";
-    font-weight: 500;
-    src: url("../fonts/NotoSansTC-Medium.otf") format("woff2");
-  }
-
-  @font-face {
-    font-family: "NotoSansTC";
-    font-weight: 700;
-    src: url("../fonts/NotoSansTC-Bold.otf") format("woff2");
-  }
-
-  @font-face {
-    font-family: "Inter";
-    font-weight: 400;
-    src: url("../fonts/Inter-Regular.ttf") format("woff2");
-  }
-
-  @font-face {
-    font-family: "Inter";
-    font-weight: 500;
-    src: url("../fonts/Inter-Medium.ttf") format("woff2");
-  }
-
-  @font-face {
-    font-family: "Inter";
-    font-weight: 700;
-    src: url("../fonts/Inter-Bold.ttf") format("woff2");
-  }
-
-  html {
-    @apply font-notoSansTC;
-  }
-
   .modal {
     @apply relative px-6 py-8 overflow-visible bg-white rounded-lg lg:px-10;
   }
@@ -100,4 +60,11 @@
   .line-clamp-3 {
     -webkit-line-clamp: 3;
   }
+}
+
+body {
+  font-family: "Inter", "Noto Sans TC", Microsoft JhengHei, ui-sans-serif,
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }

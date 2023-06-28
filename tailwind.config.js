@@ -1,18 +1,8 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
-
 module.exports = {
   purge: ["./src/**/*.pug", "./src/**/*.js"],
   darkMode: false, // or "media" or "class"
   theme: {
     extend: {
-      fontFamily: {
-        notoSansTC: [
-          "Inter",
-          "NotoSansTC",
-          "Microsoft JhengHei",
-          ...defaultTheme.fontFamily.sans,
-        ],
-      },
       textColor: {
         primary: "#87BE23",
         "primary-dark": "#6C9C30",

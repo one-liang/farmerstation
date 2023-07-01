@@ -11,3 +11,11 @@
     width: calc(300% + 80px);
   }
 }
+
+.wrapper.active .inner {
+  fill: #f39313;
+}
+
+.wrapper.active .text {
+  color: #fff;
+}

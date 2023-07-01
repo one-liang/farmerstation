@@ -12,6 +12,10 @@
   background-image: url("../images/background/recommend_bg.jpg");
 }
 
+.recommend-bg .card:nth-child(4) {
+  @apply lg:hidden inline-block;
+}
+
 .basis-147 {
   flex-basis: 147px;
 }

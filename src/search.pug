@@ -12,18 +12,20 @@ html(lang="zh-Hant-TW")
       // 浮動 banner
       div(id="banner" class="bg-primary-light border-b border-primary-dark px-5 lg:px-0 py-[10px] lg:py-3 w-full fixed top-0 left-0 transition-all duration-300 ease-out z-20")
         div(class="max-w-screen-xl mx-auto")
-          p(class="text-primary-dark text-15 lg:text-base") #番茄
+          div(class="text-black text-15 lg:text-base") 搜尋：
+            span(class="text-primary-dark") 番茄
+            |  共有 115筆 結果
       section(class="max-w-screen-xl px-5 mx-auto mt-6 xl:mt-8 mb-14 xl:mb-20 xl:px-0")
         // 麵包屑
         +breadcrumbs("首頁", "#番茄")
-        div(class="mt-5 text-lg font-medium text-black")
+        div(class="mt-5 text-lg font-medium text-black") 搜尋：
           span(class="text-primary-dark") 番茄
           |  共有 115 筆結果
 
         div(class="flex flex-col min-h-screen mt-6 lg:flex-row gap-x-16 xl:mt-8")
           div(class="w-full lg:w-[800px]")
             div(class="space-y-8 lg:divide-y lg:divide-black lg:divide-opacity-10")
-              each val in [1, 2, 3, 4, 5, 6, 7, 8]
+              each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
                 +cardH("農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照農民直銷站精選照片介紹", "牆面照片裡的小農，臉上掛著靦腆而自信的笑容，李智遠總幹事說：「現在有 65 位農友登錄，用 Line 群組即時溝通，提供銷售訊息。」 牆面照片裡的小農，臉上掛著靦腆而自信的笑容，李智遠總幹事說：「現在有 65 位農友登錄，用 Line 群組即時溝通，提供銷售訊息。」", "活力好站")
             // 分頁
             div(class="mt-8 xl:mt-16")

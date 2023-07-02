@@ -16,6 +16,12 @@
   fill: #f39313;
 }
 
+.wrapper .text {
+  color: #3f3d3c;
+  fill: #3f3d3c;
+}
+
 .wrapper.active .text {
-  color: #fff;
+  color: #ffffff;
+  fill: #ffffff;
 }

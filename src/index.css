@@ -102,3 +102,43 @@
 .dropdown-menu.active {
   @apply visible scale-100 translate-y-0 opacity-100;
 }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (min-width: 1023px) {
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-125%);
+    }
+  }
+}
+
+.marquee .pic-container {
+  animation: marquee 60s infinite linear;
+}
+
+.marquee .pic-container .pic {
+  flex-basis: 20%;
+}
+
+@media (max-width: 1024px) {
+  .marquee .pic-container .pic {
+    flex-basis: 25%;
+  }
+}
+
+@media (max-width: 768px) {
+  .marquee .pic-container .pic {
+    flex-basis: 33.33%;
+  }
+}

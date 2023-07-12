@@ -25,3 +25,23 @@
   color: #ffffff;
   fill: #ffffff;
 }
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-images {
+  display: flex;
+  width: 1020px;
+  animation: carousel 50s infinite linear;
+}
+
+@keyframes carousel {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-80%);
+  }
+}

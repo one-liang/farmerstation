@@ -1,3 +1,4 @@
+include ./components/common/loading.pug
 include ./components/common/title.pug
 include ./components/common/head.pug
 include ./components/common/card.pug
@@ -14,6 +15,7 @@ html(lang="zh-Hant-TW")
     script(async="" defer="" crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v17.0&appId=145774977565705&autoLogAppEvents=1" nonce="bYh0gysH")
 
   body(class="relative")
+    +loading
     include ./components/common/header.pug
     main(class="mt-[52px] lg:mt-[72px]")
       h1(class="sr-only") 食農知味

@@ -1,3 +1,4 @@
+include ./components/common/loading.pug
 include ./components/common/head.pug
 include ./components/common/breadcrumbs.pug
 include ./components/common/title.pug
@@ -7,6 +8,7 @@ doctype html
 html(lang="zh-Hant-TW")
   +head("search")
   body
+    +loading
     include ./components/common/header.pug
     main(class="mt-[52px] lg:mt-[72px]")
       // 浮動 banner

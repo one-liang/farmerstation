@@ -151,14 +151,14 @@ function load() {
   let timer;
   function move() {
     clearInterval(timer);
-    timer = setInterval((env) => {
+    timer = setInterval(() => {
       left = left - 1;
       console.log(list.clientLeft);
-      if (left == -(8 * 180 + 2 * 94)) {
+      if (left == -(8 * 180 + 2 * 96)) {
         left = 0;
       }
       list.style.left = left + "px";
-    }, 10);
+    }, 50);
   }
 
   move();

@@ -27,21 +27,26 @@
 }
 
 .carousel {
-  width: 100%;
+  position: relative;
+  width: 1024px;
+  height: 250px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel-images {
+  left: 0px;
   display: flex;
-  width: 1020px;
-  animation: carousel 50s infinite linear;
+  position: absolute;
 }
 
-@keyframes carousel {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-80%);
-  }
+.pic {
+  width: 180px;
+  height: 180px;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

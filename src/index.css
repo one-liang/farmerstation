@@ -105,18 +105,20 @@
 
 .carousel {
   position: relative;
-  width: 800px;
+  width: 1024px;
   height: 250px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .carousel-images {
   left: 0px;
   display: flex;
   position: absolute;
 }
+
 .pic {
   width: 180px;
   height: 180px;

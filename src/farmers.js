@@ -50,3 +50,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// 跑馬燈
+function load() {
+  let list = document.querySelector(".carousel-images");
+  let left = list.style.left;
+  let timer;
+  function move() {
+    clearInterval(timer);
+    timer = setInterval(() => {
+      left = left - 1;
+      console.log(list.clientLeft);
+      if (left == -(8 * 180 + 2 * 96)) {
+        left = 0;
+      }
+      list.style.left = left + "px";
+    }, 50);
+  }
+
+  move();
+}
+document.addEventListener("DOMContentLoaded", load);

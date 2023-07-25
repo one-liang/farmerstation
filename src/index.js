@@ -153,7 +153,6 @@ function load() {
     clearInterval(timer);
     timer = setInterval(() => {
       left = left - 1;
-      console.log(list.clientLeft);
       if (left == -(8 * 180 + 2 * 96)) {
         left = 0;
       }

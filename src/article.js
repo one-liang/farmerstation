@@ -88,12 +88,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   const dropdowns = document.querySelectorAll(".dropdown");
-  console.log("dropdowns: ", dropdowns);
   dropdowns.forEach(function (dropdown) {
     const btn = dropdown.querySelector(".dropdown-btn");
     const menu = dropdown.querySelector(".dropdown-menu");
-    console.log("btn: ", btn);
-    console.log("menu: ", menu);
 
     btn.addEventListener("click", function (event) {
       event.stopPropagation();

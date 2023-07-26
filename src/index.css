@@ -127,3 +127,35 @@
   justify-content: center;
   align-items: center;
 }
+
+.article-card {
+  @apply flex-1 block mt-6 overflow-hidden duration-300 lg:mt-0 hover:scale-105 hover:rounded-lg hover:z-1;
+}
+
+.article-card:nth-child(1) {
+  @apply rounded-l-lg;
+}
+
+.article-card:nth-child(2) {
+  @apply rounded-r-lg;
+}
+
+.article-small-card {
+  @apply flex-1 flex flex-col relative lg:h-[200px] h-[147px] basis-147 w-full overflow-hidden duration-300 hover:scale-105 hover:rounded-lg hover:z-1;
+}
+
+.article-small-card:nth-child(1) {
+  @apply lg:rounded-l-lg;
+}
+
+.article-small-card:nth-child(3) {
+  @apply lg:rounded-r-lg;
+}
+
+.vitality-card {
+  @apply relative flex mt-6 lg:mt-[72px] lg:px-6;
+}
+
+.vitality-card:nth-child(2) {
+  @apply flex-row-reverse;
+}

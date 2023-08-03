@@ -1,1 +1,29 @@
 @import url("./tailwind.css");
+
+.about {
+  @apply max-w-[800px] mx-auto mt-6 lg:mt-8;
+}
+
+.about h2 {
+  @apply mt-6 lg:mt-8 lg:text-3xl text-2xl leading-[36px] font-bold text-black;
+}
+
+.about h2:first-child {
+  @apply !mt-0;
+}
+
+.about h3 {
+  @apply mt-4 text-lg font-medium text-black lg:mt-5;
+}
+
+.about img {
+  @apply object-cover w-full h-auto mt-6 lg:mt-8;
+}
+
+.about p {
+  @apply mt-4 text-base lg:leading-[30px] leading-[28px] text-gray-800 lg:mt-5;
+}
+
+.about p a {
+  @apply underline text-primary-dark hover:no-underline;
+}

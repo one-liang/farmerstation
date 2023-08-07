@@ -27,7 +27,11 @@ html(lang="zh-Hant-TW")
             // Slides
             each val in [1, 2, 3, 4, 5, 6, 7]
               div(class="relative swiper-slide")
-                img(class="object-cover object-center w-full h-full" src=`./images/index/index-bg${val}.jpg`, alt="")
+                picture
+                  source(media="(min-width: 768px)" srcset=`./images/index/index-bg${val}.jpg`)
+                  source(media="(max-width: 767px)" srcset=`./images/index/index-bg${val}-m.jpg`)
+                  img(class="object-cover object-center w-full h-full" src=`./images/index/index-bg${val}.jpg` alt="")
+
                 p(class="absolute lg:bottom-[140px] bottom-5 lg:left-[130px] text-white lg:w-[470px] w-full lg:text-[40px] text-[22px] lg:leading-[48px] leading-[32px] font-bold lg:px-0 px-5 z-1") 在地食事標題在地食事標題在地食事標題
           div(class="swiper-pagination swiper-main-pagination")
           div(class="swiper-button-prev swiper-button-main-prev flex items-center justify-center !w-9 !h-9 border border-gray-400 rounded-full !left-4")

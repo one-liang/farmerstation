@@ -273,13 +273,15 @@ html(lang="zh-Hant-TW")
           +title("black", "Related Articles", "相關文章")
           div(class="grid grid-cols-1 mt-6 lg:grid-cols-3 lg:gap-x-10 gap-y-8 lg:gap-y-20 lg:mt-10")
             each val in [1, 2, 3, 4, 5, 6]
-              a(class="relative flex items-center card-h group gap-x-4 lg:gap-x-5" href="#")
-                picture(class="flex-shrink-0 w-[140px] lg:w-[150px] h-[105px] lg:h-[112px] lg:rounded-lg rounded-md overflow-hidden")
-                  img(class="object-cover w-full h-auto duration-200 group-hover:scale-105" src="../images/farmers/farmers-list-card.png" alt="")
+              div(class="relative flex items-center card-h group gap-x-4 lg:gap-x-5")
+                a(class="flex-shrink-0 w-[140px] lg:w-[150px] h-[105px] lg:h-[112px] lg:rounded-lg rounded-md overflow-hidden inline-block" href="#")
+                  picture
+                    img(class="object-cover w-full h-auto duration-200 group-hover:scale-105" src="../images/farmers/farmers-list-card.png" alt="")
                 div(class="")
-                  p(class="text-base text-black break-words duration-200 group-hover:text-primary-dark line-clamp line-clamp-2") 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照農民直銷站精選照片介紹
+                  a(class="block" href="#")
+                    p(class="text-base text-black break-words duration-200 group-hover:text-primary-dark line-clamp line-clamp-2") 農民直銷站精選照片介紹農民直銷站精選照片介紹農民直銷站精選照農民直銷站精選照片介紹
                   div(class="flex flex-wrap mt-3 gap-x-4")
-                    span(class="inline-block bg-primary-light border border-primary border-opacity-20 text-primary-dark lg:text-sm text-13 px-3 py-[6px] lg:rounded-lg rounded-md" href="#") 好食惜惜
+                    a(class="inline-block bg-primary-light border border-primary border-opacity-20 text-primary-dark lg:text-sm text-13 px-3 py-[6px] lg:rounded-lg rounded-md" href="#") 好食惜惜
 
     include ./components/list/footer.pug
     include ./components/common/gotop.pug

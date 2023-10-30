@@ -85,6 +85,24 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
+  // 浮動 banner
+  const swiperBanner = new Swiper(".swiper-banner", {
+    slidesPerView: "auto",
+    spaceBetween: 16,
+    freeMode: true,
+    touchRatio: 1,
+    breakpoints: {
+      // when window width is >= 1024px
+      1024: {
+        touchRatio: 0,
+      },
+    },
+    navigation: {
+      nextEl: ".swiper-button-banner-next",
+      prevEl: ".swiper-button-banner-prev",
+    },
+  });
+
   const dropdowns = document.querySelectorAll(".dropdown");
   dropdowns.forEach(function (dropdown) {
     const btn = dropdown.querySelector(".dropdown-btn");

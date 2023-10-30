@@ -79,6 +79,38 @@
   content: none !important;
 }
 
+.swiper-button-banner-next,
+.swiper-button-banner-prev {
+  @apply relative;
+}
+
+.swiper-button-banner-prev:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -12px;
+  width: 56px;
+  height: 56px;
+  background-image: linear-gradient(to right, #f0f0f0 60%, transparent);
+  z-index: -1;
+}
+
+.swiper-button-banner-next:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -12px;
+  width: 56px;
+  height: 56px;
+  background-image: linear-gradient(to left, #f0f0f0 60%, transparent);
+  z-index: -1;
+}
+
+.swiper-button-banner-next.swiper-button-disabled,
+.swiper-button-banner-prev.swiper-button-disabled {
+  @apply hidden;
+}
+
 @media (max-width: 1023px) {
   .swiper-related .swiper-slide,
   .swiper-activity .swiper-slide {

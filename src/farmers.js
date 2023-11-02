@@ -38,6 +38,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   let wrappers = document.querySelectorAll(".wrapper");
+  let sectionCard = document.querySelector("#section-card");
+  let nextBlockOffset = sectionCard.offsetTop;
   wrappers.forEach((wrapper) => {
     wrapper.addEventListener("click", function () {
       // 移除所有 wrapper 的 active 類別
@@ -47,6 +49,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // 將 active 類別添加到被點擊的 wrapper
       this.classList.add("active");
+
+      if (window.innerWidth < 1024) {
+        const targetScrollPosition = nextBlockOffset - 60;
+        window.scrollTo({
+          top: targetScrollPosition,
+          behavior: "smooth",
+        });
+      }
     });
   });
 });
@@ -60,7 +70,6 @@ function load() {
     clearInterval(timer);
     timer = setInterval(() => {
       left = left - 1;
-      console.log(list.clientLeft);
       if (left == -(8 * 180 + 2 * 96)) {
         left = 0;
       }

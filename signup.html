@@ -128,20 +128,40 @@
             <h2 class="text-2xl font-bold text-center text-black lg:text-3xl">帳號註冊</h2>
             <div class="flex flex-col mt-8 gap-y-6">
               <label class="flex flex-col" for="area">
-                <p class="text-base text-black">縣市區</p>
+                <p class="text-base text-black">地區</p>
                 <!-- error 狀態 !border-error-dark !bg-error-light" -->
-                <div class="dropdown group relative inline-block text-left mt-2 z-[1]" tabindex="-1">
-                  <button class="inline-flex items-center justify-between w-full px-4 py-3 text-sm font-medium text-gray-400 bg-white border border-black rounded-md lg:rounded-lg dropdown-btn border-opacity-10 focus-within:outline focus-within:outline-2 focus-within:border-transparent focus-within:outline-black" type="button"><span>請選擇</span><img src="./images/icons/DropDown.svg" alt=""></button>
-                  <div class="dropdown-menu">
-                    <div class="absolute top-0 right-0 mt-2 w-full max-h-[218px] overflow-y-auto origin-top divide-y divide-gray-100 rounded-lg border border-gray-200 bg-white outline-none">
-                      <div><a class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" href="#">縣市區選項一</a></div>
-                      <div><a class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" href="#">縣市區選項二</a></div>
-                      <div><a class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" href="#">縣市區選項三</a></div>
-                      <div><a class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" href="#">縣市區選項四</a></div>
-                      <div><a class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" href="#">縣市區選項五</a></div>
-                      <div><a class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" href="#">縣市區選項六</a></div>
-                      <div><a class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" href="#">縣市區選項七</a></div>
-                    </div>
+                <div class="group relative inline-block text-left mt-2 z-[2]" tabindex="-1">
+                  <div class="relative"><img class="absolute -translate-y-1/2 pointer-events-none right-4 top-1/2" src="./images/icons/DropDown.svg" alt="">
+                    <select class="inline-flex items-center justify-between w-full px-4 py-3 text-sm font-medium text-gray-400 bg-white border border-black rounded-md appearance-none lg:rounded-lg border-opacity-10 focus-within:outline focus-within:outline-2 focus-within:border-transparent focus-within:outline-black" name=""> 
+                      <option class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" value="">請選擇 </option>
+                      <option class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" value="地區選項一">地區選項一 </option>
+                      <option class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" value="地區選項一">地區選項二 </option>
+                      <option class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" value="地區選項一">地區選項三 </option>
+                      <option class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" value="地區選項一">地區選項四 </option>
+                      <option class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" value="地區選項一">地區選項五</option>
+                      <option class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" value="地區選項一">地區選項六</option>
+                      <option class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" value="地區選項一">地區選項七</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- error 訊息，用 !hidden 做隱藏-->
+                <div class="flex items-center gap-x-1 mt-2 !hidden"><img src="./images/icons/Danger.svg" alt=""><span class="text-sm text-error-dark">必填欄位</span></div>
+              </label>
+              <label class="flex flex-col" for="area">
+                <p class="text-base text-black">縣市</p>
+                <!-- error 狀態 !border-error-dark !bg-error-light" -->
+                <div class="group relative inline-block text-left mt-2 z-[1]" tabindex="-1">
+                  <div class="relative"><img class="absolute -translate-y-1/2 pointer-events-none right-4 top-1/2" src="./images/icons/DropDown.svg" alt="">
+                    <select class="inline-flex items-center justify-between w-full px-4 py-3 text-sm font-medium text-gray-400 bg-white border border-black rounded-md appearance-none lg:rounded-lg border-opacity-10 focus-within:outline focus-within:outline-2 focus-within:border-transparent focus-within:outline-black" name=""> 
+                      <option class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" value="">請選擇 </option>
+                      <option class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" value="縣市選項一">縣市選項一 </option>
+                      <option class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" value="縣市選項一">縣市選項二 </option>
+                      <option class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" value="縣市選項一">縣市選項三 </option>
+                      <option class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" value="縣市選項一">縣市選項四 </option>
+                      <option class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" value="縣市選項一">縣市選項五</option>
+                      <option class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" value="縣市選項一">縣市選項六</option>
+                      <option class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" value="縣市選項一">縣市選項七                </option>
+                    </select>
                   </div>
                 </div>
                 <!-- error 訊息，用 !hidden 做隱藏-->
@@ -150,18 +170,18 @@
               <label class="flex flex-col" for="stronghold">
                 <p class="text-base text-black">據點名稱(筆畫排序)</p>
                 <!-- error 狀態 !border-error-dark !bg-error-light" -->
-                <div class="relative z-0 inline-block mt-2 text-left dropdown group" tabindex="-1">
-                  <button class="inline-flex items-center justify-between w-full px-4 py-3 text-sm font-medium text-gray-400 bg-white border border-black rounded-md lg:rounded-lg dropdown-btn border-opacity-10 focus-within:outline focus-within:outline-2 focus-within:border-transparent focus-within:outline-black" type="button"><span>請選擇</span><img src="./images/icons/DropDown.svg" alt=""></button>
-                  <div class="dropdown-menu">
-                    <div class="absolute top-0 right-0 mt-2 w-full max-h-[218px] overflow-y-auto origin-top divide-y divide-gray-100 lg:rounded-lg rounded-md border border-gray-200 bg-white outline-none">
-                      <div><a class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" href="#">據點名稱選項一</a></div>
-                      <div><a class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" href="#">據點名稱選項二</a></div>
-                      <div><a class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" href="#">據點名稱選項三</a></div>
-                      <div><a class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" href="#">據點名稱選項四</a></div>
-                      <div><a class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" href="#">據點名稱選項五</a></div>
-                      <div><a class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" href="#">據點名稱選項六</a></div>
-                      <div><a class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" href="#">據點名稱選項七</a></div>
-                    </div>
+                <div class="relative z-0 inline-block mt-2 text-left group" tabindex="-1">
+                  <div class="relative"><img class="absolute -translate-y-1/2 pointer-events-none right-4 top-1/2" src="./images/icons/DropDown.svg" alt="">
+                    <select class="inline-flex items-center justify-between w-full px-4 py-3 text-sm font-medium text-gray-400 bg-white border border-black rounded-md appearance-none lg:rounded-lg border-opacity-10 focus-within:outline focus-within:outline-2 focus-within:border-transparent focus-within:outline-black" name=""> 
+                      <option class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" value="">請選擇 </option>
+                      <option class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" value="據點名稱一">據點名稱一 </option>
+                      <option class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" value="據點名稱一">據點名稱二 </option>
+                      <option class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" value="據點名稱一">據點名稱三 </option>
+                      <option class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" value="據點名稱一">據點名稱四 </option>
+                      <option class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" value="據點名稱一">據點名稱五</option>
+                      <option class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" value="據點名稱一">據點名稱六</option>
+                      <option class="block px-6 py-[10px] text-15 text-gray-800 duration-200 hover:bg-gray-200" value="據點名稱一">據點名稱七                </option>
+                    </select>
                   </div>
                 </div>
                 <!-- error 訊息，用 !hidden 做隱藏-->
@@ -183,6 +203,13 @@
               </label>
               <label class="flex flex-col" for="confirmPassword">
                 <p class="text-base text-black">確認密碼 </p>
+                <!-- error 狀態 !border-error-dark !bg-error-light"-->
+                <input class="h-12 px-4 mt-2 bg-white border border-gray-200 rounded-md lg:rounded-lg" id="confirmPassword" type="password">
+                <!-- error 訊息，用 !hidden 做隱藏-->
+                <div class="flex items-center gap-x-1 mt-2 !hidden"><img src="./images/icons/Danger.svg" alt=""><span class="text-sm text-error-dark">必填欄位</span></div>
+              </label>
+              <label class="flex flex-col" for="confirmPassword">
+                <p class="text-base text-black">姓名 </p>
                 <!-- error 狀態 !border-error-dark !bg-error-light"-->
                 <input class="h-12 px-4 mt-2 bg-white border border-gray-200 rounded-md lg:rounded-lg" id="confirmPassword" type="password">
                 <!-- error 訊息，用 !hidden 做隱藏-->
